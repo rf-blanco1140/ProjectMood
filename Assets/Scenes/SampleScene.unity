@@ -215,7 +215,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.990566, g: 0.7840154, b: 0.62144, a: 1}
-  m_Intensity: 538.38965
+  m_Intensity: 681.1945
   m_Range: 3.44
   m_SpotAngle: 143.1
   m_InnerSpotAngle: 21.80208
@@ -254,7 +254,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1.35
@@ -273,7 +273,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970587980}
   m_LocalRotation: {x: 0.706603, y: -0, z: -0, w: 0.7076103}
-  m_LocalPosition: {x: 0.492, y: 1.796, z: 1.287}
+  m_LocalPosition: {x: 0.492, y: 1.776, z: 1.287}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 2312.2231
+  m_Intensity: 2925.5276
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 32
@@ -722,7 +722,7 @@ Camera:
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 26.48
+  m_FocalLength: 21
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -731,7 +731,7 @@ Camera:
     height: 1
   near clip plane: 0.099999994
   far clip plane: 1000
-  field of view: 48.757427
+  field of view: 59.489765
   orthographic: 0
   orthographic size: 0.0014999999
   m_Depth: 0
@@ -838,7 +838,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7489946820687851816}
   m_LocalRotation: {x: 0.15304592, y: 0.6903455, z: -0.1530459, w: 0.6903455}
-  m_LocalPosition: {x: -5.08, y: 3.26, z: 0.0000003231699}
+  m_LocalPosition: {x: -4.29, y: 2.75, z: 0.0000003231699}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 6958755888171876527}
@@ -1419,7 +1419,7 @@ MonoBehaviour:
       enableBigTilePrepass: 0
       isFptlEnabled: 0
   clearColorMode: 0
-  backgroundColorHDR: {r: 0.025, g: 0.07, b: 0.19, a: 0}
+  backgroundColorHDR: {r: 0.076317206, g: 0.148852, b: 0.3301887, a: 0}
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
@@ -1439,10 +1439,10 @@ MonoBehaviour:
     m_Iso: 100
     m_ShutterSpeed: 0.00025
     m_Aperture: 1.4
-    m_BladeCount: 5
-    m_Curvature: {x: 2, y: 11}
-    m_BarrelClipping: 0.25
-    m_Anamorphism: 0
+    m_BladeCount: 8
+    m_Curvature: {x: 5.605471, y: 14.605467}
+    m_BarrelClipping: 0.292
+    m_Anamorphism: -1
   flipYMode: 0
   xrRendering: 1
   fullscreenPassthrough: 0
