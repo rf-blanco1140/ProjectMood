@@ -156,7 +156,7 @@ MonoBehaviour:
   m_DefaultLookDevProfile: {fileID: 11400000, guid: 485db4baca11fc04da7366db65e5e647, type: 2}
   m_RenderingPathDefaultCameraFrameSettings:
     bitDatas:
-      data1: 72198262773251917
+      data1: 72198331492728653
       data2: 13763000468760363032
     lodBias: 1
     lodBiasMode: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_RenderPipelineSettings:
     supportShadowMask: 1
     supportSSR: 1
-    supportSSRTransparent: 0
+    supportSSRTransparent: 1
     supportSSAO: 1
     supportSSGI: 1
     supportSubsurfaceScattering: 1
@@ -302,7 +302,7 @@ MonoBehaviour:
       maxDirectionalShadowMapResolution: 2048
       maxPunctualShadowMapResolution: 2048
       maxAreaShadowMapResolution: 2048
-      supportScreenSpaceShadows: 0
+      supportScreenSpaceShadows: 1
       maxScreenSpaceShadowSlots: 4
       screenSpaceShadowBufferFormat: 48
     decalSettings:
