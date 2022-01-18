@@ -1,18 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class FloatVariable : MonoBehaviour
+[CreateAssetMenu(fileName = "New FloatVariable", menuName = "ScriptableObjects/FloatVariable")]
+public class FloatVariable : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float _value;
+    private float _currentValue;
+
+    public float Value
     {
-        
+        get { return _currentValue; }
+        set { _currentValue = value; }
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual void ApplyChange(int change)
     {
-        
+        _currentValue += change;
+    }
+
+    public virtual void SetValue(int newValue)
+    {
+        _currentValue = newValue;
+    }
+
+    private void OnEnable()
+    {
+        _currentValue = _value;
     }
 }
+

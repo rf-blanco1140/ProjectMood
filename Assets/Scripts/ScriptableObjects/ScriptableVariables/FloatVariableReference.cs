@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FloatVariableReference : MonoBehaviour
+[CreateAssetMenu(fileName = "New FloatVariableReference", menuName = "ScriptableObjects/FloatVariableReference")]
+public class FloatVariableReference : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool useConstant = true;
+    public float constantValue;
+    public FloatVariable variable;
 
-    // Update is called once per frame
-    void Update()
+    public float Value
     {
-        
+        get { return useConstant ? constantValue : variable.Value; }
+        set { variable.Value = value; }
     }
 }

@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IntVariableReference : MonoBehaviour
+[CreateAssetMenu(fileName = "New IntVariableReference", menuName = "ScriptableObjects/IntVariableReference")]
+public class IntVariableReference : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool useConstant = true;
+    public int constantValue;
+    public IntVariable variable;
 
-    // Update is called once per frame
-    void Update()
+    public int Value
     {
-        
+        get { return useConstant ? constantValue : variable.Value; }
+        set { variable.Value = value; }
     }
 }

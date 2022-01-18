@@ -1,18 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class IntVariable : MonoBehaviour
+[CreateAssetMenu(fileName = "New IntVariable", menuName = "ScriptableObjects/IntVariable")]
+public class IntVariable : ScriptableObject
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private int _value;
+    private int _currentValue;
+
+    public int Value
     {
-        
+        get { return _currentValue; }
+        set { _currentValue = value; }
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual void ApplyChange(int change)
     {
-        
+        _currentValue += change;
+    }
+
+    public virtual void SetValue(int newValue)
+    {
+        _currentValue = newValue;
+    }
+
+    private void OnEnable()
+    {
+        _currentValue = _value;
     }
 }
+
