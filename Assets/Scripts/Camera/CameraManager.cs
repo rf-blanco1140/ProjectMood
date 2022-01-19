@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Camera camMain;
+    [SerializeField] private Camera camMiniGame;
+    [SerializeField] private AudioListener audioMain;
+    [SerializeField] private AudioListener audioMiniGame;
+
+    private void Start()
     {
-        
+        camMain.enabled = true;
+        camMiniGame.enabled = false;
+        audioMain.enabled = true;
+        audioMiniGame.enabled = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SwapCamera()
     {
-        
+        camMain.enabled = !camMain.enabled;
+        camMiniGame.enabled = !camMiniGame.enabled;
+        audioMain.enabled = !audioMain.enabled;
+        audioMiniGame.enabled = !audioMiniGame.enabled;
     }
+
 }

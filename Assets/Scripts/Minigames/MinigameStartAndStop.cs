@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class MinigameStartAndStop : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject _cameraManager;
+
+    private void OnEnable()
     {
-        
+        Debug.Log("MiniGame Time!");
+        _cameraManager.GetComponent<CameraManager>().SwapCamera();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        if (_cameraManager != null)
+            _cameraManager.GetComponent<CameraManager>().SwapCamera();
     }
 }
+

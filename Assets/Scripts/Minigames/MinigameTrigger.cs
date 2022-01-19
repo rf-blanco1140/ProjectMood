@@ -1,18 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class MinigameTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] GameObject CameraManager;
+    [SerializeField] private GameObject textGameObject;
+    [SerializeField] private GameObject MiniGame;
+
+    private bool _canInteract = false;
+
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            _canInteract = true;
+            textGameObject.SetActive(true);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerExit(Collider other)
     {
-        
+        _canInteract = false;
+        textGameObject.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (_canInteract && Input.GetKeyDown(KeyCode.F))
+        {
+            MiniGame.SetActive(true);
+            _canInteract = false;
+            textGameObject.SetActive(false);
+        }
     }
 }
