@@ -12,9 +12,9 @@ public class IntVariable : ScriptableObject
         set { _currentValue = value; }
     }
 
-    public virtual void ApplyChange(int change)
+    public virtual int ApplyChange(int change)
     {
-        _currentValue += change;
+        return _currentValue += change;
     }
 
     public virtual void SetValue(int newValue)
