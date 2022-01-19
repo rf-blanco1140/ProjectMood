@@ -55,7 +55,6 @@ public class InhaleExhaleMinigame : MonoBehaviour
             yield return null;
         } while (currentTime <= _timePerBreath);
 
-        Debug.Log("Done");
         inhaleText.SetActive(false);
         _readyToPress = true;
         exhaleText.SetActive(true);
@@ -74,8 +73,6 @@ public class InhaleExhaleMinigame : MonoBehaviour
             yield return null;
         } while (currentTime <= _timePerBreath);
 
-
-        Debug.Log("Done");
         _amountOfBreath += 1;
         CheckIfWin();
         exhaleText.SetActive(false);
