@@ -4,26 +4,29 @@ using UnityEngine;
 
 public class InhaleExhaleMinigame : MonoBehaviour
 {
-    [SerializeField] private GameObject inhaleText;
-    [SerializeField] private GameObject exhaleText;
+    [SerializeField] private GameObject _inhaleText;
+    [SerializeField] private GameObject _exhaleText;
+    [SerializeField] private GameObject _pressText;
+
 
     private Vector3 _inhaleScale;
     [SerializeField] private Vector3 _exhaleScale = new Vector3(10f, 10f, 10f);
     [SerializeField] private float _timePerBreath = 4;
 
     [SerializeField] private int _breathsToWin = 5;
-    private int _amountOfBreath = 0;
+    private int _amountOfBreath;
 
     private bool _readyToPress;
     private bool _isInhale;
 
     private void OnEnable()
     {
+        _amountOfBreath = 0;
         _inhaleScale = transform.localScale;
         _readyToPress = true;
         _isInhale = true;
-        exhaleText.transform.parent.gameObject.SetActive(true);
-        inhaleText.SetActive(true);
+        _inhaleText.SetActive(true);
+        _pressText.SetActive(true);
     }
 
     private void OnMouseDown()
@@ -32,12 +35,14 @@ public class InhaleExhaleMinigame : MonoBehaviour
         {
             _isInhale = false;
             _readyToPress = false;
+            _pressText.SetActive(false);
             StartCoroutine(Inhale(_exhaleScale));
         }
         else if (_readyToPress && !_isInhale)
         {
             _isInhale = true;
             _readyToPress = false;
+            _pressText.SetActive(false);
             StartCoroutine(Exhale(_inhaleScale));
         }
     }
@@ -55,9 +60,10 @@ public class InhaleExhaleMinigame : MonoBehaviour
             yield return null;
         } while (currentTime <= _timePerBreath);
 
-        inhaleText.SetActive(false);
+        _inhaleText.SetActive(false);
         _readyToPress = true;
-        exhaleText.SetActive(true);
+        _exhaleText.SetActive(true);
+        _pressText.SetActive(true);
     }
 
     IEnumerator Exhale(Vector3 destinationScale)
@@ -75,17 +81,16 @@ public class InhaleExhaleMinigame : MonoBehaviour
 
         _amountOfBreath += 1;
         CheckIfWin();
-        exhaleText.SetActive(false);
+        _exhaleText.SetActive(false);
         _readyToPress = true;
-        inhaleText.SetActive(true);
+        _inhaleText.SetActive(true);
+        _pressText.SetActive(true);
     }
 
     public void CheckIfWin()
     {
         if (_amountOfBreath >= _breathsToWin)
         {
-            Debug.Log("MinigameDone");
-            exhaleText.transform.parent.gameObject.SetActive(false);
             transform.parent.gameObject.SetActive(false);
         }
     }
