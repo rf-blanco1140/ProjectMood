@@ -33,6 +33,7 @@ public class MinigameTrigger : MonoBehaviour
             MiniGame.SetActive(true);
             _canInteract = false;
             textGameObject.SetActive(false);
+            imageF.SetActive(false);
         }
     }
 }
