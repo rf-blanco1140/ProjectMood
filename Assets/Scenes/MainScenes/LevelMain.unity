@@ -18686,7 +18686,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32818
+  m_Name: pb_Mesh70404
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22838,7 +22838,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32374
+  m_Name: pb_Mesh69928
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24100,7 +24100,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32586
+  m_Name: pb_Mesh70150
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24274,7 +24274,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32598
+  m_Name: pb_Mesh70162
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -46986,7 +46986,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32732
+  m_Name: pb_Mesh70314
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -47413,6 +47413,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1132683868}
     m_Modifications:
     - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
+      propertyPath: imageF
+      value: 
+      objectReference: {fileID: 4135480059307018705}
+    - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: MiniGame
       value: 
       objectReference: {fileID: 1300145924}
@@ -47420,6 +47424,18 @@ PrefabInstance:
       propertyPath: textGameObject
       value: 
       objectReference: {fileID: 1235626160}
+    - target: {fileID: 1930923708845300735, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c22bd0387348d9a4c900120cf2b7dd31, type: 2}
+    - target: {fileID: 3896912914027070652, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
+      propertyPath: m_Name
+      value: F_Icon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896912914027070652, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5864380443469474687, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: m_Name
       value: MinigameTrigger
@@ -47473,5 +47489,10 @@ PrefabInstance:
 --- !u!4 &4135480059307018704 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6267490028152736006, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
+  m_PrefabInstance: {fileID: 4135480059307018703}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4135480059307018705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3896912914027070652, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
   m_PrefabInstance: {fileID: 4135480059307018703}
   m_PrefabAsset: {fileID: 0}
