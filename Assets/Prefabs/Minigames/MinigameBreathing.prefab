@@ -537,7 +537,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4708376391597235704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50, y: 0, z: 0}
+  m_LocalPosition: {x: 30, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4708376392324031328}
@@ -659,7 +659,7 @@ MonoBehaviour:
   _pressText: {fileID: 3074091898522975424}
   _exhaleScale: {x: 1.2, y: 1.2, z: 1.2}
   _timePerBreath: 4
-  _breathsToWin: 2
+  _breathsToWin: 3
 --- !u!58 &1129048496
 CircleCollider2D:
   m_ObjectHideFlags: 0
