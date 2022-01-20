@@ -5,13 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
-    path: Assets/Scenes/JespersScene.unity
-    guid: 90344c01d2e5da147946c667276172ba
-  - enabled: 1
-    path: Assets/Scenes/JespersMiniGameScene.unity
-    guid: 85c5ea9f9c9508346bc41e2ca03f6698
+    path: Assets/Scenes/MainScenes/LevelMain.unity
+    guid: 152b0f4f5139793468b39326747ce6e4
   m_configObjects: {}
