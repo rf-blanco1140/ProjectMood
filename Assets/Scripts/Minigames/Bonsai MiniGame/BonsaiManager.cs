@@ -27,6 +27,7 @@ public class BonsaiManager : MonoBehaviour
     {
         if(_currentLeafAmount.Value == _minLeafAmount)
         {
+            AudioManager.instance.ReturnToDefault();
             Debug.Log("Win");
             transform.parent.gameObject.SetActive(false);
         }

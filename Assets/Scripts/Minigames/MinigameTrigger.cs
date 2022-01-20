@@ -6,8 +6,16 @@ public class MinigameTrigger : MonoBehaviour
     [SerializeField] private GameObject textGameObject;
     [SerializeField] private GameObject MiniGame;
     [SerializeField] private GameObject imageF;
-
+    [SerializeField] private AudioClip newTrack;
+   
+ 
     private bool _canInteract = false;
+
+
+    void Start()
+    {
+        
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -30,6 +38,7 @@ public class MinigameTrigger : MonoBehaviour
     {
         if (_canInteract && Input.GetKeyDown(KeyCode.F))
         {
+            AudioManager.instance.SwapTrack(newTrack);
             MiniGame.SetActive(true);
             _canInteract = false;
             textGameObject.SetActive(false);
