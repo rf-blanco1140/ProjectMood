@@ -13,12 +13,12 @@ GameObject:
   - component: {fileID: 1930923708845300735}
   - component: {fileID: 5918165339589952216}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: F_Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2276936242629296877
 Transform:
   m_ObjectHideFlags: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: c22bd0387348d9a4c900120cf2b7dd31, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -156,4 +156,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textGameObject: {fileID: 0}
   MiniGame: {fileID: 0}
-  imageF: {fileID: 0}
+  imageF: {fileID: 3896912914027070652}

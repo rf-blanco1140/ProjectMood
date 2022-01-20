@@ -4,9 +4,9 @@ using UnityEngine;
 public class BonsaiManager : MonoBehaviour
 {
     [SerializeField] private IntVariable _currentLeafAmount;
-    private int _totalLeafAmount = 10; // make non static
-    private int _maxLeafAmount = 8; // make non static
-    private int _minLeafAmount = 5; // make non static
+    private int _totalLeafAmount = 15; // make non static
+    //private int _maxLeafAmount = 12; // make non static
+    private int _minLeafAmount = 9; // make non static
 
     private void Awake()
     {
@@ -15,16 +15,26 @@ public class BonsaiManager : MonoBehaviour
 
     public void LeafCounter() 
     {
-        Debug.Log(_currentLeafAmount.Value);
-        if (_currentLeafAmount.Value >= _minLeafAmount && _currentLeafAmount.Value <= _maxLeafAmount)
+        if(_currentLeafAmount.Value == _minLeafAmount)
         {
-            //win 
-            Debug.Log("Lagom cut!");
+            Debug.Log("Win");
+            transform.parent.gameObject.SetActive(false);
         }
-        else
-        {
-            //lose
-            Debug.Log("Not lagom enough :(");
-        }
+
+
+        //temprary comment out before the logic is done.
+
+        //Debug.Log(_currentLeafAmount.Value);
+        //if (_currentLeafAmount.Value >= _minLeafAmount && _currentLeafAmount.Value <= _maxLeafAmount)
+        //{
+        //    //win 
+        //    Debug.Log("Lagom cut!");
+        //    transform.parent.gameObject.SetActive(false);
+        //}
+        //else
+        //{
+        //    //lose
+        //    Debug.Log("Not lagom enough :(");
+        //}
     }
 }

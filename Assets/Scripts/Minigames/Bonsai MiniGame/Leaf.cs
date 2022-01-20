@@ -3,6 +3,7 @@ using UnityEngine;
 public class Leaf : MonoBehaviour
 {
     [SerializeField] private IntVariable _currentLeafAmount;
+    [SerializeField] private GameObject _bonsaiTree;
 
     private int CutLeaf()
     {
@@ -11,6 +12,7 @@ public class Leaf : MonoBehaviour
     private void OnMouseDown()
     {
         CutLeaf();
+        _bonsaiTree.GetComponent<BonsaiManager>().LeafCounter();
         gameObject.SetActive(false);
     }
 }
