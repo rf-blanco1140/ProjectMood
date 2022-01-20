@@ -5,6 +5,7 @@ public class MinigameTrigger : MonoBehaviour
 {
     [SerializeField] private GameObject textGameObject;
     [SerializeField] private GameObject MiniGame;
+    [SerializeField] private GameObject imageF;
 
     private bool _canInteract = false;
 
@@ -14,6 +15,7 @@ public class MinigameTrigger : MonoBehaviour
         {
             _canInteract = true;
             textGameObject.SetActive(true);
+            imageF.SetActive(true);
         }
     }
 
@@ -21,6 +23,7 @@ public class MinigameTrigger : MonoBehaviour
     {
         _canInteract = false;
         textGameObject.SetActive(false);
+        imageF.SetActive(false);
     }
 
     private void Update()
