@@ -20,7 +20,7 @@ namespace Player
 
         private void PlayerMove()
         {
-            Vector3 velocity = new Vector3(inputDirection.x, 0, inputDirection.y) * _movementSpeed;
+            Vector3 velocity = new Vector3(-inputDirection.y, 0, inputDirection.x) * _movementSpeed;
             
             body.AddForce(velocity, ForceMode.Force);
         }
