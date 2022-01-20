@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class MinigameTrigger : MonoBehaviour
 {
-    [SerializeField] GameObject CameraManager;
     [SerializeField] private GameObject textGameObject;
     [SerializeField] private GameObject MiniGame;
 
