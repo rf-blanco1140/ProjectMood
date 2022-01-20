@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
+    [SerializeField] private GameObject minigameCameraObject;
     [SerializeField] private Camera camMain;
     [SerializeField] private Camera camMiniGame;
     [SerializeField] private AudioListener audioMain;
@@ -11,6 +12,8 @@ public class CameraManager : MonoBehaviour
 
     private void Start()
     {
+        if(minigameCameraObject)
+            minigameCameraObject.SetActive(true);
         camMain.enabled = true;
         camMiniGame.enabled = false;
         audioMain.enabled = true;
