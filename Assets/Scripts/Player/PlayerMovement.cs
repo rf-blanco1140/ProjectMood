@@ -23,7 +23,7 @@ namespace Player
 
         private void PlayerMove()
         {
-            Vector3 rotatedVector = new Vector3(-inputDirection.y, 0, inputDirection.x).normalized;
+            Vector3 rotatedVector = new Vector3(inputDirection.x, 0, inputDirection.y);
             Vector3 velocity = rotatedVector * _movementSpeed;
             body.AddForce(velocity, ForceMode.Force);
         }

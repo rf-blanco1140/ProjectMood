@@ -16,9 +16,9 @@ public class LightController : MonoBehaviour
     private void Update()
     {
         RotateLightSource();
-        ColorBlend();
+        //ColorBlend();
     }
-
+    
     private void MorningRotation()
     {
         Quaternion poopie;
@@ -26,7 +26,6 @@ public class LightController : MonoBehaviour
         poopie = Quaternion.RotateTowards(transform.rotation,pooooooop, 5 * Time.deltaTime );
         transform.rotation = poopie;
     }
-
     private void EveningRotation()
     {
         Quaternion poopsss = Quaternion.Euler(90, 0, 0);
@@ -35,9 +34,7 @@ public class LightController : MonoBehaviour
         quaternion popiii = Quaternion.RotateTowards(transform.rotation, euh, 5 * Time.deltaTime);
         transform.rotation = popiii;
     }
-    
-    
-    
+
     private void RotateLightSource()
     {
         //var roflmao = quaternion.Euler(180, 0, 0);

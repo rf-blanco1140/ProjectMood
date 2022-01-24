@@ -9,12 +9,12 @@ public class TimeManager : MonoBehaviour
     // at the end of the day get a summary of what happened
 
     private float _inGameHourInSeconds = 120f;
-    private float _debugTime = 2f;
+    private float _debugTime = 2f; // debug
     private int _hoursInDay = 0;
     private int _dayTimeEnds;
     private int _nightTimeStarts;
     private int _day = 1;
-    
+    [SerializeField] private bool _timePaused; // debug
     private void Awake()
     {
         StartCoroutine(HourlyTimer());
@@ -22,12 +22,16 @@ public class TimeManager : MonoBehaviour
 
     private IEnumerator HourlyTimer()
     {
+        while (_timePaused)
+        {
+            yield return null;
+        }
         HourManager();
         _hoursInDay++;
-        
+    
         DayTime();
         NightTime();
-        
+    
         yield return new WaitForSeconds(1);
         StartCoroutine(HourlyTimer());
     }
@@ -60,6 +64,7 @@ public class TimeManager : MonoBehaviour
     }
     private int DayManager()
     {
+        ActionEventSystem.current.endDaySummaryTrigger();
         if (_day >= 7)
         {
             _day = 1;
@@ -67,5 +72,5 @@ public class TimeManager : MonoBehaviour
         }
         _day++;
         return _day;
-    }
+    } // has event
 }
