@@ -44,11 +44,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnPos:
-  - {x: 3, y: 0, z: 0}
-  - {x: 1.5, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: -1.5, y: 0, z: 0}
-  - {x: -3, y: 0, z: 0}
+  - {x: 3, y: -2, z: 0}
+  - {x: 1.5, y: -2, z: 0}
+  - {x: 0, y: -2, z: 0}
+  - {x: -1.5, y: -2, z: 0}
+  - {x: -3, y: -2, z: 0}
   _spawnObject: {fileID: 3046419624227895388, guid: 7d7c5688ceb38334bad948d919c769f4, type: 3}
   _timeBeforeFirstSpawn: 5
 --- !u!1 &989862718563109031
@@ -683,7 +683,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: cb7a3177bb4a51d49be4191707e71517, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

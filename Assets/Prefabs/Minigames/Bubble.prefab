@@ -112,9 +112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4362e89af73a504eb0e770c96e3f3d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSpeedY: 0.3
-  _movementSpeedX: 0.2
+  _movementSpeedY: 0.25
+  _movementSpeedX: 0.15
   _boundaryRightX: 0
   _boundaryLeftX: 0
-  _swayAmount: 0.5
+  _swayAmount: 0.4
   _GoRight: 1
