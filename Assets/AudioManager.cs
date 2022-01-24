@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioClip defaultMusic;
+    public AudioClip defaultMusic, sadMusic, neutralMusic;
     public static AudioManager instance;
     private AudioSource track1, track2;
     private bool isPlayingTrack1;
+
+    public bool isHappy, isNeutral, isSad;
 
     // Start is called before the first frame update
     void Awake()
@@ -18,6 +20,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
+        isHappy = true;
         track1 = gameObject.AddComponent<AudioSource>();
         track2 = gameObject.AddComponent<AudioSource>();
         track1.loop = true;
@@ -35,7 +38,12 @@ public class AudioManager : MonoBehaviour
     }
      public void ReturnToDefault()
     {
+        if(isHappy == true)
         SwapTrack(defaultMusic);
+        if(isSad == true)
+            SwapTrack(sadMusic);
+        if (isNeutral == true)
+            SwapTrack(neutralMusic);
     }
 
     private IEnumerator FadeTrack(AudioClip newClip)
