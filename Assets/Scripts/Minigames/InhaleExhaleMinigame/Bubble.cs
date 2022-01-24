@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bubble : MonoBehaviour
 {
-
+    [SerializeField] private GameObject bubbleSpawner;
     [SerializeField] private float _movementSpeedY = 0.01f;
     [SerializeField] private float _movementSpeedX = 0.05f;
     [SerializeField] private float _boundaryRightX;
