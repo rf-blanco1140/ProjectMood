@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4362e89af73a504eb0e770c96e3f3d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bubbleSpawner: {fileID: 4708376391597235704, guid: 57ddc2b2e8864d547ab23c534b948e4a, type: 3}
   _movementSpeedY: 0.25
   _movementSpeedX: 0.15
   _boundaryRightX: 0
