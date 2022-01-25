@@ -476,6 +476,34 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 940193556, guid: 57ddc2b2e8864d547ab23c534b948e4a, type: 3}
   m_PrefabInstance: {fileID: 4708376391262194381}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &940193558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940193556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a77e6fa9a565ee418e39f61de0288ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvent: {fileID: 11400000, guid: 425b2ed6c6b1ea243a7c357b24c5de01, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 940193559}
+        m_TargetAssemblyTypeName: MinigameText, Assembly-CSharp
+        m_MethodName: ShowBubbleText
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &940193559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +520,16 @@ MonoBehaviour:
   _camera: {fileID: 1775274531}
   _text: {fileID: 1595438514}
   _canvas: {fileID: 997677957}
+  _messages:
+  - Your mind is like water. When it crashes and flows roughly it may be hard to
+    see the solution. But if you let it settle, the answer becomes clear
+  - "Nothing is impossible. The word itself says \u2018I\u2019m possible! "
+  - Keep your face always toward the sunshine, and shadows will fall behind you.
+  - 'Success is not final, failure is not fatal: it is the courage to continue that
+    counts'
+  - "You define your own life. Don\u2019t let other people write your script"
+  - "You\u2019re never too old to find new dreams"
+  - Weaknesses are just strengths in the wrong place and time
 --- !u!224 &997677954 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4708376391353032888, guid: 57ddc2b2e8864d547ab23c534b948e4a, type: 3}
@@ -952,13 +990,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584018926}
-  m_LocalRotation: {x: 0.1274642, y: -0.6955235, z: 0.1274642, w: 0.6955235}
-  m_LocalPosition: {x: 9.22, y: 3.52, z: 3.6}
+  m_LocalRotation: {x: 0.14478788, y: 0, z: 0, w: 0.98946273}
+  m_LocalPosition: {x: 0, y: 2.01, z: -10.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 20.77, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 16.65, y: 0, z: 0}
 --- !u!114 &1584018930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1107,8 +1145,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 83.11096, y: 0}
+  m_SizeDelta: {x: 366.222, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1595438515
 MonoBehaviour:
@@ -1130,7 +1168,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: POP!
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1140,7 +1178,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190335
-  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0, g: 0.38679248, b: 0.0021746047, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1157,8 +1195,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1193,7 +1231,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -2.2531738, w: -106.51077}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1232,7 +1270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6267490028152736006, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.29
+      value: -2.35
       objectReference: {fileID: 0}
     - target: {fileID: 6267490028152736006, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1240,7 +1278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6267490028152736006, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.97
+      value: -1.03
       objectReference: {fileID: 0}
     - target: {fileID: 6267490028152736006, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1317,7 +1355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6267490028152736006, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.15
+      value: 2.88
       objectReference: {fileID: 0}
     - target: {fileID: 6267490028152736006, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1325,7 +1363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6267490028152736006, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.62
+      value: -1.13
       objectReference: {fileID: 0}
     - target: {fileID: 6267490028152736006, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: m_LocalRotation.w
