@@ -3,14 +3,12 @@ using UnityEngine;
 
 public class MinigameTrigger : MonoBehaviour
 {
-    [SerializeField] private GameObject textGameObject;
-    [SerializeField] private GameObject MiniGame;
-    [SerializeField] private GameObject imageF;
-    [SerializeField] private AudioClip newTrack;
+    [SerializeField] private GameObject _textGameObject;
+    [SerializeField] private GameObject _miniGame;
+    [SerializeField] private GameObject _imageF;
+    [SerializeField] private AudioClip _newTrack;
    
- 
     private bool _canInteract = false;
-
 
     void Start()
     {
@@ -22,27 +20,27 @@ public class MinigameTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             _canInteract = true;
-            textGameObject.SetActive(true);
-            imageF.SetActive(true);
+            _textGameObject.SetActive(true);
+            _imageF.SetActive(true);
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
         _canInteract = false;
-        textGameObject.SetActive(false);
-        imageF.SetActive(false);
+        _textGameObject.SetActive(false);
+        _imageF.SetActive(false);
     }
 
     private void Update()
     {
         if (_canInteract && Input.GetKeyDown(KeyCode.F))
         {
-            AudioManager.instance.SwapTrack(newTrack);
-            MiniGame.SetActive(true);
+            //AudioManager.instance.SwapTrack(newTrack);
+            _miniGame.SetActive(true);
             _canInteract = false;
-            textGameObject.SetActive(false);
-            imageF.SetActive(false);
+            _textGameObject.SetActive(false);
+            _imageF.SetActive(false);
         }
     }
 }
