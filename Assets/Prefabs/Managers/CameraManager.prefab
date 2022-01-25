@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16a41f7512a0fb0459aa1eace60eb30f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minigameCameraObject: {fileID: 0}
   camMain: {fileID: 0}
   camMiniGame: {fileID: 0}
   audioMain: {fileID: 0}
