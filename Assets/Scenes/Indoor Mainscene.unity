@@ -686,8 +686,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.1576385, y: 1, z: 5.3120794}
-  m_Center: {x: -3.5166273, y: 1, z: 14.729101}
+  m_Size: {x: 4.7845755, y: 1, z: 5.0770445}
+  m_Center: {x: -3.7031589, y: 1, z: 14.846619}
 --- !u!114 &164200493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5757,8 +5757,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.3581605, y: 1, z: 7.9297028}
-  m_Center: {x: 0.67574215, y: 1, z: 15.759838}
+  m_Size: {x: 3.1978827, y: 1, z: 7.361122}
+  m_Center: {x: 0.7558811, y: 1, z: 16.044128}
 --- !u!114 &1574499783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6790,8 +6790,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.9729242, y: 1, z: 4.2504616}
-  m_Center: {x: -8.065361, y: 1, z: 10.557766}
+  m_Size: {x: 3.9120173, y: 1, z: 4.2504616}
+  m_Center: {x: -8.095814, y: 1, z: 10.557766}
 --- !u!114 &1887538666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7426,8 +7426,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.185246, y: 1, z: 2.2773972}
-  m_Center: {x: 0.8161402, y: 1, z: 21.116817}
+  m_Size: {x: 3.5063596, y: 1, z: 1.9008751}
+  m_Center: {x: 0.8765178, y: 1, z: 21.305079}
 --- !u!114 &2068924988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9077,7 +9077,6 @@ GameObject:
   - component: {fileID: 429963610786777406}
   - component: {fileID: 8658303455439591594}
   - component: {fileID: 6689688230974282241}
-  - component: {fileID: 2148878556823625842}
   m_Layer: 0
   m_Name: Bedroom.004
   m_TagString: Untagged
@@ -9085,20 +9084,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!64 &2148878556823625842
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2148878556823625841}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -619500131479511289, guid: 362a5222d5cd2ab468c4344bbcf4f647, type: 3}
 --- !u!23 &2169630649058054537
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9990,6 +9975,7 @@ GameObject:
   - component: {fileID: 2580950618362766170}
   - component: {fileID: 7491448799119351267}
   - component: {fileID: 588740858215576543}
+  - component: {fileID: 3547595720704529990}
   m_Layer: 0
   m_Name: Door1Frame.004
   m_TagString: Untagged
@@ -9997,6 +9983,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!65 &3547595720704529990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3547595720704529989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25000057, y: 1.2000005, z: 2.2199998}
+  m_Center: {x: -0.1750052, y: -0.11064682, z: -0.51666677}
 --- !u!23 &3551136423423360460
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10355,7 +10354,6 @@ GameObject:
   - component: {fileID: 1450764401181909499}
   - component: {fileID: 3327156317900299274}
   - component: {fileID: 3560379656899871045}
-  - component: {fileID: 4143144649654212219}
   m_Layer: 0
   m_Name: Living Room.003
   m_TagString: Untagged
@@ -10363,20 +10361,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!64 &4143144649654212219
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4143144649654212218}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 509876157956695222, guid: 362a5222d5cd2ab468c4344bbcf4f647, type: 3}
 --- !u!1 &4149298382154773629
 GameObject:
   m_ObjectHideFlags: 0
@@ -10642,7 +10626,6 @@ GameObject:
   - component: {fileID: 4730338890394225865}
   - component: {fileID: 6376878517676895305}
   - component: {fileID: 8195771460406450854}
-  - component: {fileID: 4575019355563049521}
   m_Layer: 0
   m_Name: Hallway.004
   m_TagString: Untagged
@@ -10650,20 +10633,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!64 &4575019355563049521
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4575019355563049520}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4986612277995309948, guid: 362a5222d5cd2ab468c4344bbcf4f647, type: 3}
 --- !u!33 &4590902852158530105
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10986,7 +10955,6 @@ GameObject:
   - component: {fileID: 6544354817795713170}
   - component: {fileID: 186989134693864464}
   - component: {fileID: 5592715962385428595}
-  - component: {fileID: 5103352301258139946}
   m_Layer: 0
   m_Name: Bathroom.004
   m_TagString: Untagged
@@ -10994,20 +10962,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!64 &5103352301258139946
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5103352301258139945}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1973266498352898876, guid: 362a5222d5cd2ab468c4344bbcf4f647, type: 3}
 --- !u!4 &5110968624409636904
 Transform:
   m_ObjectHideFlags: 0
@@ -12041,6 +11995,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6756769281069189958}
+  - component: {fileID: 6237218784186651133}
   m_Layer: 0
   m_Name: Full House Architecture
   m_TagString: Untagged
@@ -12048,6 +12003,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &6237218784186651133
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6237218784186651132}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 14.077354, y: 0.4959736, z: 18.07971}
+  m_Center: {x: -2.93287, y: 5.8422384, z: 10.130954}
 --- !u!23 &6262875494369513101
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12469,7 +12437,6 @@ GameObject:
   - component: {fileID: 7261780162239371421}
   - component: {fileID: 5783050267406551225}
   - component: {fileID: 5657026180202755519}
-  - component: {fileID: 6753151839862756309}
   m_Layer: 0
   m_Name: Kitchen.004
   m_TagString: Untagged
@@ -12477,20 +12444,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!64 &6753151839862756309
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6753151839862756308}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7782508396483570045, guid: 362a5222d5cd2ab468c4344bbcf4f647, type: 3}
 --- !u!4 &6756769281069189958
 Transform:
   m_ObjectHideFlags: 0
