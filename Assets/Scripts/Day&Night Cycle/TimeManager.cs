@@ -5,6 +5,9 @@ public class TimeManager : MonoBehaviour
 {
     [SerializeField] private GameEvent onEndOfDay;
     [SerializeField] private bool _timePaused; // debug
+    [SerializeField] private FloatVariable elapsedTime;
+    [SerializeField] private BoolVariable nightTime;
+    
     private float _inGameHourInSeconds = 40;
     private int _hoursInDay = 0;
     private int _dayTimeEnds = 3;
@@ -24,7 +27,7 @@ public class TimeManager : MonoBehaviour
         }
         HourManager();
         _hoursInDay++;
-    
+
         DayTime();
         NightTime();
     
@@ -37,12 +40,23 @@ public class TimeManager : MonoBehaviour
         if (_hoursInDay <= _dayTimeEnds)
         {
         }
+
+        if (_hoursInDay == 1)
+        {
+            nightTime.boolValue = false;
+        }
     }
 
     private void NightTime()
     {
         if (_hoursInDay >= _nightTimeStarts)
         {
+        }
+
+        if (_hoursInDay == _nightTimeStarts)
+        {
+            nightTime.boolValue = true;
+            elapsedTime.Value = 0;
         }
     }
 

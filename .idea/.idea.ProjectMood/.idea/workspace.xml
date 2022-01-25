@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/JespersScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/JespersScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/LightController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/LightController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/TimeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ScriptableEvents/Events/GameEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ScriptableEvents/Events/GameEvent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,10 +62,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17364">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="17364" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -97,6 +96,7 @@
       <workItem from="1642755356087" duration="5580000" />
       <workItem from="1642769441782" duration="3723000" />
       <workItem from="1643013168836" duration="21857000" />
+      <workItem from="1643135582986" duration="3006000" />
     </task>
     <servers />
   </component>

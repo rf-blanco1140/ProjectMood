@@ -315,6 +315,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onEndOfDay: {fileID: 11400000, guid: eb2ac9d2de2041346b88fbbf6dfb4d58, type: 2}
   _timePaused: 0
+  elapsedTime: {fileID: 11400000, guid: 0cb06d598e1b395409a04bf693c94d91, type: 2}
+  nightTime: {fileID: 11400000, guid: 9382853585fcb454aa2d5c69ac941955, type: 2}
 --- !u!4 &542809749
 Transform:
   m_ObjectHideFlags: 0
@@ -976,7 +978,9 @@ MonoBehaviour:
   morningColor: {r: 0.026884079, g: 0, b: 1, a: 1}
   dayColor: {r: 1, g: 0, b: 0, a: 1}
   nightColor: {r: 0.24807143, g: 1, b: 0, a: 1}
-  _morningNight: 1
+  elapsedTime: {fileID: 11400000, guid: 0cb06d598e1b395409a04bf693c94d91, type: 2}
+  nightTime: {fileID: 11400000, guid: 9382853585fcb454aa2d5c69ac941955, type: 2}
+  _timeInSeconds: 150
 --- !u!1 &1212178607
 GameObject:
   m_ObjectHideFlags: 0
