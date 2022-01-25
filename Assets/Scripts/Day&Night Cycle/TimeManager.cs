@@ -3,18 +3,14 @@ using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
-    // a day is 24h, 1h = 2min
-    // a "day" = 6h( 12 min )
-    // color/light changes during the day?
-    // at the end of the day get a summary of what happened
-
-    private float _inGameHourInSeconds = 120f;
-    private float _debugTime = 2f; // debug
-    private int _hoursInDay = 0;
-    private int _dayTimeEnds;
-    private int _nightTimeStarts;
-    private int _day = 1;
+    [SerializeField] private GameEvent onEndOfDay;
     [SerializeField] private bool _timePaused; // debug
+    private float _inGameHourInSeconds = 40;
+    private int _hoursInDay = 0;
+    private int _dayTimeEnds = 3;
+    private int _nightTimeStarts = 4;
+    private int _day = 1;
+
     private void Awake()
     {
         StartCoroutine(HourlyTimer());
@@ -32,7 +28,7 @@ public class TimeManager : MonoBehaviour
         DayTime();
         NightTime();
     
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(_inGameHourInSeconds);
         StartCoroutine(HourlyTimer());
     }
 
@@ -40,7 +36,6 @@ public class TimeManager : MonoBehaviour
     {
         if (_hoursInDay <= _dayTimeEnds)
         {
-            Debug.Log(HourManager());
         }
     }
 
@@ -48,7 +43,6 @@ public class TimeManager : MonoBehaviour
     {
         if (_hoursInDay >= _nightTimeStarts)
         {
-            Debug.Log(HourManager());
         }
     }
 
@@ -56,7 +50,7 @@ public class TimeManager : MonoBehaviour
     {
         if (_hoursInDay >= 7)
         {
-            _hoursInDay = 0;
+            _hoursInDay = 1;
             DayManager();
             return _hoursInDay;
         }
@@ -64,7 +58,7 @@ public class TimeManager : MonoBehaviour
     }
     private int DayManager()
     {
-        ActionEventSystem.current.endDaySummaryTrigger();
+        onEndOfDay.Raise();
         if (_day >= 7)
         {
             _day = 1;
@@ -72,5 +66,5 @@ public class TimeManager : MonoBehaviour
         }
         _day++;
         return _day;
-    } // has event
+    }
 }
