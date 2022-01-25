@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Bubble : MonoBehaviour
 {
-    [SerializeField] private GameObject bubbleSpawner;
     [SerializeField] private float _movementSpeedY = 0.01f;
     [SerializeField] private float _movementSpeedX = 0.05f;
     [SerializeField] private float _boundaryRightX;
     [SerializeField] private float _boundaryLeftX;
     [SerializeField] private float _swayAmount = 1f;
     [SerializeField] private bool _GoRight = true;
+
+    [SerializeField] private Vector3Event _onBubblePop;
 
     private void OnEnable()
     {
@@ -25,7 +26,7 @@ public class Bubble : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Pop");
+        _onBubblePop.Raise(transform.position);
         Destroy(gameObject);
     }
 
