@@ -856,11 +856,6 @@ Transform:
   m_Father: {fileID: 6756769281069189958}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &372685593 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 454531649832507180, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
-  m_PrefabInstance: {fileID: 2043379498}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &517768024
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,16 +1205,6 @@ Transform:
   m_Father: {fileID: 6756769281069189958}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &877694580 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6772632990866733580, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
-  m_PrefabInstance: {fileID: 2043379498}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &908638355 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3896912914027070652, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
-  m_PrefabInstance: {fileID: 1295457520}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &909580907
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,11 +1481,6 @@ Transform:
   m_Father: {fileID: 265066667}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &986686396 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 454531649832507180, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
-  m_PrefabInstance: {fileID: 1295457520}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1015706465 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4708376391597235704, guid: 57ddc2b2e8864d547ab23c534b948e4a, type: 3}
@@ -2073,29 +2053,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 517768025}
     m_Modifications:
     - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
-      propertyPath: _imageF
-      value: 
-      objectReference: {fileID: 908638355}
-    - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
-      propertyPath: MiniGame
-      value: 
-      objectReference: {fileID: 1015706465}
-    - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
-      propertyPath: newTrack
-      value: 
-      objectReference: {fileID: 8300000, guid: ad1ebb7fe4564ee4a911d1c62635ad20, type: 3}
-    - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: _miniGame
       value: 
       objectReference: {fileID: 1015706465}
-    - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
-      propertyPath: _newTrack
-      value: 
-      objectReference: {fileID: 8300000, guid: ad1ebb7fe4564ee4a911d1c62635ad20, type: 3}
-    - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
-      propertyPath: _textGameObject
-      value: 
-      objectReference: {fileID: 986686396}
     - target: {fileID: 5864380443469474687, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: m_Name
       value: MinigameTrigger
@@ -3188,29 +3148,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 517768025}
     m_Modifications:
     - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
-      propertyPath: _imageF
-      value: 
-      objectReference: {fileID: 877694580}
-    - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
-      propertyPath: MiniGame
-      value: 
-      objectReference: {fileID: 2091017186}
-    - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
-      propertyPath: newTrack
-      value: 
-      objectReference: {fileID: 8300000, guid: 8217151c62a9acf45b0df1e76ddd1aa7, type: 3}
-    - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: _miniGame
       value: 
       objectReference: {fileID: 2091017186}
-    - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
-      propertyPath: _newTrack
-      value: 
-      objectReference: {fileID: 8300000, guid: 8217151c62a9acf45b0df1e76ddd1aa7, type: 3}
-    - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
-      propertyPath: _textGameObject
-      value: 
-      objectReference: {fileID: 372685593}
     - target: {fileID: 5864380443469474687, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: m_Name
       value: MinigameTrigger (1)
