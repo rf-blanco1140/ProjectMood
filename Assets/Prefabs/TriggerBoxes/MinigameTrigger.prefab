@@ -289,10 +289,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17ae4ee20513464cbaffc35a930af74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textGameObject: {fileID: 454531649832507180}
-  MiniGame: {fileID: 0}
-  imageF: {fileID: 3896912914027070652}
-  newTrack: {fileID: 0}
+  _textGameObject: {fileID: 454531649832507180}
+  _miniGame: {fileID: 0}
+  _imageF: {fileID: 6772632990866733580}
+  _newTrack: {fileID: 8300000, guid: 8217151c62a9acf45b0df1e76ddd1aa7, type: 3}
 --- !u!1 &6772632990866733580
 GameObject:
   m_ObjectHideFlags: 0
