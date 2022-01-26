@@ -7,9 +7,12 @@ public class MoodSystem : MonoBehaviour
     [SerializeField] private FloatVariable hygiene;
     [SerializeField] private FloatVariable body;
     [SerializeField] private FloatVariable appetite;
-
+    
     [SerializeField] private float _dropValue = 7.5f;
     [SerializeField] private float _startValue = 100f;
+
+    [SerializeField] private MoodSystemUI moodSystemUI;
+    
     
     private void Start()
     {
@@ -18,6 +21,7 @@ public class MoodSystem : MonoBehaviour
         hygiene.SetValue(_startValue);
         body.SetValue(_startValue);
         appetite.SetValue(_startValue);
+        moodSystemUI.DisplayUI();
     }
 
     // drop over time
