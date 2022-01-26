@@ -1057,6 +1057,10 @@ PrefabInstance:
       propertyPath: newTrack
       value: 
       objectReference: {fileID: 8300000, guid: 8217151c62a9acf45b0df1e76ddd1aa7, type: 3}
+    - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
+      propertyPath: _miniGame
+      value: 
+      objectReference: {fileID: 1878644533}
     - target: {fileID: 5864380443469474687, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: m_Name
       value: MinigameTrigger (1)
@@ -1142,6 +1146,10 @@ PrefabInstance:
       propertyPath: newTrack
       value: 
       objectReference: {fileID: 8300000, guid: ad1ebb7fe4564ee4a911d1c62635ad20, type: 3}
+    - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
+      propertyPath: _miniGame
+      value: 
+      objectReference: {fileID: 505277657}
     - target: {fileID: 5864380443469474687, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: m_Name
       value: MinigameTrigger
@@ -1389,6 +1397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MinigameBreathing
       objectReference: {fileID: 0}
+    - target: {fileID: 4708376391597235704, guid: 57ddc2b2e8864d547ab23c534b948e4a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4708376391597235707, guid: 57ddc2b2e8864d547ab23c534b948e4a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1514,10 +1526,6 @@ PrefabInstance:
     - target: {fileID: 8381945392097632344, guid: 7e5c6477f3b65f94b85a002c8833c2ad, type: 3}
       propertyPath: m_Name
       value: MinigameBonsai
-      objectReference: {fileID: 0}
-    - target: {fileID: 8381945392097632344, guid: 7e5c6477f3b65f94b85a002c8833c2ad, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8381945392097632347, guid: 7e5c6477f3b65f94b85a002c8833c2ad, type: 3}
       propertyPath: m_RootOrder
