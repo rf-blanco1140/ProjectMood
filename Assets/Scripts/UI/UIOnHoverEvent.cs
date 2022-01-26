@@ -29,4 +29,10 @@ public class UIOnHoverEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
         transform.localScale = cachedScale;
     }
+
+ public void resetText()
+    {
+        transform.localScale = cachedScale;
+    }
+   
 }
