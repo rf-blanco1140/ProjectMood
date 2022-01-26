@@ -13,6 +13,8 @@ public class UIOnHoverEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     //public float sizeZ;
 
     public Text m_Text;
+    public int orgTextSize;
+    public int bigTextSize;
 
     void Start()
     {
@@ -22,20 +24,20 @@ public class UIOnHoverEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        m_Text.fontSize = 40;
+        m_Text.fontSize = bigTextSize;
         //transform.localScale = new Vector3(sizeX, sizeY, sizeZ);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        m_Text.fontSize = 25;
+        m_Text.fontSize = orgTextSize;
         //transform.localScale = cachedScale;
     }
 
  public void resetText()
     {
         //transform.localScale = cachedScale;
-        m_Text.fontSize = 25;
+        m_Text.fontSize = orgTextSize;
     }
    
 }
