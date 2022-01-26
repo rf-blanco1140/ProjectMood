@@ -38,7 +38,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Pause"",
-                    ""type"": ""PassThrough"",
+                    ""type"": ""Button"",
                     ""id"": ""49c58380-f7bb-4199-9a92-b3a5c3a73dfe"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
