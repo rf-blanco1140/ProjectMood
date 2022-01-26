@@ -7,8 +7,10 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private bool _timePaused; // debug
     [SerializeField] private FloatVariable elapsedTime;
     [SerializeField] private BoolVariable nightTime;
-    
-    private float _inGameHourInSeconds = 40;
+
+    [SerializeField] private GameEvent onResetDay;
+
+    private float _inGameHourInSeconds = 3;
     private int _hoursInDay = 0;
     private int _dayTimeEnds = 3;
     private int _nightTimeStarts = 4;
@@ -21,16 +23,17 @@ public class TimeManager : MonoBehaviour
 
     private IEnumerator HourlyTimer()
     {
-        while (_timePaused)
+        while (_timePaused) // whenever we add pause
         {
             yield return null;
         }
         HourManager();
-        _hoursInDay++;
 
         DayTime();
         NightTime();
-    
+        
+        _hoursInDay++;
+
         yield return new WaitForSeconds(_inGameHourInSeconds);
         StartCoroutine(HourlyTimer());
     }
@@ -44,6 +47,7 @@ public class TimeManager : MonoBehaviour
         if (_hoursInDay == 1)
         {
             nightTime.boolValue = false;
+            elapsedTime.Value = 0;
         }
     }
 
@@ -66,6 +70,7 @@ public class TimeManager : MonoBehaviour
         {
             _hoursInDay = 1;
             DayManager();
+            onResetDay.Raise();
             return _hoursInDay;
         }
         return _hoursInDay;

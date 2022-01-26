@@ -9,12 +9,13 @@ public class LightController : MonoBehaviour
     
     [SerializeField] private FloatVariable elapsedTime;
     [SerializeField] private BoolVariable nightTime;
-    [SerializeField] private float _timeInSeconds = 240f;
-    private float _timeDividedByDegrees = 0.75f;
+    [SerializeField] private float _timeInSeconds;
+    private float _timeDividedByDegrees;
 
     private quaternion _startRotation = quaternion.Euler(0,0,0);
     private quaternion _middleRotation = quaternion.Euler(90,0,0);
     private quaternion _endRotation = quaternion.Euler(180,0,0);
+    private quaternion _testRotation;
     
     private Light light;
 
@@ -26,6 +27,7 @@ public class LightController : MonoBehaviour
     private void Update()
     {
         elapsedTime.Value += Time.deltaTime;
+        _timeDividedByDegrees = 90 / _timeInSeconds;
 
         if (!nightTime.boolValue)
         {
@@ -54,13 +56,18 @@ public class LightController : MonoBehaviour
         light.color = Color.Lerp(colorA, colorB, elapsedTime.Value / _timeInSeconds);
     }
     
-    private quaternion RotateLightSource(Quaternion eulerDegree) // time manager dependencies..
+    private void RotateLightSource(Quaternion eulerDegree) 
     {
-        return transform.rotation = Quaternion.RotateTowards(transform.rotation, eulerDegree,_timeDividedByDegrees * Time.deltaTime);
+        if (elapsedTime.Value <= _timeDividedByDegrees)
+        {
+            transform.rotation = Quaternion.RotateTowards
+                (transform.rotation, eulerDegree,_timeDividedByDegrees * Time.deltaTime);
+        }
     }
 
-    private quaternion ResetRotation()
+    public void ResetRotation()
     {
-        return transform.rotation = _startRotation;
+        transform.rotation = _startRotation;
+        light.color = morningColor;
     }
 }
