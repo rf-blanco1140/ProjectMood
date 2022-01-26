@@ -28,6 +28,5 @@ public class MoodSystem : MonoBehaviour
         hygiene.Value -= _dropValue;
         body.Value -= _dropValue;
         appetite.Value -= _dropValue;
-        Debug.Log(social.Value);
     }
 }

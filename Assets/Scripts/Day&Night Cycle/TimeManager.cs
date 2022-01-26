@@ -43,11 +43,6 @@ public class TimeManager : MonoBehaviour
         StartCoroutine(HourlyTimer());
     }
 
-    private void Cool()
-    {
-        
-    }
-    
     private void DayTime()
     {
         if (_hoursInDay <= _dayTimeEnds)
