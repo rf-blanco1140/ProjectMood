@@ -6,20 +6,20 @@ using UnityEngine;
 public class MinigameStartAndStop : MonoBehaviour
 {
     public GameObject _cameraManager;
-    [SerializeField] private GameObject _PlayerBody;
+    [SerializeField] private GameObject _Player;
 
     private void OnEnable()
     {
         Debug.Log("MiniGame Time!");
         _cameraManager.GetComponent<CameraManager>().SwapCamera();
-        _PlayerBody.GetComponent<PlayerMovement>().enabled = false;
+        _Player.GetComponent<PlayerMovement>().enabled = false;
     }
 
     private void OnDisable()
     {
         if (_cameraManager != null)
             _cameraManager.GetComponent<CameraManager>().SwapCamera();
-        _PlayerBody.GetComponent<PlayerMovement>().enabled = true;
+        _Player.GetComponent<PlayerMovement>().enabled = true;
     }
 }
 

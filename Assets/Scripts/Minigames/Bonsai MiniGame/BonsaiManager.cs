@@ -59,7 +59,7 @@ public class BonsaiManager : MonoBehaviour
         {
             //AudioManager.instance.ReturnToDefault();
             Debug.Log("Win");
-            mind.ApplyChange(+10);
+            mind.ApplyChange(10);
             transform.parent.gameObject.SetActive(false);
         }
         else
