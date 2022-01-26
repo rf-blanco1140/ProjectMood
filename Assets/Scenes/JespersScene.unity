@@ -318,6 +318,7 @@ MonoBehaviour:
   elapsedTime: {fileID: 11400000, guid: 0cb06d598e1b395409a04bf693c94d91, type: 2}
   nightTime: {fileID: 11400000, guid: 9382853585fcb454aa2d5c69ac941955, type: 2}
   onResetDay: {fileID: 11400000, guid: ebe04ae2a0797cb47915dc2a71dbd49c, type: 2}
+  onDropEachHour: {fileID: 11400000, guid: 8b04b5527619fec4ca997317bf1edc40, type: 2}
 --- !u!4 &542809749
 Transform:
   m_ObjectHideFlags: 0
@@ -2015,6 +2016,85 @@ MonoBehaviour:
       - m_Target: {fileID: 1632625351}
         m_TargetAssemblyTypeName: EndOfDaySummary, Assembly-CSharp
         m_MethodName: EnableSummary
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1897419310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1897419312}
+  - component: {fileID: 1897419311}
+  - component: {fileID: 1897419313}
+  m_Layer: 0
+  m_Name: Mood Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1897419311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897419310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f36a7ad90ffbc004e9a0142d2bb3d756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mind: {fileID: 11400000, guid: a8a362f73da062247ba80f5a95d48dad, type: 2}
+  social: {fileID: 11400000, guid: 3c3f2de5d3013a44cb21e516d7c23307, type: 2}
+  hygiene: {fileID: 11400000, guid: 9b03fe4d313c59f428f79bc640bd8ac1, type: 2}
+  body: {fileID: 11400000, guid: f045ca282858c7a4489ce349ce5596fe, type: 2}
+  appetite: {fileID: 11400000, guid: 752e9e33e00c7b342afc4b649e86d734, type: 2}
+  _dropValue: 7.5
+  _startValue: 100
+--- !u!4 &1897419312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897419310}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1897419313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897419310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1febd85445ee4b34d87c96f029c63ee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvent: {fileID: 11400000, guid: 8b04b5527619fec4ca997317bf1edc40, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1897419311}
+        m_TargetAssemblyTypeName: MoodSystem, Assembly-CSharp
+        m_MethodName: DropResources
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

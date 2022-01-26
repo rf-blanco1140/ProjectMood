@@ -9,12 +9,15 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private BoolVariable nightTime;
 
     [SerializeField] private GameEvent onResetDay;
-
+    [SerializeField] private VoidEvent onDropEachHour;
+    
     private float _inGameHourInSeconds = 3;
     private int _hoursInDay = 0;
     private int _dayTimeEnds = 3;
     private int _nightTimeStarts = 4;
     private int _day = 1;
+
+    private int _dropTime = 0;
 
     private void Awake()
     {
@@ -33,11 +36,18 @@ public class TimeManager : MonoBehaviour
         NightTime();
         
         _hoursInDay++;
-
+        
+        onDropEachHour.Raise();
+        
         yield return new WaitForSeconds(_inGameHourInSeconds);
         StartCoroutine(HourlyTimer());
     }
 
+    private void Cool()
+    {
+        
+    }
+    
     private void DayTime()
     {
         if (_hoursInDay <= _dayTimeEnds)

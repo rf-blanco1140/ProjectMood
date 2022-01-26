@@ -8,7 +8,8 @@ public class BonsaiManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _currentText;
     [SerializeField] private TextMeshProUGUI _maxText;
     [SerializeField] private TextMeshProUGUI _minText;
-
+    [SerializeField] private FloatVariable mind;
+    
 
     [SerializeField] private IntVariable _currentLeafAmount;
     private int _totalLeafAmount = 0; // make non static
@@ -58,6 +59,7 @@ public class BonsaiManager : MonoBehaviour
         {
             //AudioManager.instance.ReturnToDefault();
             Debug.Log("Win");
+            mind.ApplyChange(+10);
             transform.parent.gameObject.SetActive(false);
         }
         else
