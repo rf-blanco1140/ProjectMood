@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: mind
   m_EditorClassIdentifier: 
   _value: 0
+  _currentValue: 0
