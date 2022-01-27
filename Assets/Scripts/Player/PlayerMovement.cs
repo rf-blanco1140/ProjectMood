@@ -17,6 +17,7 @@ namespace Player
         private void Awake()
         {
             body = GetComponent<Rigidbody>();
+            canWalk.boolValue = true;
         }
 
         private void FixedUpdate()
