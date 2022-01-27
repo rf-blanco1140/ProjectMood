@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Bubble : MonoBehaviour
 {
     [SerializeField] private float _movementSpeedY = 0.01f;
@@ -12,6 +13,7 @@ public class Bubble : MonoBehaviour
     [SerializeField] private bool _GoRight = true;
 
     [SerializeField] private Vector3Event _onBubblePop;
+    
 
     private void OnEnable()
     {
@@ -26,6 +28,7 @@ public class Bubble : MonoBehaviour
 
     private void OnMouseDown()
     {
+        
         _onBubblePop.Raise(transform.position);
         Destroy(gameObject);
     }
@@ -66,4 +69,5 @@ public class Bubble : MonoBehaviour
         }
 
     }
+ 
 }

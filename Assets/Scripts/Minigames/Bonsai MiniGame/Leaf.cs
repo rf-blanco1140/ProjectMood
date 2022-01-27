@@ -1,9 +1,11 @@
 using UnityEngine;
+using MoreMountains.Feedbacks;
 
 public class Leaf : MonoBehaviour
 {
     [SerializeField] private IntVariable _currentLeafAmount;
     [SerializeField] private GameObject _bonsaiTree;
+    [SerializeField] private MMFeedbacks _cutSound;
     private Vector2 _startLeafPosition;
     private float _movementSpeedY = 1;
     private bool _isFalling = false;
@@ -21,6 +23,7 @@ public class Leaf : MonoBehaviour
     {
         if (!_isFalling)
         {
+            _cutSound.PlayFeedbacks();
             CutLeaf();
             _bonsaiTree.GetComponent<BonsaiManager>().UpdateCurrentLeaf();
             _isFalling = true;
