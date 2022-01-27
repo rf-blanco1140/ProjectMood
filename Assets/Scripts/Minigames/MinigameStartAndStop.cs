@@ -8,7 +8,7 @@ using MoreMountains.Feedbacks;
 public class MinigameStartAndStop : MonoBehaviour
 {
     public GameObject _cameraManager;
-    [SerializeField] private GameObject _Player;
+    [SerializeField] private BoolVariable _canWalk;
     
 
 
@@ -16,15 +16,15 @@ public class MinigameStartAndStop : MonoBehaviour
     {
         
         Debug.Log("MiniGame Time!");
+        _canWalk.boolValue = false;
         _cameraManager.GetComponent<CameraManager>().SwapCamera();
-        _Player.GetComponent<PlayerMovement>().enabled = false;
     }
 
     private void OnDisable()
     {
+        _canWalk.boolValue = true;
         if (_cameraManager != null)
             _cameraManager.GetComponent<CameraManager>().SwapCamera();
-        _Player.GetComponent<PlayerMovement>().enabled = true;
     }
 }
 

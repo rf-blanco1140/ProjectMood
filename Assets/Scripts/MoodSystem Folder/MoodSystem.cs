@@ -10,7 +10,7 @@ public class MoodSystem : MonoBehaviour
     [SerializeField] private FloatVariable appetite;
     
     [SerializeField] private float _dropValue = 7.5f;
-    [SerializeField] private float _startValue = 100f;
+    [SerializeField] private float _startValue = 70f;
 
     [SerializeField] private MoodSystemUI moodSystemUI;
 
