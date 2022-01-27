@@ -48,32 +48,35 @@ namespace Player
         void Update()
         {
         //Animator components
+           if (inputDirection.y <= 0)
+       {
+      Animator.SetBool("isWalking", false);
+      }
 
        if (inputDirection.x >=1)
        {
-       Animator.SetFloat("Walking", 1);
+       Animator.SetBool("isWalking", true);
        }
 
-       if (inputDirection.x <= 0)
-       {
-      Animator.SetFloat("Walking", 0);
-      }
+       //if (inputDirection.x <= 0)
+       //{
+      //Animator.SetBool("isWalking", false);
+      //}
 
        if (inputDirection.x <= -0.5)
-       
-       Animator.SetFloat("Walking", 1);
+       {
+       Animator.SetBool("isWalking", true);
+       }
 
        if (inputDirection.y >= 1)
-       
-       Animator.SetFloat("WalkingUp", 1);
-
-       if (inputDirection.y <= 0)
-       
-      Animator.SetFloat("WalkingUp", 0);
+       {
+       Animator.SetBool("isWalking", true);
+       }
 
        if (inputDirection.y <= -0.5)
-       
-       Animator.SetFloat("WalkingUp" , 1);
+      { 
+       Animator.SetBool("isWalking" , true);
+      }
       }
     }
 }
