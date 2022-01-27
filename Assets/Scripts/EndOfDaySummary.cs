@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -10,15 +12,10 @@ public class EndOfDaySummary : MonoBehaviour
     [SerializeField] private FloatVariable appetite;
     [SerializeField] private FloatVariable hygiene;
     [SerializeField] private FloatVariable social;
-    
-    [Header("General Mood"), Tooltip("E.G: Today was ...")]
-    [SerializeField] private string[] generalMoodString;
-    
+
     [Header("Body")]
     [SerializeField] private string[] bodyString;
-    [SerializeField, 
-     Tooltip("should be able to follow (but not include) \"but\" " + "E.G: \"but\" I got some exercise done")] 
-    private string[] badBodyString;
+    [SerializeField] private string[] badBodyString;
     
     [Header("Mind")]
     [SerializeField] private string[] mindString;
@@ -44,13 +41,14 @@ public class EndOfDaySummary : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             //DisplayText();
-            SystemTest();
-            CalculateAverageMood();
-            Debug.Log(_overAllMood);
+            GenericMoodDisplay();
+            //CalculateAverageMood();
+            //GetLowestMoods();
+            //Debug.Log(_overAllMood);
         }
     }
 
-    private void SystemTest()
+    /*private void SystemTest()
     {
         textObject.GetComponent<Text>().text =
             $"{generalMoodString[Random.Range(0, generalMoodString.Length)]}" +
@@ -61,7 +59,7 @@ public class EndOfDaySummary : MonoBehaviour
             $"\n{mindString[Random.Range(0, mindString.Length)]} " +
             $"{PickFiller(mind,social)} " +
             $"{socialString[Random.Range(0, socialString.Length)]}";
-    }
+    }*/
     
 
     private void DisplayText()
@@ -86,35 +84,68 @@ public class EndOfDaySummary : MonoBehaviour
         }
     }
 
-
-
-    private void BadMood()
+    private void GenericMoodDisplay()
     {
         textObject.GetComponent<Text>().text =
-            $"{generalMoodString}" +
+            $"Dear diary." +
+            $"\nToday felt ok," +
+            $"\n{ChooseBadOrGoodString(body, bodyString, badBodyString)} {PickFiller(body, hygiene)}" +
+            $" {ChooseBadOrGoodString(hygiene, hygieneString, badHygieneString)}" +
+            $"\n{ChooseBadOrGoodString(appetite, appetiteString, badAppetiteString)}" +
+            $"\n{ChooseBadOrGoodString(mind, mindString, badMindString)} {PickFiller(mind, social)}" +
+            $" {ChooseBadOrGoodString(social, socialString, badSocialString)}" +
+            $"\nLooking forward to tomorrow!";
+    }
+
+    private void BadMood() // done -ish
+    {
+        textObject.GetComponent<Text>().text =
+            $"Today was horrible!" +
             $"\n I feel like I'm going to break down if I don't work on {body.name}{appetite.name}{mind.name}" +
             $"\n {PickFiller(mind, hygiene)} {hygiene.name}" + // lowest to best stats
             $"\n Hopefully tomorrow is better..";
     }
     private void OkayMood()
     {
+        textObject.GetComponent<Text>().text =
+            $"Today was ok" +
+            $"\n I feel like I'm going to break down if I don't work on {body.name}{appetite.name}{mind.name}" +
+            $"\n {PickFiller(mind, hygiene)} {hygiene.name}" + // lowest to best stats
+            $"\n Hopefully tomorrow is better..";
     }
     private void GoodMood()
     {
+        textObject.GetComponent<Text>().text =
+            $"Today was good" +
+            $"\n I feel like I'm going to break down if I don't work on {body.name}{appetite.name}{mind.name}" +
+            $"\n {PickFiller(mind, hygiene)} {hygiene.name}" + // lowest to best stats
+            $"\n Hopefully tomorrow is better..";
     }
     private void PerfectMood()
     {
-        //textObject.GetComponent<Text>().text =
-            //$"Dear diary." +
-            //$" \n Today was { /* general mood */} { /*lowest stat*/}. " +
-            //$"\n I cut my bonsai { /*amount of times*/}." +
-            //$"\n I ate { /*amount of times*/}." +
-            //$"\n I { /*took / didn't take*/} a shower" +
-            //$"\n I { /*did call someone / didn't call someone*/}" +
-            //$"\n It was a { /*good day / okay day / bad day*/}!" +
-            //$"\n Although,"; // if it was okay / bad?
+        textObject.GetComponent<Text>().text =
+            $"Today was perfect" +
+            $"\n I feel like I'm going to break down if I don't work on {body.name}{appetite.name}{mind.name}" +
+            $"\n {PickFiller(mind, hygiene)} {hygiene.name}" + // lowest to best stats
+            $"\n Hopefully tomorrow is better..";
     }
-    
+
+    private void GetLowestMoods()
+    {
+        List<FloatVariable> moodList = new List<FloatVariable>();
+        moodList.Sort();
+        Debug.Log(moodList.OrderByDescending(moodList => moodList).Take(3));
+    }
+
+    private string ChooseBadOrGoodString(FloatVariable mood, string[] goodString, string[] badString)
+    {
+        if (mood.Value >= 50)
+        {
+            return goodString[Random.Range(0, goodString.Length)];
+        }
+
+        return badString[Random.Range(0, badString.Length)];
+    }
     
     private void CalculateAverageMood()
     {
@@ -123,19 +154,15 @@ public class EndOfDaySummary : MonoBehaviour
 
     private string PickFiller(FloatVariable a, FloatVariable b)
     {
-        if (a.Value <= b.Value && b.Value >= 50)
+        if (a.Value < b.Value && b.Value >= 50)
         {
             return "but at least";
         }
-        if (a.Value >= b.Value && b.Value <= 49)
+        else if (a.Value > b.Value && b.Value <= 49)
         {
             return "but";
         }
-        if (Math.Abs(a.Value - b.Value) < 2f)
-        {
-            return "and";
-        }
-
-        return null;
+        
+        return "and";
     }
 }

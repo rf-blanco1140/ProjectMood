@@ -685,6 +685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movementSpeed: 100
   inputDirection: {x: 0, y: 0}
+  Animator: {fileID: 0}
 --- !u!114 &721403017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1201,7 +1202,7 @@ MonoBehaviour:
   nightColor: {r: 0.24807143, g: 1, b: 0, a: 1}
   elapsedTime: {fileID: 11400000, guid: 0cb06d598e1b395409a04bf693c94d91, type: 2}
   nightTime: {fileID: 11400000, guid: 9382853585fcb454aa2d5c69ac941955, type: 2}
-  _timeInSeconds: 9
+  _timeInSeconds: 120
 --- !u!114 &1010866256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2206,30 +2207,36 @@ MonoBehaviour:
   appetite: {fileID: 11400000, guid: 752e9e33e00c7b342afc4b649e86d734, type: 2}
   hygiene: {fileID: 11400000, guid: 9b03fe4d313c59f428f79bc640bd8ac1, type: 2}
   social: {fileID: 11400000, guid: 3c3f2de5d3013a44cb21e516d7c23307, type: 2}
-  generalMoodString:
-  - Dear diary, Today was perfect
-  - Dear diary, Today was alright
-  - Dear diary, Today was horrible
   bodyString:
-  - My body was aching from all the exercise i did
-  - I felt really lazy, like i wasn't taking care of my body
-  badBodyString: []
+  - My body feels great today!
+  - My body is aching, I I should rest some tomorrow
+  badBodyString:
+  - I feel so lazy.. I should work out more
+  - I want to do something physical
   mindString:
-  - I feel really stressed, i should take some time to relax
   - I feel really relaxed!
-  badMindString: []
+  - What a stress free day
+  badMindString:
+  - I'm so stressed I need to relax!
+  - It's been a long day, my head is spinning
   appetiteString:
-  - I'm starving, i really should get something to eat
+  - Can't stop thinking about my amazing dinner!
   - I'm so full, maybe i should exercise some more
-  badAppetiteString: []
+  badAppetiteString:
+  - I'm starving I really need to eat something..
+  - I need to eat something fast
   hygieneString:
-  - I stink, i should take a shower
+  - I feel so clean!
   - I really enjoyed the shower today!
-  badHygieneString: []
+  badHygieneString:
+  - I stink.. I really need a shower
+  - I want to shower really bad
   socialString:
-  - I NEED to talk to someone, i'm losing my mind i'm so lonely
+  - It was nice to hear from my friends today
   - It was great to catch up with my friends!
-  badSocialString: []
+  badSocialString:
+  - I feel really lonely..
+  - I need to socialize
   textObject: {fileID: 289518858}
 --- !u!4 &1632625352
 Transform:
