@@ -41,13 +41,13 @@ public class EndOfDaySummary : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        /*if (Input.GetKeyDown(KeyCode.T))
         {
             //DisplayText();
             SystemTest();
             CalculateAverageMood();
             Debug.Log(_overAllMood);
-        }
+        }*/
     }
 
     private void SystemTest()
@@ -62,7 +62,6 @@ public class EndOfDaySummary : MonoBehaviour
             $"{PickFiller(mind,social)} " +
             $"{socialString[Random.Range(0, socialString.Length)]}";
     }
-    
 
     private void DisplayText()
     {
@@ -85,9 +84,7 @@ public class EndOfDaySummary : MonoBehaviour
             PerfectMood();
         }
     }
-
-
-
+    
     private void BadMood()
     {
         textObject.GetComponent<Text>().text =
@@ -114,7 +111,14 @@ public class EndOfDaySummary : MonoBehaviour
             //$"\n It was a { /*good day / okay day / bad day*/}!" +
             //$"\n Although,"; // if it was okay / bad?
     }
-    
+
+    private void ChooseString(FloatVariable mood ,string moodString)
+    {
+        if (mood.Value >= 50)
+        {
+            
+        }
+    }
     
     private void CalculateAverageMood()
     {
