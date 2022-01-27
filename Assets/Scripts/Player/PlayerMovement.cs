@@ -9,6 +9,7 @@ namespace Player
         [SerializeField] private float _movementSpeed; // SO ?
         public Vector2 inputDirection;
         Vector3 previousDirection = Vector3.forward;
+        public Animator Animator;
 
         private void Awake()
         {
@@ -41,5 +42,38 @@ namespace Player
                 body.rotation = quaternion.LookRotation(previousDirection, Vector3.up);
             }
         }
+
+        
+        void Update()
+        {
+        //Animator components
+
+       if (inputDirection.x >=1)
+       {
+       Animator.SetFloat("Walking", 1);
+       }
+
+       if (inputDirection.x <= 0)
+       {
+      Animator.SetFloat("Walking", 0);
+      }
+
+       if (inputDirection.x <= -0.5)
+       
+       Animator.SetFloat("Walking", 1);
+
+       if (inputDirection.y >= 1)
+       
+       Animator.SetFloat("WalkingUp", 1);
+
+       if (inputDirection.y <= 0)
+       
+      Animator.SetFloat("WalkingUp", 0);
+
+       if (inputDirection.y <= -0.5)
+       
+       Animator.SetFloat("WalkingUp" , 1);
+      }
     }
+
 }
