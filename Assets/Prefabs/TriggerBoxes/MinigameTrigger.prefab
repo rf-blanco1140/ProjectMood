@@ -291,8 +291,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _textGameObject: {fileID: 454531649832507180}
   _miniGame: {fileID: 0}
-  _imageF: {fileID: 6772632990866733580}
+  _imageF: {fileID: 3896912914027070652}
   _newTrack: {fileID: 8300000, guid: 8217151c62a9acf45b0df1e76ddd1aa7, type: 3}
+  _fadeIn: {fileID: 0}
+  _fadeOut: {fileID: 0}
 --- !u!1 &6772632990866733580
 GameObject:
   m_ObjectHideFlags: 0
