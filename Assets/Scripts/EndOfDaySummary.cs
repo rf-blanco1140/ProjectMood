@@ -23,8 +23,8 @@ public class EndOfDaySummary : MonoBehaviour
     
     [Header("Appetite")]
     [SerializeField] private string[] appetiteString;
-    [SerializeField] private string[] badAppetiteString
-        ;
+    [SerializeField] private string[] badAppetiteString;
+    
     [Header("Hygiene")]
     [SerializeField] private string[] hygieneString;
     [SerializeField] private string[] badHygieneString;
