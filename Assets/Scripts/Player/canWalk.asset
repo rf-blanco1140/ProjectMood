@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc0e279dd86f5d44896398456ab5fa86, type: 3}
   m_Name: canWalk
   m_EditorClassIdentifier: 
-  boolValue: 0
+  boolValue: 1
