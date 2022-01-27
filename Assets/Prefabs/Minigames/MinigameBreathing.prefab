@@ -902,6 +902,7 @@ MonoBehaviour:
   _inhaleText: {fileID: 4708376390670089004}
   _exhaleText: {fileID: 989862718563109031}
   _pressText: {fileID: 3074091898522975424}
+  _OnWinGame: {fileID: 11400000, guid: 8b04b5527619fec4ca997317bf1edc40, type: 2}
   _exhaleScale: {x: 1.2, y: 1.2, z: 1.2}
   _timePerBreath: 4
   _breathsToWin: 3

@@ -7,6 +7,8 @@ public class InhaleExhaleMinigame : MonoBehaviour
     [SerializeField] private GameObject _inhaleText;
     [SerializeField] private GameObject _exhaleText;
     [SerializeField] private GameObject _pressText;
+    [SerializeField] private VoidEvent _OnWinGame;
+    [SerializeField] private FloatVariable _mindVariable;
 
 
     private Vector3 _inhaleScale;
@@ -91,6 +93,8 @@ public class InhaleExhaleMinigame : MonoBehaviour
     {
         if (_amountOfBreath >= _breathsToWin)
         {
+            _mindVariable.ApplyChange(20);
+            _OnWinGame.Raise();
             AudioManager.instance.ReturnToDefault();
             transform.parent.gameObject.SetActive(false);
         }

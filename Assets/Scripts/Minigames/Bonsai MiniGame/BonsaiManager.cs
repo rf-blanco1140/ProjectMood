@@ -8,6 +8,7 @@ public class BonsaiManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _currentText;
     [SerializeField] private TextMeshProUGUI _maxText;
     [SerializeField] private TextMeshProUGUI _minText;
+    [SerializeField] private VoidEvent _onWinGame;
     [SerializeField] private FloatVariable mind;
     
 
@@ -59,7 +60,8 @@ public class BonsaiManager : MonoBehaviour
         {
            
             Debug.Log("Win");
-            mind.ApplyChange(10);
+            mind.ApplyChange(20);
+            _onWinGame.Raise();
             transform.parent.gameObject.SetActive(false);
         }
         else

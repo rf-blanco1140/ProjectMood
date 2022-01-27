@@ -4083,6 +4083,7 @@ MonoBehaviour:
   _currentText: {fileID: 8136028040755050147}
   _maxText: {fileID: 4210656010909964274}
   _minText: {fileID: 775348594899237639}
+  _onWinGame: {fileID: 11400000, guid: 8b04b5527619fec4ca997317bf1edc40, type: 2}
   mind: {fileID: 11400000, guid: a8a362f73da062247ba80f5a95d48dad, type: 2}
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
 --- !u!114 &343532576
