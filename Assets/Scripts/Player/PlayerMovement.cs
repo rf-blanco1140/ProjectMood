@@ -10,6 +10,8 @@ namespace Player
         public Vector2 inputDirection;
         Vector3 previousDirection = Vector3.forward;
 
+        [SerializeField] private BoolVariable canWalk;
+        
         public Animator Animator;
 
         private void Awake()
@@ -19,8 +21,11 @@ namespace Player
 
         private void FixedUpdate()
         {
-            PlayerMove();
-            PlayerFaceDirection();
+            if (canWalk.boolValue)
+            {
+                PlayerMove();
+                PlayerFaceDirection();
+            }
         }
 
         private void PlayerMove()
@@ -47,7 +52,9 @@ namespace Player
         
         void Update()
         {
-        //Animator components
+
+
+            //Animator components
            if (inputDirection.y <= 0)
        {
       Animator.SetBool("isWalking", false);
