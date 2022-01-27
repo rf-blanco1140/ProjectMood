@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
-    [SerializeField] private GameEvent onEndOfDay;
     [SerializeField] private bool _timePaused; // debug
     [SerializeField] private FloatVariable elapsedTime;
     [SerializeField] private BoolVariable nightTime;
@@ -43,7 +42,7 @@ public class TimeManager : MonoBehaviour
         yield return new WaitForSeconds(_inGameHourInSeconds);
         StartCoroutine(HourlyTimer());
     }
-
+    
     private void DayTime()
     {
         if (_hoursInDay <= _dayTimeEnds)
@@ -91,7 +90,6 @@ public class TimeManager : MonoBehaviour
     }
     private int DayManager()
     {
-        onEndOfDay.Raise();
         if (_day >= 7)
         {
             _day = 1;
