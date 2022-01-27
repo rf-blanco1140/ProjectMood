@@ -57,7 +57,7 @@ public class BonsaiManager : MonoBehaviour
     {
         if(_currentLeafAmount.Value >= _minLeafAmount && _currentLeafAmount.Value <= _maxLeafAmount)
         {
-            //AudioManager.instance.ReturnToDefault();
+           
             Debug.Log("Win");
             mind.ApplyChange(10);
             transform.parent.gameObject.SetActive(false);
@@ -67,5 +67,6 @@ public class BonsaiManager : MonoBehaviour
             Debug.Log("Not Win");
             transform.parent.gameObject.SetActive(false);
         }
+        AudioManager.instance.ReturnToDefault();
     }
 }

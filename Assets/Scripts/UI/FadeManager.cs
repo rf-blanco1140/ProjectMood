@@ -19,4 +19,9 @@ public class FadeManager : MonoBehaviour
     {
         fadeIn.PlayFeedbacks();
     }
+    
+    public void FadeOut()
+    {
+        fadeOut.PlayFeedbacks();
+    }
 }

@@ -24,6 +24,9 @@ ModelImporter:
   - first:
       74: -6084434901854193228
     second: Armature|Walking with object
+  - first:
+      74: 8075094313233978375
+    second: Armature|Hand (Ignore this)
   externalObjects: {}
   materials:
     materialImportMode: 2
