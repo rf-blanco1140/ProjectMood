@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using MoreMountains.Feedbacks;
 
@@ -40,12 +41,18 @@ public class MinigameTrigger : MonoBehaviour
     {
         if (_canInteract && Input.GetKeyDown(KeyCode.F))
         {
-            //AudioManager.instance.SwapTrack(newTrack);
-            //fadeFeedbacks.PlayFeedbacks();
-            _miniGame.SetActive(true);
-            _canInteract = false;
-            _textGameObject.SetActive(false);
-            _imageF.SetActive(false);
+            StartCoroutine(Delay());
+            fadeFeedbacks.PlayFeedbacks();
         }
+    }
+
+    private IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(2);
+        //AudioManager.instance.SwapTrack(newTrack);
+        _miniGame.SetActive(true);
+        _canInteract = false;
+        _textGameObject.SetActive(false);
+        _imageF.SetActive(false);
     }
 }
