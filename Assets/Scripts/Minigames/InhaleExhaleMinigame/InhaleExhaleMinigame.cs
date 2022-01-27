@@ -91,7 +91,7 @@ public class InhaleExhaleMinigame : MonoBehaviour
     {
         if (_amountOfBreath >= _breathsToWin)
         {
-            //AudioManager.instance.ReturnToDefault();
+            AudioManager.instance.ReturnToDefault();
             transform.parent.gameObject.SetActive(false);
         }
     }
