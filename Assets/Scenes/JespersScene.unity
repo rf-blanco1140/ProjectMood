@@ -393,7 +393,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97147d99e959c0540893a47dfd3ccfc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onEndOfDay: {fileID: 11400000, guid: eb2ac9d2de2041346b88fbbf6dfb4d58, type: 2}
   _timePaused: 0
   elapsedTime: {fileID: 11400000, guid: 0cb06d598e1b395409a04bf693c94d91, type: 2}
   nightTime: {fileID: 11400000, guid: 9382853585fcb454aa2d5c69ac941955, type: 2}
@@ -2189,7 +2188,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1632625351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2262,16 +2261,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1632625350}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bd0413e9cc8b214cae7d65fe24b3966, type: 3}
+  m_Script: {fileID: 11500000, guid: 1febd85445ee4b34d87c96f029c63ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: eb2ac9d2de2041346b88fbbf6dfb4d58, type: 2}
-  response:
+  _gameEvent: {fileID: 11400000, guid: ef1ee0d2fe4613847b9961f3e2741cd9, type: 2}
+  _unityEventResponse:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1632625351}
         m_TargetAssemblyTypeName: EndOfDaySummary, Assembly-CSharp
-        m_MethodName: EnableSummary
+        m_MethodName: GenericMoodDisplay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2472,6 +2471,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2913800528855786385, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: summary
+      value: 
+      objectReference: {fileID: 1632625350}
+    - target: {fileID: 2913800528855786385, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: onSummary
+      value: 
+      objectReference: {fileID: 11400000, guid: ef1ee0d2fe4613847b9961f3e2741cd9, type: 2}
     - target: {fileID: 2913800528855786386, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
       propertyPath: m_RootOrder
       value: 12

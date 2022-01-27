@@ -41,7 +41,7 @@ public class EndOfDaySummary : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             //DisplayText();
-            GenericMoodDisplay();
+            //GenericMoodDisplay();
             //CalculateAverageMood();
             //GetLowestMoods();
             //Debug.Log(_overAllMood);
@@ -84,7 +84,7 @@ public class EndOfDaySummary : MonoBehaviour
         }
     }
 
-    private void GenericMoodDisplay()
+    public void GenericMoodDisplay()
     {
         textObject.GetComponent<Text>().text =
             $"Dear diary." +
