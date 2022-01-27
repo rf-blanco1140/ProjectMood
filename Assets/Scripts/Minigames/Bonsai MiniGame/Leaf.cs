@@ -23,7 +23,7 @@ public class Leaf : MonoBehaviour
     {
         if (!_isFalling)
         {
-            _cutSound.PlayFeedbacks();
+            //_cutSound.PlayFeedbacks();
             CutLeaf();
             _bonsaiTree.GetComponent<BonsaiManager>().UpdateCurrentLeaf();
             _isFalling = true;

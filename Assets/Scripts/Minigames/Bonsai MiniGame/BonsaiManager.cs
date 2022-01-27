@@ -13,8 +13,8 @@ public class BonsaiManager : MonoBehaviour
 
     [SerializeField] private IntVariable _currentLeafAmount;
     private int _totalLeafAmount = 0; // make non static
-    private int _maxLeafAmount = 50; // make non static
-    private int _minLeafAmount = 40; // make non static
+    private int _maxLeafAmount = 75; // make non static
+    private int _minLeafAmount = 60; // make non static
 
 
     private void OnEnable()
