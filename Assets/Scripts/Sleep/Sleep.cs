@@ -7,9 +7,8 @@ public class Sleep : MonoBehaviour
     [SerializeField] private FloatVariable body;
     [SerializeField] private GameObject exhausted;
     [SerializeField] private GameObject rested;
-    
 
-    private IEnumerator GoingToSleep()
+    public IEnumerator GoingToSleep()
     {
         rested.SetActive(true);
         onNextDay.Raise();
@@ -18,6 +17,11 @@ public class Sleep : MonoBehaviour
         rested.SetActive(false);
     }
 
+    public void StartExhaustion()
+    {
+        StartCoroutine(Exhausted());
+    }
+    
     private IEnumerator Exhausted()
     {
         exhausted.SetActive(true);
