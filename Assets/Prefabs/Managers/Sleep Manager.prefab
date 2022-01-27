@@ -229,9 +229,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onNextDay: {fileID: 11400000, guid: 5d0b79536abb4aa4bb5f3c56960facba, type: 2}
+  onSummary: {fileID: 11400000, guid: ef1ee0d2fe4613847b9961f3e2741cd9, type: 2}
   body: {fileID: 11400000, guid: f045ca282858c7a4489ce349ce5596fe, type: 2}
   exhausted: {fileID: 2913800529351454816}
   rested: {fileID: 2913800530029092262}
+  summary: {fileID: 0}
 --- !u!114 &2913800528855786384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,8 +286,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20.440735, y: 1, z: 2.0508347}
-  m_Center: {x: 1.2240028, y: 0, z: -0.5254173}
+  m_Size: {x: 1.073555, y: 1, z: 1.7490978}
+  m_Center: {x: -6.558731, y: 0, z: -5.87926}
 --- !u!1 &2913800529351454816
 GameObject:
   m_ObjectHideFlags: 0

@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &434600668165240633
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &7878822508577247372
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -782,7 +782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &6227893906467201072
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1124,7 +1124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &3069989293307587593
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1466,7 +1466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &5970888468988616101
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1944,7 +1944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &1949829177165951742
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2286,7 +2286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &6133573799669734385
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2628,7 +2628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &648910590805925413
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2970,7 +2970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &6570086674695978628
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3312,7 +3312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &3426992783888614854
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3654,7 +3654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &8581986791873780036
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3909,6 +3909,8 @@ GameObject:
   - component: {fileID: 4821046494754578056}
   - component: {fileID: 2074393112187499324}
   - component: {fileID: 8937773001963569511}
+  - component: {fileID: 343532576}
+  - component: {fileID: 343532577}
   m_Layer: 5
   m_Name: BonsaiTree
   m_TagString: Untagged
@@ -4083,6 +4085,97 @@ MonoBehaviour:
   _minText: {fileID: 775348594899237639}
   mind: {fileID: 11400000, guid: a8a362f73da062247ba80f5a95d48dad, type: 2}
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
+--- !u!114 &343532576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224755179972753361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2ce51367856bd49b72678cc4263225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Sound
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    InitialDelay: 0
+    CooldownDuration: 0
+    ExcludeFromHoldingPauses: 0
+    InterruptsOnStop: 1
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  Sfx: {fileID: 8300000, guid: c0bd716da5494864bb69b86599b2255d, type: 3}
+  RandomSfx: []
+  TestButton: 0
+  TestStopButton: 0
+  PlayMethod: 0
+  PoolSize: 10
+  MinVolume: 1
+  MaxVolume: 1
+  MinPitch: 0.9
+  MaxPitch: 1.2
+  SfxAudioMixerGroup: {fileID: 0}
+--- !u!114 &343532577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224755179972753361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b72de2996c5c40bfb394f3d0e0a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Feedbacks:
+  - {fileID: 343532576}
+  InitializationMode: 0
+  SafeMode: 3
+  Direction: 0
+  AutoChangeDirectionOnEnd: 0
+  AutoPlayOnStart: 0
+  AutoPlayOnEnable: 0
+  DurationMultiplier: 1
+  DisplayFullDurationDetails: 0
+  CooldownDuration: 0
+  InitialDelay: 0
+  CanPlayWhileAlreadyPlaying: 1
+  FeedbacksIntensity: 1
+  Events:
+    TriggerMMFeedbacksEvents: 0
+    TriggerUnityEvents: 1
+    OnPlay:
+      m_PersistentCalls:
+        m_Calls: []
+    OnPause:
+      m_PersistentCalls:
+        m_Calls: []
+    OnResume:
+      m_PersistentCalls:
+        m_Calls: []
+    OnRevert:
+      m_PersistentCalls:
+        m_Calls: []
+    OnComplete:
+      m_PersistentCalls:
+        m_Calls: []
+  DebugActive: 0
 --- !u!1 &1446926306568884732
 GameObject:
   m_ObjectHideFlags: 0
@@ -4181,7 +4274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &860417555839377718
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4523,7 +4616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &3051575888356050182
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4865,7 +4958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &1062208081256771968
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5207,7 +5300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &7223467652460101833
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5549,7 +5642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &4348006502942838931
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5891,7 +5984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &8839682671613761234
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6233,7 +6326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &4733459682280620958
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6575,7 +6668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &246092845340467148
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6917,7 +7010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &148630443564489813
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7259,7 +7352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &5268092518921256962
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7601,7 +7694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &7914386382829832086
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8046,7 +8139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &6581110674815684313
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8388,7 +8481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &2389083003307251592
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8730,7 +8823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &2479669486531910028
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9072,7 +9165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &1789319849570476885
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9414,7 +9507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &624018992744404015
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9756,7 +9849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &2780642101591908746
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10098,7 +10191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &6041263868824370362
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10440,7 +10533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &7839521001985783807
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10782,7 +10875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &3878627246105645333
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11124,7 +11217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &830569276806328213
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11466,7 +11559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &1684329312903673295
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11944,7 +12037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &6896588324165378026
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12286,7 +12379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &3945898636141582522
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12628,7 +12721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &137105068690328512
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12970,7 +13063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &5771582591906394710
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13312,7 +13405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &8697273643143985665
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13654,7 +13747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &6119478744354939747
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13996,7 +14089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &5592041993192251933
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14338,7 +14431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &4654387671032312216
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14680,7 +14773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &4387883039021561925
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15022,7 +15115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &5961393380025848390
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15364,7 +15457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &133623152722700720
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15706,7 +15799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &1063296853561201763
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16048,7 +16141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &1197798687225553848
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16390,7 +16483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &6541406917760400369
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16732,7 +16825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &3135065112239090941
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17074,7 +17167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &5347041428375035878
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17416,7 +17509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &7857681739876247487
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17758,7 +17851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &8458186068899411562
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18100,7 +18193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &7016911201190233843
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18442,7 +18535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &2669552261022140152
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18784,7 +18877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &9214498581789963840
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19126,7 +19219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &5193409592110914995
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19468,7 +19561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &3651000666558488702
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19810,7 +19903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &2545525656332806447
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20152,7 +20245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &7781179408025091432
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20494,7 +20587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &6758575232578604409
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20836,7 +20929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &5384686198685228281
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21178,7 +21271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &5061719051949042360
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21520,7 +21613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &4774097194048855153
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21862,7 +21955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &3018803447905706005
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -22204,7 +22297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &4150241437137797166
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -22546,7 +22639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &194781914947265865
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -23025,7 +23118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &252557420872181931
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -23367,7 +23460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &4757870804238036078
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -23709,7 +23802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &3150054279737278040
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24051,7 +24144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &9043164873158222801
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24393,7 +24486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &2358895854752224336
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24735,7 +24828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &9053395463956899901
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -25077,7 +25170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &4122495253806390034
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -25419,7 +25512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &4600728432875583359
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -25673,13 +25766,14 @@ GameObject:
   m_Component:
   - component: {fileID: 8381945392097632347}
   - component: {fileID: 2049193141501005581}
+  - component: {fileID: 2091017188}
   m_Layer: 5
   m_Name: MinigameBonsai
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8381945392097632347
 Transform:
   m_ObjectHideFlags: 0
@@ -25708,8 +25802,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f9f70269fdaac44b859fb209f058d67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cameraManager: {fileID: 906808331994658989, guid: cda8e64d2ca06e545b98622f9202e94d, type: 3}
+  _cameraManager: {fileID: 0}
   _Player: {fileID: 1236790480752805521, guid: 8fa6a513762f49c4088f8b8f37b8337f, type: 3}
+--- !u!114 &2091017188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8381945392097632344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2ce51367856bd49b72678cc4263225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Sound
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    InitialDelay: 0
+    CooldownDuration: 0
+    ExcludeFromHoldingPauses: 0
+    InterruptsOnStop: 1
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  Sfx: {fileID: 8300000, guid: c0bd716da5494864bb69b86599b2255d, type: 3}
+  RandomSfx: []
+  TestButton: 0
+  TestStopButton: 0
+  PlayMethod: 0
+  PoolSize: 10
+  MinVolume: 1
+  MaxVolume: 1
+  MinPitch: 0.9
+  MaxPitch: 1.2
+  SfxAudioMixerGroup: {fileID: 0}
 --- !u!1 &8385734470744456596
 GameObject:
   m_ObjectHideFlags: 0
@@ -25808,7 +25948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &3476937094723546924
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26283,7 +26423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &1454083668349880735
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26762,7 +26902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &2323015836229082090
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -27104,7 +27244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &7324537632496419788
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -27446,7 +27586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &4500344996283668280
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -27788,7 +27928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &5803184414439193128
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -28130,7 +28270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &6221250527752356461
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -28472,7 +28612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &8545224421576657144
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -28814,7 +28954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &7961468536134785881
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -29156,7 +29296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &8509147344015200622
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -29498,7 +29638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &3360962152317988198
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -29840,7 +29980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentLeafAmount: {fileID: 11400000, guid: 07ab9b5cde2a8284ba890eaf5d0e5d82, type: 2}
   _bonsaiTree: {fileID: 1224755179972753361}
-  _cutSound: {fileID: 0}
+  _cutSound: {fileID: 343532577}
 --- !u!60 &7243431877849436342
 PolygonCollider2D:
   m_ObjectHideFlags: 0

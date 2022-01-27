@@ -52,7 +52,7 @@ MonoBehaviour:
   - {x: -1.5, y: -2, z: 0}
   - {x: -3, y: -2, z: 0}
   _spawnObject: {fileID: 3046419624227895388, guid: 7d7c5688ceb38334bad948d919c769f4, type: 3}
-  _timeBeforeFirstSpawn: 8
+  _timeBeforeFirstSpawn: 10
 --- !u!114 &3140574493246763399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,6 +97,7 @@ MonoBehaviour:
   _camera: {fileID: 0}
   _text: {fileID: 1595438514}
   _canvas: {fileID: 4708376391353032885}
+  _popSound: {fileID: 0}
   _messages:
   - Your mind is like water. When it crashes and flows roughly it may be hard to
     see the solution. But if you let it settle, the answer becomes clear
