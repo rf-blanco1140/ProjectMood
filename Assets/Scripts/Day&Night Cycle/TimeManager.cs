@@ -12,7 +12,7 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private VoidEvent onDropEachHour;
     [SerializeField] private VoidEvent onExhaustion;
     
-    private float _inGameHourInSeconds = 3;
+    private float _inGameHourInSeconds = 40f;
     private int _hoursInDay = 1;
     private int _dayTimeEnds = 3;
     private int _nightTimeStarts = 4;
