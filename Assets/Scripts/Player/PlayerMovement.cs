@@ -53,20 +53,23 @@ namespace Player
       Animator.SetBool("isWalking", false);
       }
 
+         if (inputDirection.x >=0)
+       {
+       Animator.SetBool("isWalking", false);
+       }
+
+
        if (inputDirection.x >=1)
        {
        Animator.SetBool("isWalking", true);
        }
 
-       //if (inputDirection.x <= 0)
-       //{
-      //Animator.SetBool("isWalking", false);
-      //}
-
        if (inputDirection.x <= -0.5)
        {
        Animator.SetBool("isWalking", true);
        }
+
+
 
        if (inputDirection.y >= 1)
        {
