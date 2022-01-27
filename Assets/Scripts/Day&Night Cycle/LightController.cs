@@ -9,8 +9,8 @@ public class LightController : MonoBehaviour
     
     [SerializeField] private FloatVariable elapsedTime;
     [SerializeField] private BoolVariable nightTime;
-    [SerializeField] private float _timeInSeconds;
-    private float _timeDividedByDegrees;
+    private float _timeInSeconds = 120f;
+    private float _timeDividedByDegrees = 0.75f;
 
     private quaternion _startRotation = quaternion.Euler(0,0,0);
     private quaternion _middleRotation = quaternion.Euler(90,0,0);
@@ -27,7 +27,7 @@ public class LightController : MonoBehaviour
     private void Update()
     {
         elapsedTime.Value += Time.deltaTime;
-        _timeDividedByDegrees = 90 / _timeInSeconds;
+        //_timeDividedByDegrees = 90 / _timeInSeconds;
 
         if (!nightTime.boolValue)
         {
@@ -58,7 +58,7 @@ public class LightController : MonoBehaviour
     
     private void RotateLightSource(Quaternion eulerDegree) 
     {
-        if (elapsedTime.Value <= _timeDividedByDegrees)
+        if (_timeDividedByDegrees <= elapsedTime.Value) // broken
         {
             transform.rotation = Quaternion.RotateTowards
                 (transform.rotation, eulerDegree,_timeDividedByDegrees * Time.deltaTime);
