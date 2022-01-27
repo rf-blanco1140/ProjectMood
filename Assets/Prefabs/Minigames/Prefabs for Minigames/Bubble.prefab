@@ -119,3 +119,4 @@ MonoBehaviour:
   _swayAmount: 0.4
   _GoRight: 1
   _onBubblePop: {fileID: 11400000, guid: 425b2ed6c6b1ea243a7c357b24c5de01, type: 2}
+  _popSound: {fileID: 0}

@@ -10,6 +10,7 @@ public class TimeManager : MonoBehaviour
 
     [SerializeField] private GameEvent onResetDay;
     [SerializeField] private VoidEvent onDropEachHour;
+    [SerializeField] private VoidEvent onExhaustion;
     
     private float _inGameHourInSeconds = 3;
     private int _hoursInDay = 1;
@@ -69,13 +70,21 @@ public class TimeManager : MonoBehaviour
         }
     }
 
+    public void NextDay()
+    {
+        _day++;
+        onResetDay.Raise();
+        _hoursInDay = 1;
+    }
+    
     private int HourManager()
     {
         if (_hoursInDay >= 7)
         {
+            onExhaustion.Raise();
             _hoursInDay = 1;
-            DayManager();
-            onResetDay.Raise();
+            //DayManager();
+            //onResetDay.Raise();
             return _hoursInDay;
         }
         return _hoursInDay;

@@ -239,7 +239,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &289518860
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -373,6 +373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 542809749}
   - component: {fileID: 542809748}
+  - component: {fileID: 542809750}
   m_Layer: 0
   m_Name: Day&Night
   m_TagString: Untagged
@@ -398,6 +399,7 @@ MonoBehaviour:
   nightTime: {fileID: 11400000, guid: 9382853585fcb454aa2d5c69ac941955, type: 2}
   onResetDay: {fileID: 11400000, guid: ebe04ae2a0797cb47915dc2a71dbd49c, type: 2}
   onDropEachHour: {fileID: 11400000, guid: 8b04b5527619fec4ca997317bf1edc40, type: 2}
+  onExhaustion: {fileID: 11400000, guid: e443997aeba42e547bf29de5072cae09, type: 2}
 --- !u!4 &542809749
 Transform:
   m_ObjectHideFlags: 0
@@ -410,8 +412,36 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &542809750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542809747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1febd85445ee4b34d87c96f029c63ee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvent: {fileID: 11400000, guid: 5d0b79536abb4aa4bb5f3c56960facba, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 542809748}
+        m_TargetAssemblyTypeName: TimeManager, Assembly-CSharp
+        m_MethodName: NextDay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &592258881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,7 +1060,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1010866254
 MonoBehaviour:
@@ -2183,18 +2213,23 @@ MonoBehaviour:
   bodyString:
   - My body was aching from all the exercise i did
   - I felt really lazy, like i wasn't taking care of my body
+  badBodyString: []
   mindString:
   - I feel really stressed, i should take some time to relax
   - I feel really relaxed!
+  badMindString: []
   appetiteString:
   - I'm starving, i really should get something to eat
   - I'm so full, maybe i should exercise some more
+  badAppetiteString: []
   hygieneString:
   - I stink, i should take a shower
   - I really enjoyed the shower today!
+  badHygieneString: []
   socialString:
   - I NEED to talk to someone, i'm losing my mind i'm so lonely
   - It was great to catch up with my friends!
+  badSocialString: []
   textObject: {fileID: 289518858}
 --- !u!4 &1632625352
 Transform:
@@ -2423,6 +2458,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9459974d8844e584b9b72d175b4f7b1c, type: 3}
+--- !u!1001 &2913800529545302564
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2913800528855786386, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913800528855786386, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913800528855786386, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913800528855786386, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913800528855786386, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913800528855786386, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913800528855786386, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913800528855786386, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913800528855786386, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913800528855786386, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913800528855786386, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913800528855786391, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_Name
+      value: Sleep Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
 --- !u!1001 &7084630680536278623
 PrefabInstance:
   m_ObjectHideFlags: 0
