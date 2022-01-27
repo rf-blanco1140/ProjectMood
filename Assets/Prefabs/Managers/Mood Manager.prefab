@@ -51,7 +51,7 @@ MonoBehaviour:
   body: {fileID: 11400000, guid: f045ca282858c7a4489ce349ce5596fe, type: 2}
   appetite: {fileID: 11400000, guid: 752e9e33e00c7b342afc4b649e86d734, type: 2}
   _dropValue: 7.5
-  _startValue: 100
+  _startValue: 70
   moodSystemUI: {fileID: 763247482759377443}
 --- !u!114 &763247482136738134
 MonoBehaviour:
@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 763247482759377455}
   - component: {fileID: 763247482759377443}
   - component: {fileID: 763247482759377454}
+  - component: {fileID: 7565991527829315593}
   m_Layer: 0
   m_Name: Mood Canvas
   m_TagString: Untagged
@@ -366,6 +367,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameEvent: {fileID: 11400000, guid: 8b04b5527619fec4ca997317bf1edc40, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 763247482759377443}
+        m_TargetAssemblyTypeName: MoodSystemUI, Assembly-CSharp
+        m_MethodName: DisplayUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7565991527829315593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763247482759377445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1febd85445ee4b34d87c96f029c63ee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvent: {fileID: 11400000, guid: a945f0bca6a884c40b659f9cf58f686a, type: 2}
   _unityEventResponse:
     m_PersistentCalls:
       m_Calls:
@@ -643,7 +672,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -17.437134, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -951,7 +980,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 495}
+  m_AnchoredPosition: {x: 0, y: 506}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4657142384286603052

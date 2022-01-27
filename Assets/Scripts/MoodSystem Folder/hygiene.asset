@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: hygiene
   m_EditorClassIdentifier: 
   _value: 0
-  _currentValue: 0
+  _currentValue: 62.5
+  _maxValue: 100

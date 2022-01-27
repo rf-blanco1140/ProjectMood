@@ -5,6 +5,7 @@ public class FloatVariable : ScriptableObject
 {
     [SerializeField] private float _value;
     [SerializeField] private float _currentValue;
+    [SerializeField] private float _maxValue;
 
     public float Value
     {
@@ -14,7 +15,14 @@ public class FloatVariable : ScriptableObject
 
     public virtual void ApplyChange(float change)
     {
-        _currentValue += change;
+        if((_currentValue + change) >= _maxValue)
+        {
+            _currentValue = _maxValue;
+        }
+        else
+        {
+            _currentValue += change;
+        }
     }
 
     public virtual void SetValue(float newValue)
