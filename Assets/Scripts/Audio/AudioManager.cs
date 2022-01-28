@@ -60,14 +60,13 @@ public class AudioManager : MonoBehaviour
     }
      public void ReturnToDefault()
     {
-        SwapTrack(defaultMusic);
-        /*
+        
         if(isHappy == true)
         SwapTrack(defaultMusic);
         if(isSad == true)
             SwapTrack(sadMusic);
         if (isNeutral == true)
-            SwapTrack(neutralMusic);*/
+            SwapTrack(neutralMusic);
     }
 
     private IEnumerator FadeTrack(AudioClip newClip)

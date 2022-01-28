@@ -38,6 +38,7 @@ public class Bubble : MonoBehaviour
     {
         transform.position += new Vector3(0,_movementSpeedY * Time.deltaTime,0);
         MoveLeftAndRight();
+        CheckTimeScale();
     }
 
     void MoveLeftAndRight()
@@ -68,6 +69,17 @@ public class Bubble : MonoBehaviour
 
         }
 
+    }
+    public void CheckTimeScale()
+    {
+        if(Time.timeScale == 0)
+        {
+            GetComponent<CircleCollider2D>().enabled = false;
+        }
+        else
+        {
+            GetComponent<CircleCollider2D>().enabled = true;
+        }
     }
  
 }

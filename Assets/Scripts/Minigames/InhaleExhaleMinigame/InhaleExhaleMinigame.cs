@@ -99,4 +99,19 @@ public class InhaleExhaleMinigame : MonoBehaviour
             transform.parent.gameObject.SetActive(false);
         }
     }
+    private void Update()
+    {
+        CheckTimeScale();
+    }
+    public void CheckTimeScale()
+    {
+        if (Time.timeScale == 0)
+        {
+            GetComponent<CircleCollider2D>().enabled = false;
+        }
+        else
+        {
+            GetComponent<CircleCollider2D>().enabled = true;
+        }
+    }
 }
