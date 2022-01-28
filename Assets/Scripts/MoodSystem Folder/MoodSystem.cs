@@ -59,7 +59,6 @@ public class MoodSystem : MonoBehaviour
         body.SetValue(_startValue);
         appetite.SetValue(_startValue);
         moodSystemUI.DisplayUI();
-        Debug.Log("hello");
         CalculateAverageMood();
     }
 
