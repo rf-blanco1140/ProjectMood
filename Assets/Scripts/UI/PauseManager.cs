@@ -9,6 +9,10 @@ public class PauseManager : MonoBehaviour
 
     PlayerInputs action;
     public GameObject pauseMenu;
+    public GameObject pauseButtons;
+    public GameObject saveMenu;
+    public GameObject optionsMenu;
+    public GameObject lineImg;
     bool paused;
     // Start is called before the first frame update
     void Start()
@@ -47,11 +51,20 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 0;
         paused = true;
         pauseMenu.SetActive(true);
+        pauseButtons.SetActive(true);
+        lineImg.SetActive(true);
     }
     public void ResumeGame()
     {
+        
         pauseMenu.SetActive(false);
+        saveMenu.SetActive(false);
+        optionsMenu.SetActive(false);
         Time.timeScale = 1;
         paused = false;
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

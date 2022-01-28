@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 2913800528855786384}
   - component: {fileID: 2913800528855786387}
   - component: {fileID: 2913800528855786396}
+  - component: {fileID: 5042099135887197866}
   m_Layer: 0
   m_Name: Sleep Manager
   m_TagString: Untagged
@@ -288,6 +289,50 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.073555, y: 1, z: 1.7490978}
   m_Center: {x: -6.558731, y: 0, z: -5.87926}
+--- !u!114 &5042099135887197866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2913800528855786391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b72de2996c5c40bfb394f3d0e0a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Feedbacks: []
+  InitializationMode: 2
+  SafeMode: 3
+  Direction: 0
+  AutoChangeDirectionOnEnd: 0
+  AutoPlayOnStart: 0
+  AutoPlayOnEnable: 0
+  DurationMultiplier: 1
+  DisplayFullDurationDetails: 0
+  CooldownDuration: 0
+  InitialDelay: 0
+  CanPlayWhileAlreadyPlaying: 1
+  FeedbacksIntensity: 1
+  Events:
+    TriggerMMFeedbacksEvents: 0
+    TriggerUnityEvents: 1
+    OnPlay:
+      m_PersistentCalls:
+        m_Calls: []
+    OnPause:
+      m_PersistentCalls:
+        m_Calls: []
+    OnResume:
+      m_PersistentCalls:
+        m_Calls: []
+    OnRevert:
+      m_PersistentCalls:
+        m_Calls: []
+    OnComplete:
+      m_PersistentCalls:
+        m_Calls: []
+  DebugActive: 0
 --- !u!1 &2913800529351454816
 GameObject:
   m_ObjectHideFlags: 0
