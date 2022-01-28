@@ -12,6 +12,7 @@ public class MinigameTrigger : MonoBehaviour
     [SerializeField] private AudioClip _newTrack;
     [SerializeField] private MMFeedbacks _fadeIn;
     [SerializeField] private MMFeedbacks _fadeOut;
+    [SerializeField] private MMFeedbacks _startSound;
 
     private bool _canInteract = false;
 
@@ -43,6 +44,7 @@ public class MinigameTrigger : MonoBehaviour
         if (_canInteract && Input.GetKeyDown(KeyCode.F))
         {
             _fadeIn.PlayFeedbacks();
+            _startSound.PlayFeedbacks();
             StartCoroutine(Delay());
             
         }

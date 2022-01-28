@@ -8,6 +8,7 @@ public class MoodSystem : MonoBehaviour
     [SerializeField] private FloatVariable hygiene;
     [SerializeField] private FloatVariable body;
     [SerializeField] private FloatVariable appetite;
+    [SerializeField] private IntEvent _onMoodChange;
     
     [SerializeField] private float _dropValue = 7.5f;
     [SerializeField] private float _startValue = 70f;
@@ -24,7 +25,7 @@ public class MoodSystem : MonoBehaviour
         Happy = 3
     }
 
-    private MoodEnum currentMood = MoodEnum.Normal;
+    [SerializeField] private MoodEnum currentMood;
     
     private void CalculateAverageMood()
     {
@@ -33,17 +34,19 @@ public class MoodSystem : MonoBehaviour
         if (_overAllMood >= 75f && currentMood != MoodEnum.Happy)
         {
             currentMood = MoodEnum.Happy;
-            // void event raise
+            _onMoodChange.Raise(3);
             // change light / audio / whatever
         }
         else if (_overAllMood <= 25f && currentMood != MoodEnum.Sad)
         {
             currentMood = MoodEnum.Sad;
+            _onMoodChange.Raise(1);
         }
         
         else if (currentMood != MoodEnum.Normal)
         {
             currentMood = MoodEnum.Normal;
+            _onMoodChange.Raise(2);
         } 
     }
 
@@ -56,6 +59,8 @@ public class MoodSystem : MonoBehaviour
         body.SetValue(_startValue);
         appetite.SetValue(_startValue);
         moodSystemUI.DisplayUI();
+        Debug.Log("hello");
+        CalculateAverageMood();
     }
 
     // drop over time
@@ -66,5 +71,6 @@ public class MoodSystem : MonoBehaviour
         hygiene.Value -= _dropValue;
         body.Value -= _dropValue;
         appetite.Value -= _dropValue;
+        CalculateAverageMood();
     }
 }

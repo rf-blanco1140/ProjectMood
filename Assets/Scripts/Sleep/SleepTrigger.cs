@@ -1,14 +1,16 @@
 using UnityEngine;
-
+using MoreMountains.Feedbacks;
 public class SleepTrigger : MonoBehaviour
 {
     [SerializeField] private GameObject textObject;
-    
-    private void OnTriggerStay(Collider other)
+    [SerializeField] private MMFeedbacks _endSound;
+
+   private void OnTriggerStay(Collider other)
     {
         textObject.SetActive(true);
         if(TryGetComponent(out Sleep sleep) && Input.GetKeyDown(KeyCode.F))
         {
+            _endSound.PlayFeedbacks();
             StartCoroutine(sleep.GoingToSleep());
         }
     }

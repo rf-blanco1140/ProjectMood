@@ -18,6 +18,28 @@ public class AudioManager : MonoBehaviour
             instance = this;
     }
 
+    public void CheckMood(int currentMood)
+    {
+        if(currentMood == 1)
+        {
+            isSad = true;
+            isNeutral = false;
+            isHappy = false;
+        }
+        else if(currentMood == 2)
+        {
+            isSad = false;
+            isNeutral = true;
+            isHappy = false;
+        }
+        else if(currentMood == 3)
+        {
+            isSad = false;
+            isNeutral = false;
+            isHappy = true;
+        }
+    }
+
     private void Start()
     {
         isHappy = true;
