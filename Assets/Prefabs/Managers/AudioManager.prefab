@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMusic: {fileID: 8300000, guid: 26ab542543e481b499cde0779ad548de, type: 3}
-  sadMusic: {fileID: 0}
-  neutralMusic: {fileID: 0}
+  sadMusic: {fileID: 8300000, guid: 30cf54097055aef4e9562a79e716c6cc, type: 3}
+  neutralMusic: {fileID: 8300000, guid: e59a551fd481f3c4e8bc1e3673a3c6a9, type: 3}
   isHappy: 0
   isNeutral: 0
   isSad: 0
