@@ -50,9 +50,11 @@ MonoBehaviour:
   hygiene: {fileID: 11400000, guid: 9b03fe4d313c59f428f79bc640bd8ac1, type: 2}
   body: {fileID: 11400000, guid: f045ca282858c7a4489ce349ce5596fe, type: 2}
   appetite: {fileID: 11400000, guid: 752e9e33e00c7b342afc4b649e86d734, type: 2}
-  _dropValue: 7.5
-  _startValue: 70
+  _onMoodChange: {fileID: 11400000, guid: 34830aa69e643634d808a7009bcee643, type: 2}
+  _dropValue: -7.5
+  _startValue: 5
   moodSystemUI: {fileID: 763247482759377443}
+  currentMood: 2
 --- !u!114 &763247482136738134
 MonoBehaviour:
   m_ObjectHideFlags: 0

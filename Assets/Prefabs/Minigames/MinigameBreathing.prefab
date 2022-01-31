@@ -801,8 +801,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f9f70269fdaac44b859fb209f058d67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cameraManager: {fileID: 906808331994658989, guid: cda8e64d2ca06e545b98622f9202e94d, type: 3}
-  _Player: {fileID: 1236790480752805521, guid: 8fa6a513762f49c4088f8b8f37b8337f, type: 3}
+  _cameraManager: {fileID: 0}
+  _canWalk: {fileID: 11400000, guid: d54b5c11946b22a469b4b0b173c5109f, type: 2}
 --- !u!1 &4708376392324031329
 GameObject:
   m_ObjectHideFlags: 0
@@ -903,6 +903,7 @@ MonoBehaviour:
   _exhaleText: {fileID: 989862718563109031}
   _pressText: {fileID: 3074091898522975424}
   _OnWinGame: {fileID: 11400000, guid: 8b04b5527619fec4ca997317bf1edc40, type: 2}
+  _mindVariable: {fileID: 11400000, guid: f045ca282858c7a4489ce349ce5596fe, type: 2}
   _exhaleScale: {x: 1.2, y: 1.2, z: 1.2}
   _timePerBreath: 4
   _breathsToWin: 3

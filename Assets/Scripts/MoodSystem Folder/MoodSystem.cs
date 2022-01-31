@@ -10,7 +10,7 @@ public class MoodSystem : MonoBehaviour
     [SerializeField] private FloatVariable appetite;
     [SerializeField] private IntEvent _onMoodChange;
     
-    [SerializeField] private float _dropValue = 7.5f;
+    [SerializeField] private float _dropValue = -7.5f;
     [SerializeField] private float _startValue = 70f;
 
     [SerializeField] private MoodSystemUI moodSystemUI;
@@ -65,11 +65,11 @@ public class MoodSystem : MonoBehaviour
     // drop over time
     public void DropResources()
     {
-        mind.Value -= _dropValue;
-        social.Value -= _dropValue;
-        hygiene.Value -= _dropValue;
-        body.Value -= _dropValue;
-        appetite.Value -= _dropValue;
+        mind.ApplyChange(_dropValue);
+        social.ApplyChange(_dropValue);
+        hygiene.ApplyChange(_dropValue);
+        body.ApplyChange(_dropValue);
+        appetite.ApplyChange(_dropValue);
         CalculateAverageMood();
     }
 }

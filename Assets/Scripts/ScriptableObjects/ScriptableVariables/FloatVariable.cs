@@ -6,6 +6,7 @@ public class FloatVariable : ScriptableObject
     [SerializeField] private float _value;
     [SerializeField] private float _currentValue;
     [SerializeField] private float _maxValue;
+    [SerializeField] private float _minValue = 0;
 
     public float Value
     {
@@ -18,6 +19,10 @@ public class FloatVariable : ScriptableObject
         if((_currentValue + change) >= _maxValue)
         {
             _currentValue = _maxValue;
+        }
+        else if((_currentValue + change) <= _minValue)
+        {
+            _currentValue = _minValue;
         }
         else
         {
