@@ -69,39 +69,41 @@ namespace Player
                 _isWalkingBool = true;
             }
 
+            Animator.SetBool("isWalking", _isWalkingBool);
+
             //Animator components
-           if (inputDirection.y <= 0)
-       {
-      Animator.SetBool("isWalking", false);
-      }
+          // if (inputDirection.y <= 0)
+       //{
+    //  Animator.SetBool("isWalking", false);
+      //}
 
-         if (inputDirection.x >=0)
-       {
-       Animator.SetBool("isWalking", false);
-       }
-
-
-       if (inputDirection.x >=1)
-       {
-       Animator.SetBool("isWalking", true);
-       }
-
-       if (inputDirection.x <= -0.5)
-       {
-       Animator.SetBool("isWalking", true);
-       }
+        // if (inputDirection.x >=0)
+      // {
+       //Animator.SetBool("isWalking", false);
+//       }
 
 
+  //     if (inputDirection.x >=1)
+    //   {
+      // Animator.SetBool("isWalking", true);
+      // }
 
-       if (inputDirection.y >= 1)
-       {
-       Animator.SetBool("isWalking", true);
-       }
+       //if (inputDirection.x <= -0.5)
+       //{
+       //Animator.SetBool("isWalking", true);
+       //}
 
-       if (inputDirection.y <= -0.5)
-      { 
-       Animator.SetBool("isWalking" , true);
-      }
+
+
+       //if (inputDirection.y >= 1)
+      // {
+      // Animator.SetBool("isWalking", true);
+      // }
+
+      // if (inputDirection.y <= -0.5)
+      //{ 
+      // Animator.SetBool("isWalking" , true);
+      //}
       }
     }
 }
