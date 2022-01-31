@@ -10,6 +10,7 @@ namespace Player
         public Vector2 inputDirection;
         Vector3 previousDirection = Vector3.forward;
 
+        //Hello
         [SerializeField] private BoolVariable canWalk;
         [SerializeField] private BoolVariable _isWalking;
         
