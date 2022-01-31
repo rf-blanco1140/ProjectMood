@@ -11,6 +11,7 @@ namespace Player
         Vector3 previousDirection = Vector3.forward;
 
         [SerializeField] private BoolVariable canWalk;
+        [SerializeField] private BoolVariable _isWalking;
         
         public Animator Animator;
 
@@ -18,6 +19,7 @@ namespace Player
         {
             body = GetComponent<Rigidbody>();
             canWalk.boolValue = true;
+            _isWalking.boolValue = false;
         }
 
         private void FixedUpdate()
@@ -53,7 +55,14 @@ namespace Player
         
         void Update()
         {
-
+            if(inputDirection.x == 0 && inputDirection.y == 0)
+            {
+                _isWalking.boolValue = false;
+            }
+            else
+            {
+                _isWalking.boolValue = true;
+            }
 
             //Animator components
            if (inputDirection.y <= 0)
