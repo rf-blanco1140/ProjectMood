@@ -13,6 +13,7 @@ namespace Player
         //Hello
         [SerializeField] private BoolVariable canWalk;
         [SerializeField] private BoolVariable _isWalking;
+        [SerializeField] private bool _isWalkingBool;
         
         public Animator Animator;
 
@@ -21,6 +22,7 @@ namespace Player
             body = GetComponent<Rigidbody>();
             canWalk.boolValue = true;
             _isWalking.boolValue = false;
+            _isWalkingBool = false;
         }
 
         private void FixedUpdate()
@@ -59,10 +61,12 @@ namespace Player
             if(inputDirection.x == 0 && inputDirection.y == 0)
             {
                 _isWalking.boolValue = false;
+                _isWalkingBool = false;
             }
             else
             {
                 _isWalking.boolValue = true;
+                _isWalkingBool = true;
             }
 
             //Animator components
