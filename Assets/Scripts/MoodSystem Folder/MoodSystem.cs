@@ -35,7 +35,6 @@ public class MoodSystem : MonoBehaviour
         {
             currentMood = MoodEnum.Happy;
             _onMoodChange.Raise(3);
-            // change light / audio / whatever
         }
         else if (_overAllMood <= 25f && currentMood != MoodEnum.Sad)
         {
@@ -43,7 +42,7 @@ public class MoodSystem : MonoBehaviour
             _onMoodChange.Raise(1);
         }
         
-        else if (currentMood != MoodEnum.Normal)
+        else if (_overAllMood < 75 && _overAllMood > 25 && currentMood != MoodEnum.Normal)
         {
             currentMood = MoodEnum.Normal;
             _onMoodChange.Raise(2);
