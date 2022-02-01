@@ -5,10 +5,9 @@ public class Clean : MonoBehaviour
 {
     [SerializeField] private Material dirty;
     [SerializeField] private Material clean;
-    private float duration = 2f;
     private Renderer renderer;
-    float poopie = 0f;
-    // lerp 2 meshes 1 inv - 1 dirty
+    private float duration = 0f;
+    private float durationPassed = .1f;
 
     private void Awake()
     {
@@ -16,14 +15,14 @@ public class Clean : MonoBehaviour
         renderer.material = dirty;
     }
 
-    private void OnMouseDown()
+    private void OnTriggerEnter(Collider other)
     {
-        CleanOnClick();
+        LerpToTransparency();
     }
 
-    private void CleanOnClick() // poopie name
+    private void LerpToTransparency()
     {
-        renderer.material.Lerp(dirty, clean, poopie);
-        poopie += .1f;
+        renderer.material.Lerp(dirty, clean, duration);
+        duration += durationPassed;
     }
 }
