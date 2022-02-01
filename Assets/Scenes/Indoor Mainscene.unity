@@ -6972,7 +6972,7 @@ PrefabInstance:
       objectReference: {fileID: 673341345}
     - target: {fileID: 763247482136738120, guid: 9459974d8844e584b9b72d175b4f7b1c, type: 3}
       propertyPath: _startValue
-      value: 100
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 763247482136738121, guid: 9459974d8844e584b9b72d175b4f7b1c, type: 3}
       propertyPath: m_Name
@@ -14817,6 +14817,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6f39de362407d1b4d834c44dc7557e60, type: 3}
   m_PrefabInstance: {fileID: 1806312241}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1809406275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6727813868588276575, guid: a3c9fe1583a9e944e816914df6852828, type: 3}
+  m_PrefabInstance: {fileID: 825837854}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1809406276 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6727813868588276573, guid: a3c9fe1583a9e944e816914df6852828, type: 3}
+  m_PrefabInstance: {fileID: 825837854}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809406275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f5cb2c8cc31b847ab57c1ff645d60f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1809406277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809406275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47eb0c14d022d7e44bea53123d0af43c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvent: {fileID: 11400000, guid: 34830aa69e643634d808a7009bcee643, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1809406276}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: CheckMood
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1810318844
 GameObject:
   m_ObjectHideFlags: 0
