@@ -5929,6 +5929,11 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!95 &673341345 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7741481984578800613, guid: e0e62c950a2a6394db947ec163707e4d, type: 3}
+  m_PrefabInstance: {fileID: 7741481984851650091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &714380146
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6961,6 +6966,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1810318845}
     m_Modifications:
+    - target: {fileID: 763247482136738120, guid: 9459974d8844e584b9b72d175b4f7b1c, type: 3}
+      propertyPath: _animator
+      value: 
+      objectReference: {fileID: 673341345}
+    - target: {fileID: 763247482136738120, guid: 9459974d8844e584b9b72d175b4f7b1c, type: 3}
+      propertyPath: _startValue
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 763247482136738121, guid: 9459974d8844e584b9b72d175b4f7b1c, type: 3}
       propertyPath: m_Name
       value: Mood Manager

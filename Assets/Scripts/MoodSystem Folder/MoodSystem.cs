@@ -9,7 +9,9 @@ public class MoodSystem : MonoBehaviour
     [SerializeField] private FloatVariable body;
     [SerializeField] private FloatVariable appetite;
     [SerializeField] private IntEvent _onMoodChange;
-    
+
+    [SerializeField] private Animator _animator;
+
     [SerializeField] private float _dropValue = -7.5f;
     [SerializeField] private float _startValue = 70f;
 
@@ -30,6 +32,7 @@ public class MoodSystem : MonoBehaviour
     private void CalculateAverageMood()
     {
         _overAllMood = (body.Value + appetite.Value + hygiene.Value + mind.Value + social.Value) / 5;
+        _animator.SetFloat("animMood", _overAllMood);
 
         if (_overAllMood >= 75f && currentMood != MoodEnum.Happy)
         {
@@ -71,4 +74,6 @@ public class MoodSystem : MonoBehaviour
         appetite.ApplyChange(_dropValue);
         CalculateAverageMood();
     }
+
+
 }
