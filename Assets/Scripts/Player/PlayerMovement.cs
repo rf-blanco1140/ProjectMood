@@ -31,6 +31,7 @@ namespace Player
             {
                 PlayerMove();
                 PlayerFaceDirection();
+                //NewMove();
             }
         }
 
@@ -39,6 +40,23 @@ namespace Player
             Vector3 rotatedVector = new Vector3(inputDirection.x, 0, inputDirection.y);
             Vector3 velocity = rotatedVector * _movementSpeed;
             body.AddForce(velocity, ForceMode.Force);
+        }
+
+        private void NewMove()
+        {
+            // if inputdirection = 1, input goes from 0-1 * time.fixeddeltatime / float
+            // if inputdirection = 0, input stops ? 
+
+            float targetFloat = 5f;
+            Vector2 input = default;
+            Vector3 inputTarget = new Vector3(input.x,0,input.y) * targetFloat;
+            
+            
+            if (inputDirection.x >= 1f)
+            {
+                Vector2.MoveTowards(input, inputTarget, Time.fixedDeltaTime);
+            }
+            
         }
         
         private void PlayerFaceDirection()
