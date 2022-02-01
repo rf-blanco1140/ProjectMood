@@ -265,7 +265,7 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.21568628, g: 0.21176471, b: 0.20784314, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.2745098, g: 0.26666665, b: 0.26666665, a: 1}
+    - _Color: {r: 0.27358484, g: 0.24132246, b: 0.24132246, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
@@ -279,6 +279,6 @@ Material:
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
-    - _UnlitColor: {r: 0.27450982, g: 0.26666668, b: 0.26666668, a: 1}
+    - _UnlitColor: {r: 0.2735849, g: 0.24132253, b: 0.24132253, a: 1}
     - _UnlitColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
