@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2126879909}
     m_Modifications:
+    - target: {fileID: 612247690186377817, guid: fcf8e15fbd23f3a4d9a8b9d031fcb1ad, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1154826665561469370, guid: fcf8e15fbd23f3a4d9a8b9d031fcb1ad, type: 3}
       propertyPath: m_ReceiveGI
       value: 2
@@ -181,6 +185,14 @@ PrefabInstance:
     - target: {fileID: 2903670112604214711, guid: fcf8e15fbd23f3a4d9a8b9d031fcb1ad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153972404313994629, guid: fcf8e15fbd23f3a4d9a8b9d031fcb1ad, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281716639621404479, guid: fcf8e15fbd23f3a4d9a8b9d031fcb1ad, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcf8e15fbd23f3a4d9a8b9d031fcb1ad, type: 3}
@@ -2115,6 +2127,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2126879909}
     m_Modifications:
+    - target: {fileID: 612247690186377817, guid: fcf8e15fbd23f3a4d9a8b9d031fcb1ad, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154826665561469370, guid: fcf8e15fbd23f3a4d9a8b9d031fcb1ad, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1715000552644331565, guid: fcf8e15fbd23f3a4d9a8b9d031fcb1ad, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.168
@@ -2166,6 +2186,14 @@ PrefabInstance:
     - target: {fileID: 2903670112604214711, guid: fcf8e15fbd23f3a4d9a8b9d031fcb1ad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153972404313994629, guid: fcf8e15fbd23f3a4d9a8b9d031fcb1ad, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281716639621404479, guid: fcf8e15fbd23f3a4d9a8b9d031fcb1ad, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcf8e15fbd23f3a4d9a8b9d031fcb1ad, type: 3}
