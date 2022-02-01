@@ -51,6 +51,8 @@ MonoBehaviour:
   _movementSpeed: 50
   inputDirection: {x: 0, y: 0}
   canWalk: {fileID: 11400000, guid: d54b5c11946b22a469b4b0b173c5109f, type: 2}
+  _isWalking: {fileID: 0}
+  _isWalkingBool: 0
   Animator: {fileID: 7741481984578800613}
 --- !u!54 &8810926237212790027
 Rigidbody:
@@ -79,9 +81,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.17021084
-  m_Height: 1.8263016
+  m_Height: 1.9686844
   m_Direction: 1
-  m_Center: {x: 0.004210949, y: 0.9054589, z: 0}
+  m_Center: {x: 0.004210949, y: 0.8342675, z: 0}
 --- !u!114 &8810926237212790025
 MonoBehaviour:
   m_ObjectHideFlags: 0
