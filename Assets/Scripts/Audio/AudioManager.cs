@@ -11,6 +11,8 @@ public class AudioManager : MonoBehaviour
 
     public bool isHappy, isNeutral, isSad;
 
+    private int _skipFirstTwo = 2;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -20,6 +22,11 @@ public class AudioManager : MonoBehaviour
 
     public void CheckMood(int currentMood)
     {
+        if(_skipFirstTwo != 0)
+        {
+            --_skipFirstTwo;
+            return;
+        }
         if(currentMood == 1)
         {
             isSad = true;
@@ -38,18 +45,20 @@ public class AudioManager : MonoBehaviour
             isNeutral = false;
             isHappy = true;
         }
+
+        ReturnToDefault();
     }
 
     private void Start()
     {
-        isHappy = true;
         track1 = gameObject.AddComponent<AudioSource>();
         track2 = gameObject.AddComponent<AudioSource>();
         track1.loop = true;
         track2.loop = true;
         isPlayingTrack1 = true;
 
-        SwapTrack(defaultMusic);
+        isNeutral = true;
+        ReturnToDefault();
     }
     public void SwapTrack(AudioClip newClip)
     {
@@ -60,7 +69,6 @@ public class AudioManager : MonoBehaviour
     }
      public void ReturnToDefault()
     {
-        
         if(isHappy == true)
         SwapTrack(defaultMusic);
         if(isSad == true)
