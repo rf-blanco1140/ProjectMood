@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f201c596-5ae4-4312-bd06-349e50fd4f1e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectMood/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectMood/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/JespersMiniGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/JespersMiniGameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Clean.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Clean.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Clean.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Clean.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Cleaning.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Cleaning.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Dirt.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Dirt.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Dirty.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Dirty.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/clean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/clean.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/dirty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/dirty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/greenn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/greenn.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/painting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/painting.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +42,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/LightController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/DragAndDrop3D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputSystem/InputSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoodSystem Folder/MoodSystemUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rooms/DistanceToRooms.cs" root0="FORCE_HIGHLIGHTING" />
@@ -51,6 +70,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/Build_2-01\GP_2_Team_9.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Jeppe\Desktop\Build_2-01" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -104,7 +131,7 @@
       <workItem from="1643620669296" duration="9134000" />
       <workItem from="1643637712144" duration="4021000" />
       <workItem from="1643642045788" duration="3516000" />
-      <workItem from="1643702516666" duration="415000" />
+      <workItem from="1643702516666" duration="8352000" />
     </task>
     <servers />
   </component>
