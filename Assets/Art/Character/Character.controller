@@ -141,7 +141,7 @@ AnimatorStateMachine:
     m_Position: {x: 270, y: 40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2466168501524353161}
-    m_Position: {x: -210, y: 40, z: 0}
+    m_Position: {x: -220, y: 40, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 57994003406080419}
@@ -447,7 +447,7 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: animMood
     m_Type: 1
-    m_DefaultFloat: 29
+    m_DefaultFloat: 80
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
@@ -716,7 +716,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -8945691123924629249, guid: b0ae2ef40386aaa4cb638c4c05875c2b, type: 3}
+  m_Motion: {fileID: 5788222443401731486, guid: 8ec9f725120fb2147879793992b87dec, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -808,7 +808,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Armature|Walk-Sad
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 7099197920746875060}

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: mind
   m_EditorClassIdentifier: 
   _value: 0
-  _currentValue: 82.5
+  _currentValue: 17.5
   _maxValue: 100
+  _minValue: 0
