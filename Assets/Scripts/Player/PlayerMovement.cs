@@ -14,9 +14,9 @@ namespace Player
         [SerializeField] private BoolVariable canWalk;
         [SerializeField] private BoolVariable _isWalking;
         [SerializeField] private bool _isWalkingBool;
-        
-        public Animator Animator;
 
+        //public Animator Animator1, Animator2, Animator3;
+        public Animator Animator1, Animator2, Animator3;
         private void Awake()
         {
             body = GetComponent<Rigidbody>();
@@ -87,41 +87,43 @@ namespace Player
                 _isWalkingBool = true;
             }
 
-            Animator.SetBool("isWalking", _isWalkingBool);
+            Animator1.SetBool("isWalking", _isWalkingBool);
+            Animator2.SetBool("isWalking", _isWalkingBool);
+            Animator3.SetBool("isWalking", _isWalkingBool);
 
             //Animator components
-          // if (inputDirection.y <= 0)
-       //{
-    //  Animator.SetBool("isWalking", false);
-      //}
+            // if (inputDirection.y <= 0)
+            //{
+            //  Animator.SetBool("isWalking", false);
+            //}
 
-        // if (inputDirection.x >=0)
-      // {
-       //Animator.SetBool("isWalking", false);
-//       }
-
-
-  //     if (inputDirection.x >=1)
-    //   {
-      // Animator.SetBool("isWalking", true);
-      // }
-
-       //if (inputDirection.x <= -0.5)
-       //{
-       //Animator.SetBool("isWalking", true);
-       //}
+            // if (inputDirection.x >=0)
+            // {
+            //Animator.SetBool("isWalking", false);
+            //       }
 
 
+            //     if (inputDirection.x >=1)
+            //   {
+            // Animator.SetBool("isWalking", true);
+            // }
 
-       //if (inputDirection.y >= 1)
-      // {
-      // Animator.SetBool("isWalking", true);
-      // }
+            //if (inputDirection.x <= -0.5)
+            //{
+            //Animator.SetBool("isWalking", true);
+            //}
 
-      // if (inputDirection.y <= -0.5)
-      //{ 
-      // Animator.SetBool("isWalking" , true);
-      //}
-      }
+
+
+            //if (inputDirection.y >= 1)
+            // {
+            // Animator.SetBool("isWalking", true);
+            // }
+
+            // if (inputDirection.y <= -0.5)
+            //{ 
+            // Animator.SetBool("isWalking" , true);
+            //}
+        }
     }
 }
