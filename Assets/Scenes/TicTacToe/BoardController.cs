@@ -9,6 +9,7 @@ public class BoardController : MonoBehaviour
     [SerializeField] private GameObject cellPrefab;
     private bool isPlayerTurn;
     [SerializeField] private AI ai;
+    [SerializeField] private GrandmaController grandmaReference;
 
     private GridCellController[,] grid;
     private Owner winner;
@@ -55,16 +56,12 @@ public class BoardController : MonoBehaviour
                 }
                 else if(grid[i,j].GetOwner() != ownerCheck)
                 {
-                    Debug.LogError("Se salio");
-                    Debug.Log("OC: " + ownerCheck);
-                    Debug.Log("last current Owner: " + grid[i, j].GetOwner());
                     ownerCheck = Owner.None;
                     j = 4;
                 }
             }
             if(ownerCheck!=Owner.None)
             {
-                Debug.Log("1");
                 ret = ownerCheck;
                 return ret;
             }
@@ -91,7 +88,6 @@ public class BoardController : MonoBehaviour
             }
             if (ownerCheck != Owner.None)
             {
-                Debug.Log("2");
                 ret = ownerCheck;
                 return ret;
             }
@@ -120,7 +116,6 @@ public class BoardController : MonoBehaviour
         }
         if (ret != Owner.None)
         {
-            Debug.Log("3");
             return ret;
         }
 
@@ -146,7 +141,6 @@ public class BoardController : MonoBehaviour
         }
         if (ret != Owner.None)
         {
-            Debug.Log("4");
             return ret;
         }
 
@@ -155,6 +149,14 @@ public class BoardController : MonoBehaviour
 
     private void FinishGame()
     {
+        if(winner == Owner.Player)
+        {
+            AffectGrandma(GrandmaStats.Lost);
+        }
+        else
+        {
+            AffectGrandma(GrandmaStats.Vitorious);
+        }
         Debug.Log("a winner is " + winner);
     }
 
@@ -180,7 +182,22 @@ public class BoardController : MonoBehaviour
         else
         {
             ai.ChoseCell();
-            isPlayerTurn = true;
         }
+    }
+
+    public void EndAiTurn()
+    {
+        winner = WinCheck();
+        Debug.Log("W: " + winner);
+        if (winner != Owner.None)
+        {
+            FinishGame();
+        }
+        isPlayerTurn = true;
+    }
+
+    public void AffectGrandma(GrandmaStats newStat)
+    {
+        grandmaReference.ChangeExpression(newStat);
     }
 }

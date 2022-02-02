@@ -11,7 +11,7 @@ public class GridCellController : MonoBehaviour
     private void Start()
     {
         myOwner = Owner.None;
-        boardController = GameObject.Find("Tic-tac-toe").GetComponent<BoardController>();
+        boardController = GameObject.Find("Tic-tac-toe Grid").GetComponent<BoardController>();
     }
 
     private void OnMouseDown()
@@ -19,6 +19,7 @@ public class GridCellController : MonoBehaviour
         //safe that it was marked by the player
         if(myOwner == Owner.None)
         {
+            boardController.AffectGrandma(GrandmaStats.Worried);
             SetNewOwner(Owner.Player);
             boardController.PlayAiTurn();
         }
