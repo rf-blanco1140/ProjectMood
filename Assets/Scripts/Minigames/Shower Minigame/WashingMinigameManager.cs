@@ -6,13 +6,14 @@ public class WashingMinigameManager : MonoBehaviour
     [SerializeField] private Material dirtMaterial;
     [SerializeField] private VoidEvent _onWinGame;
     [SerializeField] private FloatVariable hygiene;
-    
+    private int _totalDirtTransparency = 0;
     private void OnEnable()
     {
         for (int i = 0; i < dirt.Length; i++)
         {
             dirt[i].GetComponent<Renderer>().material = dirtMaterial;
         }
+        Debug.Log(dirt.Length);
     }
     
     private void OnFinish()
@@ -22,13 +23,11 @@ public class WashingMinigameManager : MonoBehaviour
         transform.parent.gameObject.SetActive(false);
     }
 
-
-    public void GetAverageTransparency(int additive)
+    public void GetAverageTransparency()
     {
-        int _totalDirtTransparency = 0;
-        _totalDirtTransparency += additive;
+        _totalDirtTransparency += 1;
         
-        if (_totalDirtTransparency >= dirt.Length - 1)
+        if (_totalDirtTransparency >= dirt.Length)
         {
             OnFinish();
         }
