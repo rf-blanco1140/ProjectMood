@@ -11,7 +11,7 @@ public class AudioManager : MonoBehaviour
 
     public bool isHappy, isNeutral, isSad;
 
-    private int _skipFirstTwo = 2;
+    private int _skipFirstTwo = 1;
 
     // Start is called before the first frame update
     void Awake()
@@ -27,6 +27,7 @@ public class AudioManager : MonoBehaviour
             --_skipFirstTwo;
             return;
         }
+
         if(currentMood == 1)
         {
             isSad = true;
