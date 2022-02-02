@@ -48,6 +48,7 @@ public class PauseManager : MonoBehaviour
     }
     public void PauseGame()
     {
+        AudioListener.pause = true;
         Time.timeScale = 0;
         paused = true;
         pauseMenu.SetActive(true);
@@ -56,7 +57,7 @@ public class PauseManager : MonoBehaviour
     }
     public void ResumeGame()
     {
-        
+        AudioListener.pause = false;
         pauseMenu.SetActive(false);
         saveMenu.SetActive(false);
         optionsMenu.SetActive(false);
