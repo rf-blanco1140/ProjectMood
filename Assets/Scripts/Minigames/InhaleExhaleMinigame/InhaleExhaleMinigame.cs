@@ -19,6 +19,8 @@ public class InhaleExhaleMinigame : MonoBehaviour
     [SerializeField] private int _breathsToWin = 5;
     [SerializeField] private MMFeedbacks _breathInSFX;
     [SerializeField] private MMFeedbacks _breathOutSFX;
+    [SerializeField] private MMFeedbacks _finishedSFX;
+    [SerializeField] private MMFeedbacks _fadeOut;
 
     private int _amountOfBreath;
 
@@ -99,10 +101,16 @@ public class InhaleExhaleMinigame : MonoBehaviour
     {
         if (_amountOfBreath >= _breathsToWin)
         {
+            
+            _finishedSFX.PlayFeedbacks();
+            
+           
             _mindVariable.ApplyChange(20);
             _OnWinGame.Raise();
             AudioManager.instance.ReturnToDefault();
+            _fadeOut.PlayFeedbacks();
             transform.parent.gameObject.SetActive(false);
+            
         }
     }
     private void Update()
