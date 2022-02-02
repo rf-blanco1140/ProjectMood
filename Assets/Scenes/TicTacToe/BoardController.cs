@@ -41,7 +41,7 @@ public class BoardController : MonoBehaviour
         
         Owner ownerCheck = Owner.None;
 
-        //check rows
+        //Check columns
         for (int i=0;i<3;i++)
         {
             for(int j=0;j<3;j++)
@@ -55,9 +55,11 @@ public class BoardController : MonoBehaviour
                 }
                 else if(grid[i,j].GetOwner() != ownerCheck)
                 {
+                    Debug.LogError("Se salio");
+                    Debug.Log("OC: " + ownerCheck);
+                    Debug.Log("last current Owner: " + grid[i, j].GetOwner());
                     ownerCheck = Owner.None;
                     j = 4;
-                    i = 4;
                 }
             }
             if(ownerCheck!=Owner.None)
@@ -68,7 +70,7 @@ public class BoardController : MonoBehaviour
             }
         }
 
-        //Check columns
+        //Check rows
         ownerCheck = Owner.None;
         for (int j = 0; j < 3; j++)
         {
