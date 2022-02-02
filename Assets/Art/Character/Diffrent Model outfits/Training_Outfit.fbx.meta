@@ -42,6 +42,12 @@ ModelImporter:
   - first:
       74: 6998218163885658647
     second: Character|Walk-Normal
+  - first:
+      74: -4497150631808873852
+    second: Armature|Changing clothes 1
+  - first:
+      74: -7598053344281148637
+    second: Armature|Changing clothes 2
   externalObjects: {}
   materials:
     materialImportMode: 2

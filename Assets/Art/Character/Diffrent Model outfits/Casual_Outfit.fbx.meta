@@ -39,6 +39,12 @@ ModelImporter:
   - first:
       74: 6503203012564869816
     second: Armature|Walk-Sad
+  - first:
+      74: -4497150631808873852
+    second: Armature|Changing clothes 1
+  - first:
+      74: -7598053344281148637
+    second: Armature|Changing clothes 2
   externalObjects: {}
   materials:
     materialImportMode: 2
