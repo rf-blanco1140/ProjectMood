@@ -13,7 +13,9 @@ public class BoardController : MonoBehaviour
 
     private GridCellController[,] grid;
     private Owner winner;
-
+    [SerializeField] private GameObject playerVictoryMsg;
+    [SerializeField] private GameObject playerDefeatMsg;
+    [SerializeField] private GameObject textBubble;
 
     private void Start()
     {
@@ -149,13 +151,16 @@ public class BoardController : MonoBehaviour
 
     private void FinishGame()
     {
+        textBubble.SetActive(true);
         if(winner == Owner.Player)
         {
             AffectGrandma(GrandmaStats.Lost);
+            playerVictoryMsg.SetActive(true);
         }
         else
         {
             AffectGrandma(GrandmaStats.Vitorious);
+            playerDefeatMsg.SetActive(true);
         }
         Debug.Log("a winner is " + winner);
     }
@@ -193,7 +198,10 @@ public class BoardController : MonoBehaviour
         {
             FinishGame();
         }
-        isPlayerTurn = true;
+        else
+        {
+            isPlayerTurn = true;
+        }
     }
 
     public void AffectGrandma(GrandmaStats newStat)
