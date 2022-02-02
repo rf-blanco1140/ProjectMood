@@ -32,9 +32,14 @@ public class MoodSystem : MonoBehaviour
     private void CalculateAverageMood()
     {
         _overAllMood = (body.Value + appetite.Value + hygiene.Value + mind.Value + social.Value) / 5;
-        _animator1.SetFloat("animMood", _overAllMood);
-        _animator2.SetFloat("animMood", _overAllMood);
-        _animator3.SetFloat("animMood", _overAllMood);
+
+        if (_animator1.gameObject.activeSelf)
+            _animator1.SetFloat("animMood", _overAllMood);
+        if (_animator2.gameObject.activeSelf)
+            _animator2.SetFloat("animMood", _overAllMood);
+        if (_animator3.gameObject.activeSelf)
+            _animator3.SetFloat("animMood", _overAllMood);
+
 
         if (_overAllMood >= 75f && currentMood != MoodEnum.Happy)
         {
