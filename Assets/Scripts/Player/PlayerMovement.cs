@@ -87,9 +87,12 @@ namespace Player
                 _isWalkingBool = true;
             }
 
-            Animator1.SetBool("isWalking", _isWalkingBool);
-            Animator2.SetBool("isWalking", _isWalkingBool);
-            Animator3.SetBool("isWalking", _isWalkingBool);
+            if (Animator1.gameObject.activeSelf)
+                Animator1.SetBool("isWalking", _isWalkingBool);
+            if (Animator2.gameObject.activeSelf)
+                Animator2.SetBool("isWalking", _isWalkingBool);
+            if (Animator3.gameObject.activeSelf)
+                Animator3.SetBool("isWalking", _isWalkingBool);
 
             //Animator components
             // if (inputDirection.y <= 0)
