@@ -17,6 +17,9 @@ public class BoardController : MonoBehaviour
     [SerializeField] private GameObject playerDefeatMsg;
     [SerializeField] private GameObject textBubble;
 
+    [SerializeField] private VoidEvent _onWinGame;
+    [SerializeField] private FloatVariable social;
+
     private void Start()
     {
         grid = new GridCellController[3, 3];
@@ -163,6 +166,8 @@ public class BoardController : MonoBehaviour
             playerDefeatMsg.SetActive(true);
         }
         Debug.Log("a winner is " + winner);
+        social.ApplyChange(30);
+        _onWinGame.Raise();
     }
 
     public bool IsCellAvaliable(int i, int j)
