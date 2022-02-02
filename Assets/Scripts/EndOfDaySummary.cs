@@ -50,7 +50,7 @@ public class EndOfDaySummary : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
            //DisplayText();
-           //GenericMoodDisplay();
+           GenericMoodDisplay();
            //CalculateAverageMood();
            moodList.Add(hygiene);
            moodList.Add(body);

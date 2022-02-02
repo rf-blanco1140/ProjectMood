@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class DragAndDrop3D : MonoBehaviour
 {
+    [SerializeField] private Camera miniGameCamera;
     private Vector3 _offSet;
     private float _mouseZCoord;
     private void OnMouseDrag()
@@ -12,7 +13,7 @@ public class DragAndDrop3D : MonoBehaviour
 
     private void OnMouseDown()
     {
-        _mouseZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
+        _mouseZCoord = miniGameCamera.WorldToScreenPoint(gameObject.transform.position).z;
         _offSet = gameObject.transform.position - GetMouseWorldPos();
     }
 
@@ -20,6 +21,6 @@ public class DragAndDrop3D : MonoBehaviour
     {
         Vector3 _mousePoint = Input.mousePosition;
         _mousePoint.z = _mouseZCoord;
-        return Camera.main.ScreenToWorldPoint(_mousePoint);
+        return miniGameCamera.ScreenToWorldPoint(_mousePoint);
     }
 }

@@ -36,7 +36,7 @@ TagManager:
   - 
   - 
   - 
-  - Water
+  - WaterDrop
   - Soap
   m_SortingLayers:
   - name: Default
