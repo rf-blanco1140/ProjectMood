@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MoreMountains.Feedbacks;
 
 public class InhaleExhaleMinigame : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class InhaleExhaleMinigame : MonoBehaviour
     [SerializeField] private float _timePerBreath = 4;
 
     [SerializeField] private int _breathsToWin = 5;
+    [SerializeField] private MMFeedbacks _breathInSFX;
+    [SerializeField] private MMFeedbacks _breathOutSFX;
+
     private int _amountOfBreath;
 
     private bool _readyToPress;
@@ -35,6 +39,7 @@ public class InhaleExhaleMinigame : MonoBehaviour
     {
         if (_readyToPress && _isInhale)
         {
+            _breathInSFX.PlayFeedbacks();
             _isInhale = false;
             _readyToPress = false;
             _pressText.SetActive(false);
@@ -42,6 +47,7 @@ public class InhaleExhaleMinigame : MonoBehaviour
         }
         else if (_readyToPress && !_isInhale)
         {
+            _breathOutSFX.PlayFeedbacks();
             _isInhale = true;
             _readyToPress = false;
             _pressText.SetActive(false);
