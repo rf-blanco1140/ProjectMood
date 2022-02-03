@@ -1,31 +1,81 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class YogaManager : MonoBehaviour
 {
-    // check nodes what ID is attached ?
-    // if the IDs match then you're good
-    // if not they fall off after some time ?
-    // when all match reset
-    // after completed 2-3 times you win
+    // pose appears on top
+    // buttons on bottom
+    // press correct one
+    // ints
+    [SerializeField] private VoidEvent _onWinGame;
+    [SerializeField] private FloatVariable body;
     
-    // spawn randomized positions with IDs ????
-    // instantiate node get component node.ID = Random.Range ???
-    
-    // When snapped
-    //private GameObject node;
+    private List<int> _poseID = new List<int>(); // 5 poses
+    public int _pressedID;
 
-    /*private Dictionary<int, GameObject> test;
-
-    private void GetNodeID()
+    private void Awake()
     {
-        node.GetComponent<Node>().GetID;
-        if (ID == nodeID)
+        RandomizePoseID();
+    }
+
+    public void CopyList(List<int> list)
+    {
+        foreach (var ID in _poseID)
         {
-            intVar++; // ID 3
-            Body.setActive(false);
-            DragAndDrop3D.setActive(false);
-            // if you put the correct one it can't be removed
+            list.Add(ID);
         }
-    }*/
+    }
+
+    private void RandomizePoseID()
+    {
+        _poseID.Add(Random.Range(0,4));
+        _poseID.Add(Random.Range(0,4));
+        _poseID.Add(Random.Range(0,4));
+        _poseID.Add(Random.Range(0,4));
+        _poseID.Add(Random.Range(0,4));
+        _poseID.Add(0);
+    }
+
+    public void LookForCorrectID()
+    {
+        if (_poseID[0] == _pressedID)
+        {
+            GoToNextPose(); 
+            Debug.Log("correct");
+            // + points
+        }
+        else
+        {
+            GoToNextPose();
+            Debug.Log("incorrect");
+            // - points
+        }
+    }
+
+    private void GoToNextPose()
+    {
+        if (_poseID.Count <= 1)
+        {
+            Debug.Log("no more poses");
+            return;
+        }
+        
+        Debug.Log($"poseID before {_poseID[0]}");
+        _poseID.RemoveAt(0);
+        Debug.Log($"poseID after {_poseID[0]}");
+    }
+    
+    private void OnEnable()
+    {
+        RandomizePoseID();
+        _pressedID = 0;
+    }
+
+    private void OnFinish()
+    {
+        body.ApplyChange(20);
+        _onWinGame.Raise();
+        transform.parent.gameObject.SetActive(false);
+    }
 }
