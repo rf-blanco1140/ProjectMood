@@ -6,7 +6,7 @@ public class Leaf : MonoBehaviour
     [SerializeField] private IntVariable _currentLeafAmount;
     [SerializeField] private GameObject _bonsaiTree;
     [SerializeField] private MMFeedbacks _cutSound;
-    private Vector2 _startLeafPosition;
+    private Vector3 _startLeafPosition;
     private float _movementSpeedY = 1;
     private bool _isFalling = false;
 
