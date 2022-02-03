@@ -48,7 +48,6 @@ MonoBehaviour:
   _spawnPos:
   - {x: 3, y: -2, z: 0}
   - {x: 1.5, y: -2, z: 0}
-  - {x: 0, y: -2, z: 0}
   - {x: -1.5, y: -2, z: 0}
   - {x: -3, y: -2, z: 0}
   _spawnObject: {fileID: 3046419624227895388, guid: 7d7c5688ceb38334bad948d919c769f4, type: 3}
@@ -183,7 +182,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190335
-  m_fontColor: {r: 0, g: 0.38679248, b: 0.0021746047, a: 1}
+  m_fontColor: {r: 0, g: 1, b: 0.01010108, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -457,7 +456,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294939648
-  m_fontColor: {r: 0, g: 0.5810094, b: 1, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -594,7 +593,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278202345
-  m_fontColor: {r: 0.9150943, g: 0.18414494, b: 0, a: 1}
+  m_fontColor: {r: 0.9645741, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -730,7 +729,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294939648
-  m_fontColor: {r: 0, g: 0.5810094, b: 1, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1066,9 +1065,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0027669668, y: 0}
+  m_Offset: {x: 0.04439751, y: -1.2186368}
   serializedVersion: 2
-  m_Radius: 1.2827669
+  m_Radius: 6.5120263
 --- !u!114 &6626700000889247842
 MonoBehaviour:
   m_ObjectHideFlags: 0
