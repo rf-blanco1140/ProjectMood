@@ -48,7 +48,6 @@ MonoBehaviour:
   _spawnPos:
   - {x: 3, y: -2, z: 0}
   - {x: 1.5, y: -2, z: 0}
-  - {x: 0, y: -2, z: 0}
   - {x: -1.5, y: -2, z: 0}
   - {x: -3, y: -2, z: 0}
   _spawnObject: {fileID: 3046419624227895388, guid: 7d7c5688ceb38334bad948d919c769f4, type: 3}
