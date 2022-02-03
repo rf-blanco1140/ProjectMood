@@ -14,6 +14,11 @@ public class YogaManager : MonoBehaviour
     private List<int> _poseID = new List<int>(); // 5 poses
     public int _pressedID;
 
+    private void Awake()
+    {
+        RandomizePoseID();
+    }
+
     public void CopyList(List<int> list)
     {
         foreach (var ID in _poseID)
@@ -52,7 +57,6 @@ public class YogaManager : MonoBehaviour
     {
         if (_poseID.Count <= 1)
         {
-            OnFinish();
             Debug.Log("no more poses");
             return;
         }

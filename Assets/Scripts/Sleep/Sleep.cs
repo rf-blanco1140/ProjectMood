@@ -17,7 +17,7 @@ public class Sleep : MonoBehaviour
     {
         rested.SetActive(true);
         onNextDay.Raise();
-        body.ApplyChange(20);
+        body.SetValue(+20);
         yield return new WaitForSeconds(2);        
         rested.SetActive(false);
         onSummary.Raise();
