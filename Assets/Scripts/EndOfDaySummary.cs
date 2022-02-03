@@ -180,7 +180,7 @@ public class EndOfDaySummary : MonoBehaviour
             return goodString[Random.Range(0, goodString.Length)];
         }
 
-        return badString[Random.Range(0, badString.Length)];
+        else return badString[Random.Range(0, badString.Length)];
     }
     
     private void CalculateAverageMood()
