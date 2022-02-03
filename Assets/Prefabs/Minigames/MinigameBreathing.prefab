@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 940193558}
   - component: {fileID: 3140574493246763399}
   - component: {fileID: 940193559}
+  - component: {fileID: 2021144058}
+  - component: {fileID: 2021144059}
   m_Layer: 5
   m_Name: BubbleSpawner
   m_TagString: Untagged
@@ -97,7 +99,7 @@ MonoBehaviour:
   _camera: {fileID: 0}
   _text: {fileID: 1595438514}
   _canvas: {fileID: 4708376391353032885}
-  _popSound: {fileID: 0}
+  _popSound: {fileID: 2021144059}
   _messages:
   - Your mind is like water. When it crashes and flows roughly it may be hard to
     see the solution. But if you let it settle, the answer becomes clear
@@ -108,6 +110,97 @@ MonoBehaviour:
   - "You define your own life. Don\u2019t let other people write your script"
   - "You\u2019re never too old to find new dreams"
   - Weaknesses are just strengths in the wrong place and time
+--- !u!114 &2021144058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940193556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2ce51367856bd49b72678cc4263225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Sound
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    InitialDelay: 0
+    CooldownDuration: 0
+    ExcludeFromHoldingPauses: 0
+    InterruptsOnStop: 1
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  Sfx: {fileID: 8300000, guid: 38d50946ff28d3246a24e2afe6d91a86, type: 3}
+  RandomSfx: []
+  TestButton: 0
+  TestStopButton: 0
+  PlayMethod: 0
+  PoolSize: 10
+  MinVolume: 1
+  MaxVolume: 1
+  MinPitch: 1
+  MaxPitch: 1
+  SfxAudioMixerGroup: {fileID: 0}
+--- !u!114 &2021144059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940193556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841b72de2996c5c40bfb394f3d0e0a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Feedbacks:
+  - {fileID: 2021144058}
+  InitializationMode: 2
+  SafeMode: 3
+  Direction: 0
+  AutoChangeDirectionOnEnd: 0
+  AutoPlayOnStart: 0
+  AutoPlayOnEnable: 0
+  DurationMultiplier: 1
+  DisplayFullDurationDetails: 0
+  CooldownDuration: 0
+  InitialDelay: 0
+  CanPlayWhileAlreadyPlaying: 1
+  FeedbacksIntensity: 1
+  Events:
+    TriggerMMFeedbacksEvents: 0
+    TriggerUnityEvents: 1
+    OnPlay:
+      m_PersistentCalls:
+        m_Calls: []
+    OnPause:
+      m_PersistentCalls:
+        m_Calls: []
+    OnResume:
+      m_PersistentCalls:
+        m_Calls: []
+    OnRevert:
+      m_PersistentCalls:
+        m_Calls: []
+    OnComplete:
+      m_PersistentCalls:
+        m_Calls: []
+  DebugActive: 0
 --- !u!1 &1595438513
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,7 +276,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190335
-  m_fontColor: {r: 0, g: 0.38679248, b: 0.0021746047, a: 1}
+  m_fontColor: {r: 0.011124954, g: 0.4716981, b: 0.016418856, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -457,7 +550,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294939648
-  m_fontColor: {r: 0, g: 0.5810094, b: 1, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -587,14 +680,14 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a7cf2bc8733f6c0468062c8e95e84690, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -7371932871882357731, guid: a7cf2bc8733f6c0468062c8e95e84690, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278202345
-  m_fontColor: {r: 0.9150943, g: 0.18414494, b: 0, a: 1}
+    rgba: 4278254079
+  m_fontColor: {r: 1, g: 0.9752088, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -650,7 +743,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -208.57056, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &4708376390670089004
@@ -729,8 +822,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294939648
-  m_fontColor: {r: 0, g: 0.5810094, b: 1, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -908,7 +1001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4708376391597235707
 Transform:
   m_ObjectHideFlags: 0
@@ -1043,7 +1136,7 @@ MonoBehaviour:
   _inhaleText: {fileID: 4708376390670089004}
   _exhaleText: {fileID: 989862718563109031}
   _pressText: {fileID: 3074091898522975424}
-  _OnWinGame: {fileID: 11400000, guid: 8b04b5527619fec4ca997317bf1edc40, type: 2}
+  _OnWinGame: {fileID: 11400000, guid: a945f0bca6a884c40b659f9cf58f686a, type: 2}
   _mindVariable: {fileID: 11400000, guid: f045ca282858c7a4489ce349ce5596fe, type: 2}
   _middleLung: {fileID: 1856563400}
   _exhaleScale: {x: 0.35, y: 0.35, z: 0.35}
@@ -1066,9 +1159,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0027669668, y: 0}
+  m_Offset: {x: 0.03302256, y: -1.3652141}
   serializedVersion: 2
-  m_Radius: 1.2827669
+  m_Radius: 6.525542
 --- !u!114 &6626700000889247842
 MonoBehaviour:
   m_ObjectHideFlags: 0
