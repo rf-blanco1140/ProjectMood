@@ -2,55 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f201c596-5ae4-4312-bd06-349e50fd4f1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/blue.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/green.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/red.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/yellow.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/PoseNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/PoseNode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManagerUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManagerUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Minigame.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Minigame.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectMood/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectMood/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/End Day Summary.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/End Day Summary.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/JespersMiniGameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/JespersMiniGameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/Body.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/Body.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/Head.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/Head.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/L arm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/L arm.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/L arm2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/L arm2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/L arm3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/L arm3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/L leg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/L leg.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/L leg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/L leg2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/L leg3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/L leg3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/R arm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/R arm.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/R arm2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/R arm2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/R arm3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/R arm3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/R leg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/R leg.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/R leg2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/R leg2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/R leg3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Poses/R leg3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/NiceVibrationsAHAPConverters.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/OlderVersions/v1.7/NiceVibrations-v-1-7.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/OlderVersions/v2.0.1/NiceVibrations-v-2-0-1.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/JespersScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/JespersScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndOfDaySummary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EndOfDaySummary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/Art.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/Art/blue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/blue.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/Art/blue.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/green.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/Art/green.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/green.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/Art/green.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/red.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/Art/red.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/red.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/Art/red.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/yellow.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/Art/yellow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/Art/yellow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/Art/yellow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/Body.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/Body.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/Body.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/Body.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/Head.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/Head.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/Head.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/Head.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/L arm.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/L arm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/L arm.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/L arm.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/L arm2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/L arm2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/L arm2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/L arm2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/L arm3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/L arm3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/L arm3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/L arm3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/L leg.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/L leg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/L leg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/L leg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/L leg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/L leg2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/L leg2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/L leg2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/L leg3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/L leg3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/L leg3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/L leg3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/R arm.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/R arm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/R arm.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/R arm.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/R arm2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/R arm2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/R arm2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/R arm2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/R arm3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/R arm3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/R arm3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/R arm3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/R leg.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/R leg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/R leg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/R leg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/R leg2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/R leg2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/R leg2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/R leg2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/R leg3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/R leg3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/old/R leg3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Programmer art/old/R leg3.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +71,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/LightController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/Git Projects/Mood/ProjectMood/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/PoseNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Git Projects/Mood/ProjectMood/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputSystem/InputSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/PickWashingObject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -82,6 +80,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Clean.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1c34070ddd5b426b8f32df1db927aad128400/51/8d2c70b2/Event.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/WashingMinigameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Git Projects/Mood/ProjectMood/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/SnapToNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManagerUI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -89,6 +88,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rooms/DistanceToRooms.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://D:/Git Projects/Mood/ProjectMood/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/SprayWash.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Git Projects/Mood/ProjectMood/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://D:/Git Projects/Mood/ProjectMood/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="23rhqLFyFx7sdy23qebwnSCkcNm" />
@@ -175,7 +175,7 @@
       <workItem from="1643724228943" duration="6191000" />
       <workItem from="1643789520334" duration="8123000" />
       <workItem from="1643798070328" duration="13926000" />
-      <workItem from="1643875794245" duration="9995000" />
+      <workItem from="1643875794245" duration="11960000" />
     </task>
     <servers />
   </component>

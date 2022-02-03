@@ -608,7 +608,10 @@ MonoBehaviour:
   canWalk: {fileID: 11400000, guid: d54b5c11946b22a469b4b0b173c5109f, type: 2}
   _isWalking: {fileID: 0}
   _isWalkingBool: 0
-  Animator: {fileID: 0}
+  _footstepSound: {fileID: 0}
+  Animator1: {fileID: 0}
+  Animator2: {fileID: 0}
+  Animator3: {fileID: 0}
 --- !u!114 &721403017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2254,10 +2257,6 @@ PrefabInstance:
     - target: {fileID: 4081882896527495703, guid: 5c3901c6b42c71d4fbb6ca52a1c747fc, type: 3}
       propertyPath: m_Name
       value: End Day Summary
-      objectReference: {fileID: 0}
-    - target: {fileID: 4081882896527495703, guid: 5c3901c6b42c71d4fbb6ca52a1c747fc, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4081882896527495705, guid: 5c3901c6b42c71d4fbb6ca52a1c747fc, type: 3}
       propertyPath: m_RootOrder
