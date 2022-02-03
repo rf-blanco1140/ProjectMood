@@ -10,6 +10,7 @@ public class InhaleExhaleMinigame : MonoBehaviour
     [SerializeField] private GameObject _pressText;
     [SerializeField] private VoidEvent _OnWinGame;
     [SerializeField] private FloatVariable _mindVariable;
+    [SerializeField] private MiddleLung _middleLung;
 
 
     private Vector3 _inhaleScale;
@@ -70,6 +71,8 @@ public class InhaleExhaleMinigame : MonoBehaviour
             yield return null;
         } while (currentTime <= _timePerBreath);
 
+        _middleLung.NextSprite();
+
         _inhaleText.SetActive(false);
         _readyToPress = true;
         _exhaleText.SetActive(true);
@@ -88,6 +91,8 @@ public class InhaleExhaleMinigame : MonoBehaviour
             currentTime += Time.deltaTime;
             yield return null;
         } while (currentTime <= _timePerBreath);
+
+        _middleLung.NextSprite();
 
         _amountOfBreath += 1;
         CheckIfWin();
