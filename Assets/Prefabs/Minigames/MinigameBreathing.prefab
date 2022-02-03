@@ -242,6 +242,110 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1856563397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1856563398}
+  - component: {fileID: 1856563399}
+  - component: {fileID: 1856563400}
+  m_Layer: 5
+  m_Name: LungMiddle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1856563398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856563397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_Children: []
+  m_Father: {fileID: 4708376391597235707}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1856563399
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856563397}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 20
+  m_Sprite: {fileID: 21300000, guid: 22091a51e66e88c4a8588b9f41444365, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 15.48, y: 15.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1856563400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856563397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89433ad239522b46a6366296b5ef7a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _lungSprites:
+  - {fileID: 21300000, guid: 22091a51e66e88c4a8588b9f41444365, type: 3}
+  - {fileID: 21300000, guid: b2dd0b76c37cdd24f826033ec7908e1a, type: 3}
+  - {fileID: 21300000, guid: efdc023a066314942bd2717b7442ad6e, type: 3}
+  - {fileID: 21300000, guid: 8d446e3ddd872a74d94c39cb7df7d673, type: 3}
+  - {fileID: 21300000, guid: d462390bdd0c6404a8a3a79403fc7b02, type: 3}
+  - {fileID: 21300000, guid: a544ff55023f258409e0c9f46958c01f, type: 3}
+  - {fileID: 21300000, guid: a544ff55023f258409e0c9f46958c01f, type: 3}
+  _spriteIndex: 0
 --- !u!1 &494955731169698886
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,6 +924,7 @@ Transform:
   - {fileID: 4708376391353032888}
   - {fileID: 940193557}
   - {fileID: 8072351364130174410}
+  - {fileID: 1856563398}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -852,7 +957,7 @@ GameObject:
   - component: {fileID: 6626700000889247842}
   - component: {fileID: 5967260751575316164}
   m_Layer: 5
-  m_Name: BreathingCircle
+  m_Name: BreathingLungs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -867,7 +972,7 @@ Transform:
   m_GameObject: {fileID: 4708376392324031329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 4708376391597235707}
   m_RootOrder: 0
@@ -912,7 +1017,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: cb7a3177bb4a51d49be4191707e71517, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8032776637518194eac38d7499d4fddb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -940,7 +1045,8 @@ MonoBehaviour:
   _pressText: {fileID: 3074091898522975424}
   _OnWinGame: {fileID: 11400000, guid: 8b04b5527619fec4ca997317bf1edc40, type: 2}
   _mindVariable: {fileID: 11400000, guid: f045ca282858c7a4489ce349ce5596fe, type: 2}
-  _exhaleScale: {x: 1.2, y: 1.2, z: 1.2}
+  _middleLung: {fileID: 1856563400}
+  _exhaleScale: {x: 0.35, y: 0.35, z: 0.35}
   _timePerBreath: 4
   _breathsToWin: 3
   _breathInSFX: {fileID: 3297606802656536274}

@@ -36,34 +36,8 @@ public class EndOfDaySummary : MonoBehaviour
 
     private List<FloatVariable> moodList = new List<FloatVariable>();
     private List<int> intValues = new List<int>();
-    private void Start()
-    {
-        body.Value = 3;
-        hygiene.Value = 5;
-        appetite.Value = 2;
-        mind.Value = 4;
-        social.Value = 1;
-    }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-           //DisplayText();
-           GenericMoodDisplay();
-           //CalculateAverageMood();
-           moodList.Add(hygiene);
-           moodList.Add(body);
-           moodList.Add(appetite);
-           moodList.Add(mind);
-           moodList.Add(social);
-           GetLowestMoods(1);
-           GetLowestMoods(2);
-           GetLowestMoods(3);
-        }
-    }
-    
-    private void DisplayText()
+    public void DisplayText()
     {
         CalculateAverageMood();
         
@@ -85,25 +59,14 @@ public class EndOfDaySummary : MonoBehaviour
         }
     }
 
-    public void GenericMoodDisplay()
-    {
-        textObject.GetComponent<Text>().text =
-            $"Dear diary." +
-            $"\nToday felt ok," +
-            $"\n{ChooseBadOrGoodString(body, bodyString, badBodyString)} {PickFiller(body, hygiene)}" +
-            $" {ChooseBadOrGoodString(hygiene, hygieneString, badHygieneString)}" +
-            $"\n{ChooseBadOrGoodString(appetite, appetiteString, badAppetiteString)}" +
-            $"\n{ChooseBadOrGoodString(mind, mindString, badMindString)} {PickFiller(mind, social)}" +
-            $" {ChooseBadOrGoodString(social, socialString, badSocialString)}" +
-            $"\nLooking forward to tomorrow!";
-    }
-
-    private void BadMood() // done -ish
+    #region Moods
+    
+    private void BadMood() 
     {
         textObject.GetComponent<Text>().text =
             $"Today was horrible!" +
-            $"\n I feel like I'm going to break down if I don't work on {body.name}{appetite.name}{mind.name}" +
-            $"\n {PickFiller(mind, hygiene)} {hygiene.name}" + // lowest to best stats
+            $"\n I feel like I'm going to break down if I don't work on " +
+            $"{GetLowestMoods(1)} {GetLowestMoods(2)} {GetLowestMoods(3)}" +
             $"\n Hopefully tomorrow is better..";
     }
     
@@ -140,7 +103,53 @@ public class EndOfDaySummary : MonoBehaviour
             $"\nToday was perfect!" +
             $"\nI can't think of a single bad thing that happened today!";
     }
+    
+    #endregion
 
+
+    #region Conversion and sorting
+    
+    private void ConvertListToIntValues()
+    {
+        foreach (var mood in moodList)    
+        {
+            intValues.Add((int)mood.Value);
+        }
+    }
+
+    private void ConvertIntValuesToList()
+    {
+        int i = 0;
+        foreach (var mood in moodList)
+        {
+            mood.Value = intValues[i];
+            i++;
+            Debug.Log(mood.Value);
+        }
+    }
+    
+    private void Sort(List<int> _list)
+    {
+        int _minIndex = 0;
+        for (int i = 0; i < moodList.Count - 1; i++)
+        {
+            _minIndex = i;
+            
+            for (int j = i + 1; j < moodList.Count; j++)
+            {
+                if (_list[j] < _list[_minIndex])
+                {
+                    _minIndex = j;
+                }
+            }
+
+            (moodList[_minIndex], moodList[i]) = (moodList[i], moodList[_minIndex]);
+            (_list[_minIndex], _list[i]) = (_list[i], _list[_minIndex]);
+        }
+    }
+    
+    #endregion
+    
     private string GetLowestMoods(int test)
     {
         ConvertListToIntValues();
@@ -162,45 +171,6 @@ public class EndOfDaySummary : MonoBehaviour
                 break;
         }
         return returnString;
-    }
-
-    private void ConvertIntValuesToList()
-    {
-        int i = 0;
-        foreach (var mood in moodList)
-        {
-            mood.Value = intValues[i];
-            i++;
-            Debug.Log(mood.Value);
-        }
-    }
-    
-    private void ConvertListToIntValues()
-    {
-        foreach (var mood in moodList)    
-        {
-            intValues.Add((int)mood.Value);
-        }
-    }
-
-    private void Sort(List<int> _list)
-    {
-        int _minIndex = 0;
-        for (int i = 0; i < moodList.Count - 1; i++)
-        {
-            _minIndex = i;
-            
-            for (int j = i + 1; j < moodList.Count; j++)
-            {
-                if (_list[j] < _list[_minIndex])
-                {
-                    _minIndex = j;
-                }
-            }
-
-            (moodList[_minIndex], moodList[i]) = (moodList[i], moodList[_minIndex]);
-            (_list[_minIndex], _list[i]) = (_list[i], _list[_minIndex]);
-        }
     }
 
     private string ChooseBadOrGoodString(FloatVariable mood, string[] goodString, string[] badString)
