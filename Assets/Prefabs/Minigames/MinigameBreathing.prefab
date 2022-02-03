@@ -48,7 +48,6 @@ MonoBehaviour:
   _spawnPos:
   - {x: 3, y: -2, z: 0}
   - {x: 1.5, y: -2, z: 0}
-  - {x: 0, y: -2, z: 0}
   - {x: -1.5, y: -2, z: 0}
   - {x: -3, y: -2, z: 0}
   _spawnObject: {fileID: 3046419624227895388, guid: 7d7c5688ceb38334bad948d919c769f4, type: 3}
@@ -125,7 +124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1595438514
 RectTransform:
   m_ObjectHideFlags: 0
@@ -457,7 +456,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294939648
-  m_fontColor: {r: 0, g: 0.5810094, b: 1, a: 1}
+  m_fontColor: {r: 0.018227339, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -587,14 +586,14 @@ MonoBehaviour:
 '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a7cf2bc8733f6c0468062c8e95e84690, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: -7371932871882357731, guid: a7cf2bc8733f6c0468062c8e95e84690, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278202345
-  m_fontColor: {r: 0.9150943, g: 0.18414494, b: 0, a: 1}
+    rgba: 4278249960
+  m_fontColor: {r: 0.90942436, g: 0.9137255, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -650,7 +649,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -208.57056, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &4708376390670089004
@@ -729,8 +728,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294939648
-  m_fontColor: {r: 0, g: 0.5810094, b: 1, a: 1}
+    rgba: 4281728768
+  m_fontColor: {r: 0, g: 1, b: 0.20850754, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1066,9 +1065,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0027669668, y: 0}
+  m_Offset: {x: -0.0042470293, y: -1.3822484}
   serializedVersion: 2
-  m_Radius: 1.2827669
+  m_Radius: 6.499303
 --- !u!114 &6626700000889247842
 MonoBehaviour:
   m_ObjectHideFlags: 0
