@@ -18,7 +18,7 @@ public class MinigameText : MonoBehaviour
     {
         int indexInList = Random.Range(0, _messages.Count - 1);
         _text.gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = _messages[indexInList];
-        //_popSound.PlayFeedbacks();
+        _popSound.PlayFeedbacks();
         Vector2 anchoredPos;
 
         RectTransformUtility.ScreenPointToLocalPointInRectangle(_parent, _camera.WorldToScreenPoint(BubblePosition),
