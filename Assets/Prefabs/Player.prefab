@@ -54,7 +54,10 @@ MonoBehaviour:
   canWalk: {fileID: 11400000, guid: d54b5c11946b22a469b4b0b173c5109f, type: 2}
   _isWalking: {fileID: 0}
   _isWalkingBool: 0
-  Animator: {fileID: 946092935960885935}
+  _footstepSound: {fileID: 0}
+  Animator1: {fileID: 946092935960885935}
+  Animator2: {fileID: 946092935960885935}
+  Animator3: {fileID: 946092935960885935}
 --- !u!54 &8810926237212790027
 Rigidbody:
   m_ObjectHideFlags: 0
