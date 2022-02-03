@@ -1210,7 +1210,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Meat
+  m_text: 'Beef
 
 '
   m_isRightToLeft: 0
@@ -1441,7 +1441,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Vegan
+  m_text: 'Egg
 
 '
   m_isRightToLeft: 0
