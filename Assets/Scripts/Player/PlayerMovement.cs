@@ -1,5 +1,6 @@
 using Unity.Mathematics;
 using UnityEngine;
+using MoreMountains.Feedbacks;
 
 namespace Player
 {
@@ -14,6 +15,7 @@ namespace Player
         [SerializeField] private BoolVariable canWalk;
         [SerializeField] private BoolVariable _isWalking;
         [SerializeField] private bool _isWalkingBool;
+        [SerializeField] private MMFeedbacks _footstepSound;
 
         //public Animator Animator1, Animator2, Animator3;
         public Animator Animator1, Animator2, Animator3;
@@ -73,16 +75,42 @@ namespace Player
             }
         }
         
-        
+        public void PlaySound()
+        {
+            if (canWalk.boolValue == true)
+            {
+                _footstepSound.PlayFeedbacks();
+            }
+            else
+            {
+                return;
+            }
+
+        }
+
+        public void StopSound()
+        {
+            if (canWalk.boolValue == true)
+            {
+                _footstepSound.PauseFeedbacks();
+            }
+            else
+            {
+                return;
+            }
+            
+        }
         void Update()
         {
             if(inputDirection.x == 0 && inputDirection.y == 0)
             {
+                StopSound();
                 _isWalking.boolValue = false;
                 _isWalkingBool = false;
             }
             else
             {
+                PlaySound();
                 _isWalking.boolValue = true;
                 _isWalkingBool = true;
             }
