@@ -9,9 +9,11 @@ public class AudioManager : MonoBehaviour
     private AudioSource track1, track2;
     private bool isPlayingTrack1;
 
+
+
     public bool isHappy, isNeutral, isSad;
 
-    private int _skipFirstTwo = 1;
+    [SerializeField]private int _skipFirstTwo = 1;
 
     // Start is called before the first frame update
     void Awake()
