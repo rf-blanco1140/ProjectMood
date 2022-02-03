@@ -22,10 +22,10 @@ public class MoodSystemUI : MonoBehaviour
 
     public void DisplayUI()
     {
-        bodyText.text = "Body: " + body.Value.ToString();
-        mindText.text = "Mind: " + mind.Value.ToString();
-        appetiteText.text = "Appetite: " + appetite.Value.ToString();
-        hygieneText.text = "Hygiene: " + hygiene.Value.ToString();
-        socialText.text = "Social: " + social.Value.ToString();
+        bodyText.text = body.Value.ToString();
+        mindText.text = mind.Value.ToString();
+        appetiteText.text = appetite.Value.ToString();
+        hygieneText.text = hygiene.Value.ToString();
+        socialText.text = social.Value.ToString();
     }
 }
