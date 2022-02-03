@@ -22,7 +22,7 @@ public class YogaManagerUI : MonoBehaviour
     private void DrawImages()
     {
         manager.CopyList(_IDlist);
-        
+        Debug.Log($"ID list Count{_IDlist.Count} \n");
         foreach (var icon in icons)
         {
             //set ID and Image
