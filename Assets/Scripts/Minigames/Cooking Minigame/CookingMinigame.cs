@@ -74,6 +74,7 @@ public class CookingMinigame : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            AudioManager.instance.ReturnToDefault();
             StopCooking();
         }
     }

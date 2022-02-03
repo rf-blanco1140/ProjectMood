@@ -18,6 +18,7 @@ public class WashingMinigameManager : MonoBehaviour
     
     private void OnFinish()
     {
+        AudioManager.instance.ReturnToDefault();
         hygiene.ApplyChange(20);
         _onWinGame.Raise();
         transform.parent.gameObject.SetActive(false);
