@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-
+using MoreMountains.Feedbacks;
 public class Clean : MonoBehaviour
 {
     [SerializeField] private Material dirty;
@@ -8,6 +8,7 @@ public class Clean : MonoBehaviour
     [SerializeField] [Range(0f,0.5f)] private float washerPower;
     [SerializeField] [Range(0f,0.5f)] private float soapPower;
     [SerializeField] private VoidEvent onTransparent;
+    [SerializeField] private MMFeedbacks soapSfx;
 
     private bool _transparent = false;
     private Renderer renderer;
@@ -27,9 +28,10 @@ public class Clean : MonoBehaviour
             durationPassed = washerPower;
         }
         else durationPassed = soapPower;
-        
+        soapSfx.PlayFeedbacks();
         LerpToTransparency();
     }
+
 
     private void LerpToTransparency()
     {

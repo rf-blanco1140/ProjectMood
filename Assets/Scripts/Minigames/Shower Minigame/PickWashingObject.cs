@@ -4,6 +4,8 @@ public class PickWashingObject : MonoBehaviour
 {
     [SerializeField] private GameObject soap;
     [SerializeField] private GameObject powerWash;
+    
+    private AudioSource audioSource;
 
     private bool _active;
     Vector3 soapStartPosition;
@@ -11,6 +13,7 @@ public class PickWashingObject : MonoBehaviour
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         soapStartPosition = soap.transform.position;
         washerStartPosition = powerWash.transform.position;
     }
@@ -18,7 +21,7 @@ public class PickWashingObject : MonoBehaviour
     public void UseSoap()
     {
         SetPosition(soap, soapStartPosition);
-        
+        audioSource.Stop();
         soap.SetActive(true);
         powerWash.SetActive(false);
     }
@@ -26,7 +29,7 @@ public class PickWashingObject : MonoBehaviour
     public void UsePowerWash()
     {
         SetPosition(powerWash, washerStartPosition);
-
+        audioSource.Play();
         powerWash.SetActive(true);
         soap.SetActive(false);
     }
@@ -35,4 +38,5 @@ public class PickWashingObject : MonoBehaviour
     {
         return washObject.transform.position = targetPosition;
     }
+ 
 }
