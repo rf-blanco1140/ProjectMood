@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f201c596-5ae4-4312-bd06-349e50fd4f1e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectMood/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectMood/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Indoor Mainscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Indoor Mainscene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TicTacToe/BoardController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TicTacToe/BoardController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +27,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/WaterDrop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/LightController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Git Projects/Mood/ProjectMood/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/PoseNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Git Projects/Mood/ProjectMood/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputSystem/InputSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/PickWashingObject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -35,16 +36,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Clean.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1c34070ddd5b426b8f32df1db927aad128400/51/8d2c70b2/Event.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/WashingMinigameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Git Projects/Mood/ProjectMood/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/SnapToNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManagerUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoodSystem Folder/MoodSystemUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rooms/DistanceToRooms.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Git Projects/Mood/ProjectMood/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/SprayWash.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Git Projects/Mood/ProjectMood/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Git Projects/Mood/ProjectMood/UserSettings/EditorUserSettings.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="23rhqLFyFx7sdy23qebwnSCkcNm" />
   <component name="ProjectViewState">
@@ -131,6 +128,7 @@
       <workItem from="1643789520334" duration="8123000" />
       <workItem from="1643798070328" duration="13926000" />
       <workItem from="1643875794245" duration="11960000" />
+      <workItem from="1643965903037" duration="734000" />
     </task>
     <servers />
   </component>
