@@ -48,6 +48,60 @@ ModelImporter:
   - first:
       74: -7598053344281148637
     second: Armature|Changing clothes 2
+  - first:
+      74: -7738451938637947764
+    second: Armature|Changing clothes 1_L_Animations.blend
+  - first:
+      74: 5054315572875052761
+    second: Armature|Changing clothes 2_L_Animations.blend
+  - first:
+      74: 8893359695111834098
+    second: Armature|Go to bed_L_Animations.blend
+  - first:
+      74: -1612915434682693399
+    second: Armature|Hand (Ignore this)_L_Animations.blend
+  - first:
+      74: -5039471315544581237
+    second: Armature|Idle-Happy_L_Animations.blend
+  - first:
+      74: -1124262572318462991
+    second: Armature|Idle-Normal_L_Animations.blend
+  - first:
+      74: 3528252398952656067
+    second: Armature|Idle-Sad_L_Animations.blend
+  - first:
+      74: -7907859987986459900
+    second: Armature|Picking up_L_Animations.blend
+  - first:
+      74: -5024684411382082221
+    second: Armature|Stitting Down_L_Animations.blend
+  - first:
+      74: 8220735394317551762
+    second: Armature|Take up phone_L_Animations.blend
+  - first:
+      74: 7985380450260852855
+    second: Armature|Walk-Happy_L_Animations.blend
+  - first:
+      74: -8929268119372429590
+    second: Armature|Walk-Normal_L_Animations.blend
+  - first:
+      74: -5249029545708828663
+    second: Armature|Walk-Object_L_Animations.blend
+  - first:
+      74: 4610138476206980736
+    second: Armature|Walk-Sad_L_Animations.blend
+  - first:
+      74: -5106416734881554600
+    second: Armature|.T-Pose_L_Animations.blend
+  - first:
+      74: -3608559965222445866
+    second: Armature|Breathe in_L_Animations.blend
+  - first:
+      74: -8027669335396580894
+    second: Armature|Breathe inNout_L_Animations.blend
+  - first:
+      74: 3649791555647767186
+    second: Armature|Breathe out_L_Animations.blend
   externalObjects: {}
   materials:
     materialImportMode: 2
