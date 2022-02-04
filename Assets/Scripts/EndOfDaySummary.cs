@@ -116,17 +116,6 @@ public class EndOfDaySummary : MonoBehaviour
             intValues.Add((int)mood.Value);
         }
     }
-
-    private void ConvertIntValuesToList()
-    {
-        int i = 0;
-        foreach (var mood in moodList)
-        {
-            mood.Value = intValues[i];
-            i++;
-            Debug.Log(mood.Value);
-        }
-    }
     
     private void Sort(List<int> _list)
     {
@@ -145,6 +134,17 @@ public class EndOfDaySummary : MonoBehaviour
 
             (moodList[_minIndex], moodList[i]) = (moodList[i], moodList[_minIndex]);
             (_list[_minIndex], _list[i]) = (_list[i], _list[_minIndex]);
+        }
+    }
+
+    private void ConvertIntValuesToList()
+    {
+        int i = 0;
+        foreach (var mood in moodList)
+        {
+            mood.Value = intValues[i];
+            i++;
+            Debug.Log(mood.Value);
         }
     }
     

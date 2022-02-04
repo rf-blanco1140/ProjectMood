@@ -4237,5 +4237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yoga Minigame
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5607268053002844866, guid: c4dec59ecab14204599d6c9e31b9aed7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5607268053002844865, guid: c4dec59ecab14204599d6c9e31b9aed7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c4dec59ecab14204599d6c9e31b9aed7, type: 3}

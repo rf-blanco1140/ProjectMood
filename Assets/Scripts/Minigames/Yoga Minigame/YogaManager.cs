@@ -8,17 +8,17 @@ public class YogaManager : MonoBehaviour
     // buttons on bottom
     // press correct one
     // ints
-    [SerializeField] private VoidEvent _onWinGame;
-    [SerializeField] private FloatVariable body;
+    //[SerializeField] private VoidEvent _onWinGame;
+    //[SerializeField] private FloatVariable body;
     
-    private List<int> _poseID = new List<int>(); // 5 poses
+    [SerializeField] private List<int> _poseID = new List<int>(); // 5 poses
     public int _pressedID;
 
     public void CopyList(List<int> list)
     {
-        foreach (var ID in _poseID)
+        foreach (var pose in _poseID)
         {
-            list.Add(ID);
+            list.Add(pose);
         }
     }
 
@@ -53,7 +53,7 @@ public class YogaManager : MonoBehaviour
         if (_poseID.Count <= 1)
         {
             Debug.Log("no more poses");
-            OnFinish();
+            //OnFinish();
             return;
         }
         
@@ -64,14 +64,15 @@ public class YogaManager : MonoBehaviour
     
     private void OnEnable()
     {
+        _poseID = new List<int>();
         RandomizePoseID();
         _pressedID = 0;
     }
 
-    private void OnFinish()
+    /*private void OnFinish()
     {
         body.ApplyChange(20);
         _onWinGame.Raise();
         transform.parent.gameObject.SetActive(false);
-    }
+    }*/
 }

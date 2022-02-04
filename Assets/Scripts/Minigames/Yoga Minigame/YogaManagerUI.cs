@@ -11,22 +11,25 @@ public class YogaManagerUI : MonoBehaviour
     [SerializeField] private YogaManager manager;
     [SerializeField] private Sprite[] newSprite;
     
-    private List<int> _IDlist = new List<int>();
-    private int i;
+    [SerializeField] private List<int> _IDlist = new List<int>();
+    private int ID = 0;
+    private int i = 0;
 
     private void OnEnable()
     {
+        _IDlist = new List<int>();
         DrawImages();
     }
 
     private void DrawImages()
     {
         manager.CopyList(_IDlist);
+        Debug.Log(_IDlist.Count);
         
         foreach (var icon in icons)
         {
             //set ID and Image
-            int ID = _IDlist[i];
+            ID = _IDlist[i];
             Debug.Log($"{ID} \n");
             GetCurrentImage(ID, icon);
             i++;
