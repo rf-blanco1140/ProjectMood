@@ -28,6 +28,7 @@ public class CharacterNeeds : MonoBehaviour
     private void Start()
     {
         mySpriteRenderer.sprite = null;
+        mySpriteRenderer.color = Color.red;
     }
 
     private void Update()
