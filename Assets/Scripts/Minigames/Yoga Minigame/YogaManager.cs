@@ -13,7 +13,7 @@ public class YogaManager : MonoBehaviour
     
     [SerializeField] private List<int> _poseID = new List<int>(); // 5 poses
     public int _pressedID;
-
+    private int _totalPoses = 10;
     public void CopyList(List<int> list)
     {
         foreach (var pose in _poseID)
@@ -24,12 +24,11 @@ public class YogaManager : MonoBehaviour
 
     private void RandomizePoseID()
     {
-        _poseID.Add(Random.Range(0,4));
-        _poseID.Add(Random.Range(0,4));
-        _poseID.Add(Random.Range(0,4));
-        _poseID.Add(Random.Range(0,4));
-        _poseID.Add(Random.Range(0,4));
-        _poseID.Add(0);
+        for (int i = 0; i < _totalPoses +1; i++)
+        {        
+            _poseID.Add(Random.Range(0,4));
+            if (i == _totalPoses +1) _poseID.Add(0);
+        }
     }
 
     public void LookForCorrectID()

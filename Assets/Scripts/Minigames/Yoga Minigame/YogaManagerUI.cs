@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class YogaManagerUI : MonoBehaviour
@@ -7,7 +8,7 @@ public class YogaManagerUI : MonoBehaviour
     // foreach int in list check switch case with ID value
     // draw all of them in a line
 
-    [SerializeField] private GameObject[] icons;
+    [SerializeField] private List<GameObject> icons = new List<GameObject>();
     [SerializeField] private YogaManager manager;
     [SerializeField] private Sprite[] newSprite;
     
@@ -62,31 +63,53 @@ public class YogaManagerUI : MonoBehaviour
                 break;
         }
     }
+
+    private void RemoveCurrentPose()
+    {
+        _IDlist.RemoveAt(0);
+        GameObject _toBeDestroyed = icons[0];
+        icons.RemoveAt(0);
+        Destroy(_toBeDestroyed);
+    }
     
+
+    #region HardCodedButtons
+
     // giga hard code for epic pro gamers
     public void ButtonOne()
     {
         manager._pressedID = 0;
         manager.LookForCorrectID();
+        RemoveCurrentPose();
     }
     public void ButtonTwo()
     {
         manager._pressedID = 1;
         manager.LookForCorrectID();
+        RemoveCurrentPose();
+
     }
     public void ButtonThree()
     {
         manager._pressedID = 2;
         manager.LookForCorrectID();
+        RemoveCurrentPose();
+
     }
     public void ButtonFour()
     {
         manager._pressedID = 3;
         manager.LookForCorrectID();
+        RemoveCurrentPose();
+
     }
     public void ButtonFive()
     {
         manager._pressedID = 4;
         manager.LookForCorrectID();
+        RemoveCurrentPose();
+
     }
+    
+    #endregion
 }
