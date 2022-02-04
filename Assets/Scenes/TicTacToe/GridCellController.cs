@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using MoreMountains.Feedbacks;
 
 public class GridCellController : MonoBehaviour
 {
     [SerializeField] private GameObject[] marks;
     [SerializeField]private Owner myOwner;
     private BoardController boardController;
+    [SerializeField] private MMFeedbacks placeBlockSFX;
 
     private void Start()
     {
@@ -37,10 +39,12 @@ public class GridCellController : MonoBehaviour
         myOwner = newOwner;
         if(myOwner==Owner.Player)
         {
+            placeBlockSFX.PlayFeedbacks();
             GetComponent<SpriteRenderer>().sprite = marks[0].GetComponent<SpriteRenderer>().sprite;
         }
         else
         {
+            placeBlockSFX.PlayFeedbacks();
             GetComponent<SpriteRenderer>().sprite = marks[1].GetComponent<SpriteRenderer>().sprite;
         }
     }
