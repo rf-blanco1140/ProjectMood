@@ -23,18 +23,23 @@ public class CharacterNeeds : MonoBehaviour
 
     private int lowThreshold;
     private int statToShow;
+    private bool finishedCooldown;
     private enum Stats {None, Body, Mind, Appetite, Hygiene, Social};
 
     private void Start()
     {
         mySpriteRenderer.sprite = null;
         mySpriteRenderer.color = Color.red;
+        StartCoroutine(WaitingForCooldown());
     }
 
     private void Update()
     {
-        ShowLowStat();
-        transform.rotation = Quaternion.Euler(followCamera.transform.eulerAngles.x, 0, 0);
+        if(finishedCooldown)
+        {
+            //ShowLowStat();
+            transform.rotation = Quaternion.Euler(followCamera.transform.eulerAngles.x, 0, 0);
+        }
     }
 
     private void ShowLowStat()
@@ -89,8 +94,26 @@ public class CharacterNeeds : MonoBehaviour
         }
     }
 
-    /**private IEnumerator CooldownTime()
+    private void HideIcon()
     {
-        yield return new 
-    }*/
+        mySpriteRenderer.sprite = null;
+    }
+
+    public IEnumerator CooldownTime()
+    {
+        HideIcon();
+        Debug.LogError(":v");
+        yield return new WaitForSeconds(5f);
+        finishedCooldown = true;
+        StartCoroutine(WaitingForCooldown());
+    }
+
+    private IEnumerator WaitingForCooldown()
+    {
+        ShowLowStat();
+        Debug.LogError("XO");
+        yield return new WaitForSeconds(10f);
+        finishedCooldown = true;
+        StartCoroutine(CooldownTime());
+    }
 }
