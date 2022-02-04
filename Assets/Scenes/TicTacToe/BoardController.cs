@@ -17,6 +17,8 @@ public class BoardController : MonoBehaviour
     [SerializeField] private GameObject playerDefeatMsg;
     [SerializeField] private GameObject textBubble;
 
+    private LayerMask UI = 5;
+
     [SerializeField] private VoidEvent _onWinGame;
     [SerializeField] private FloatVariable social;
 
@@ -33,6 +35,7 @@ public class BoardController : MonoBehaviour
                 newCell.transform.position = positions[t].transform.position;
                 newCell.gameObject.AddComponent<BoxCollider2D>();
                 newCell.GetComponent<BoxCollider2D>().size = new Vector2(0.42f,0.42f);
+                newCell.gameObject.layer = UI;
                 grid[i, j] = newCell;
                 t++;
             } 
