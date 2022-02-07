@@ -29,6 +29,10 @@ public class AudioManager : MonoBehaviour
             --_skipFirstTwo;
             return;
         }
+        if (track2.isPlaying)
+        {
+            return;
+        }
 
         if(currentMood == 1)
         {
@@ -66,9 +70,11 @@ public class AudioManager : MonoBehaviour
     public void SwapTrack(AudioClip newClip)
     {
         StopAllCoroutines();
-
+        
         StartCoroutine(FadeTrack(newClip));
         isPlayingTrack1 = !isPlayingTrack1;
+
+       
     }
      public void ReturnToDefault()
     {
