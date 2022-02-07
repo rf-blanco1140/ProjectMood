@@ -15671,7 +15671,6 @@ MonoBehaviour:
   m_Script: {fileID: 1343626056}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Entries: []
 --- !u!4 &919546386
 Transform:
   m_ObjectHideFlags: 19
@@ -25340,7 +25339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482156457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.060699932, y: 0.006000459, z: 0.41406506}
+  m_LocalPosition: {x: 0.060699932, y: 0.006000459, z: 0.41406578}
   m_LocalScale: {x: 1, y: 0.91652, z: 1}
   m_Children: []
   m_Father: {fileID: 1713742908}
@@ -33443,7 +33442,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994985710}
   m_LocalRotation: {x: 0.45197183, y: -0, z: -0, w: 0.8920322}
-  m_LocalPosition: {x: 0, y: 2.69, z: 0.5}
+  m_LocalPosition: {x: 0.55, y: 2.11, z: 0.88}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 1670570867}
@@ -33474,6 +33473,8 @@ MonoBehaviour:
   appetite: {fileID: 11400000, guid: 752e9e33e00c7b342afc4b649e86d734, type: 2}
   hygiene: {fileID: 11400000, guid: 9b03fe4d313c59f428f79bc640bd8ac1, type: 2}
   social: {fileID: 11400000, guid: 3c3f2de5d3013a44cb21e516d7c23307, type: 2}
+  cooldownTime: 30
+  activeTime: 7
 --- !u!1 &1998752004
 GameObject:
   m_ObjectHideFlags: 0
@@ -35373,7 +35374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067125896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.414984, y: 30.721243, z: -144.89998}
+  m_LocalPosition: {x: -14.412695, y: 30.721815, z: -144.89998}
   m_LocalScale: {x: 1, y: 1, z: 0.4183}
   m_Children: []
   m_Father: {fileID: 7261780162239371421}
