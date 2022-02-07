@@ -10,7 +10,7 @@ public class CookingMinigame : MonoBehaviour
     [SerializeField] private GameObject _CanvasBefore;
     [SerializeField] private GameObject _CanvasDuring;
 
-    private AudioSource audioSource; 
+    private AudioSource audioSource;
     [SerializeField] private AudioClip _fryingSFX;
 
     [SerializeField] private MMFeedbacks _fader;
@@ -37,14 +37,14 @@ public class CookingMinigame : MonoBehaviour
     public void StartCooking()
     {
         audioSource.PlayOneShot(_fryingSFX);
-         StartCoroutine(CookingTime());
+        StartCoroutine(CookingTime());
         _CanvasDuring.SetActive(true);
-        
+
     }
 
     IEnumerator CookingTime()
     {
-        
+
         //time before cooked
         yield return new WaitForSeconds(8);
         _ingredientState++;
@@ -77,7 +77,7 @@ public class CookingMinigame : MonoBehaviour
         AudioManager.instance.ReturnToDefault();
         audioSource.Stop();
 
-        //_fader.PlayFeedbacks();
+        _fader.PlayFeedbacks();
         transform.parent.gameObject.SetActive(false);
 
     }
@@ -86,7 +86,8 @@ public class CookingMinigame : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-           // _fader.PlayFeedbacks();
+            _fader.PlayFeedbacks();
+            Delay();
             audioSource.Stop();
             AudioManager.instance.ReturnToDefault();
             StopCooking();
@@ -95,5 +96,11 @@ public class CookingMinigame : MonoBehaviour
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
+    }
+    private IEnumerator Delay()
+    {
+        
+        yield return new WaitForSeconds(1);
+        
     }
 }
