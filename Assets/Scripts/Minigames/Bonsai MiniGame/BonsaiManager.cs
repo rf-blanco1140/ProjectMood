@@ -28,7 +28,7 @@ public class BonsaiManager : MonoBehaviour
             _allChildren[i].gameObject.SetActive(true);
         }
 
-        _totalLeafAmount = _allChildren.Length - 16;
+        _totalLeafAmount = _allChildren.Length - 25;
 
         _currentLeafAmount.SetValue(_totalLeafAmount);
 
