@@ -18,10 +18,12 @@ public class CookingMinigame : MonoBehaviour
     [SerializeField] private MMFeedbacks _failSFX;
     private GameObject _cookingIngredient;
     private int _ingredientState;
+    private bool _isCooking;
 
     private void OnEnable()
     {
         _ingredientState = 0;
+        _isCooking = false;
         _CanvasBefore.SetActive(true);
         _CanvasDuring.SetActive(false);
 
@@ -39,6 +41,7 @@ public class CookingMinigame : MonoBehaviour
     public void StartCooking()
     {
         audioSource.PlayOneShot(_fryingSFX);
+        _isCooking = true;
         StartCoroutine(CookingTime());
         _CanvasDuring.SetActive(true);
 
@@ -88,7 +91,7 @@ public class CookingMinigame : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && _isCooking)
         {
             _fader.PlayFeedbacks();
             Delay();
