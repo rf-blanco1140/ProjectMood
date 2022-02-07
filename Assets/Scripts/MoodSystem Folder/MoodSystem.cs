@@ -15,7 +15,7 @@ public class MoodSystem : MonoBehaviour
     [SerializeField] private float _dropValue = -7.5f;
     [SerializeField] private float _startValue = 70f;
 
-    [SerializeField] private MoodSystemUI moodSystemUI;
+    [SerializeField] private GameObject moodSystemUI;
 
     private float _overAllMood = 0;
     private int current = 0;
@@ -67,7 +67,7 @@ public class MoodSystem : MonoBehaviour
         hygiene.SetValue(_startValue);
         body.SetValue(_startValue);
         appetite.SetValue(_startValue);
-        moodSystemUI.DisplayUI();
+        moodSystemUI.GetComponent<MoodSystemUI>().DisplayUI();
         CalculateAverageMood();
     }
 
@@ -82,5 +82,14 @@ public class MoodSystem : MonoBehaviour
         CalculateAverageMood();
     }
 
+    public void EnableMoodUI()
+    {
+        moodSystemUI.gameObject.SetActive(true);
+    }
+
+    public void DisableMoodUI()
+    {
+        moodSystemUI.gameObject.SetActive(false);
+    }
 
 }

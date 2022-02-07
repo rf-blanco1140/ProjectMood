@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using RotaryHeart.Lib.SerializableDictionary;
+using MoreMountains.Feedbacks;
 public class BoardController : MonoBehaviour
 {
     [SerializeField] private List<Transform> positions;
@@ -21,6 +22,8 @@ public class BoardController : MonoBehaviour
 
     [SerializeField] private VoidEvent _onWinGame;
     [SerializeField] private FloatVariable social;
+    [SerializeField] private MMFeedbacks failSFX;
+    [SerializeField] private MMFeedbacks winSFX;
 
     private void Start()
     {
@@ -160,11 +163,13 @@ public class BoardController : MonoBehaviour
         textBubble.SetActive(true);
         if(winner == Owner.Player)
         {
+            winSFX.PlayFeedbacks();
             AffectGrandma(GrandmaStats.Lost);
             playerVictoryMsg.SetActive(true);
         }
         else
         {
+            failSFX.PlayFeedbacks();
             AffectGrandma(GrandmaStats.Vitorious);
             playerDefeatMsg.SetActive(true);
         }

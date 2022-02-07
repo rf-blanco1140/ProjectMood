@@ -11,6 +11,10 @@ namespace Player
         public Vector2 inputDirection;
         Vector3 previousDirection = Vector3.forward;
 
+        private Vector3 movement;
+        private Rigidbody rb;
+        private float moveSpeed;
+
         //Hello
         [SerializeField] private BoolVariable canWalk;
         [SerializeField] private BoolVariable _isWalking;
@@ -25,6 +29,35 @@ namespace Player
             canWalk.boolValue = true;
             _isWalking.boolValue = false;
             _isWalkingBool = false;
+
+            rb = gameObject.GetComponent<Rigidbody>();
+            moveSpeed = 2f;
+        }
+
+        void Update()
+        {
+            movement.x = Input.GetAxis("Horizontal");
+            movement.z = Input.GetAxis("Vertical");
+
+            if (inputDirection.x == 0 && inputDirection.y == 0)
+            {
+                StopSound();
+                _isWalking.boolValue = false;
+                _isWalkingBool = false;
+            }
+            else
+            {
+                PlaySound();
+                _isWalking.boolValue = true;
+                _isWalkingBool = true;
+            }
+
+            if (Animator1.gameObject.activeSelf)
+                Animator1.SetBool("isWalking", _isWalkingBool);
+            if (Animator2.gameObject.activeSelf)
+                Animator2.SetBool("isWalking", _isWalkingBool);
+            if (Animator3.gameObject.activeSelf)
+                Animator3.SetBool("isWalking", _isWalkingBool);
         }
 
         private void FixedUpdate()
@@ -39,9 +72,11 @@ namespace Player
 
         private void PlayerMove()
         {
-            Vector3 rotatedVector = new Vector3(inputDirection.x, 0, inputDirection.y);
+            /**Vector3 rotatedVector = new Vector3(inputDirection.x, 0, inputDirection.y);
             Vector3 velocity = rotatedVector * _movementSpeed;
-            body.AddForce(velocity, ForceMode.Force);
+            body.AddForce(velocity, ForceMode.Force);*/
+
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
         }
 
         private void NewMove()
@@ -100,61 +135,6 @@ namespace Player
             }
             
         }
-        void Update()
-        {
-            if(inputDirection.x == 0 && inputDirection.y == 0)
-            {
-                StopSound();
-                _isWalking.boolValue = false;
-                _isWalkingBool = false;
-            }
-            else
-            {
-                PlaySound();
-                _isWalking.boolValue = true;
-                _isWalkingBool = true;
-            }
 
-            if (Animator1.gameObject.activeSelf)
-                Animator1.SetBool("isWalking", _isWalkingBool);
-            if (Animator2.gameObject.activeSelf)
-                Animator2.SetBool("isWalking", _isWalkingBool);
-            if (Animator3.gameObject.activeSelf)
-                Animator3.SetBool("isWalking", _isWalkingBool);
-
-            //Animator components
-            // if (inputDirection.y <= 0)
-            //{
-            //  Animator.SetBool("isWalking", false);
-            //}
-
-            // if (inputDirection.x >=0)
-            // {
-            //Animator.SetBool("isWalking", false);
-            //       }
-
-
-            //     if (inputDirection.x >=1)
-            //   {
-            // Animator.SetBool("isWalking", true);
-            // }
-
-            //if (inputDirection.x <= -0.5)
-            //{
-            //Animator.SetBool("isWalking", true);
-            //}
-
-
-
-            //if (inputDirection.y >= 1)
-            // {
-            // Animator.SetBool("isWalking", true);
-            // }
-
-            // if (inputDirection.y <= -0.5)
-            //{ 
-            // Animator.SetBool("isWalking" , true);
-            //}
-        }
     }
 }

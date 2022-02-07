@@ -14,8 +14,8 @@ public class MoodSystemUI : MonoBehaviour
     [SerializeField] private FloatVariable appetite;
     [SerializeField] private FloatVariable hygiene;
     [SerializeField] private FloatVariable social;
-    
-    private void Start()
+
+    private void OnEnable()
     {
         DisplayUI();
     }
@@ -28,4 +28,5 @@ public class MoodSystemUI : MonoBehaviour
         hygieneText.text = hygiene.Value.ToString();
         socialText.text = social.Value.ToString();
     }
+
 }

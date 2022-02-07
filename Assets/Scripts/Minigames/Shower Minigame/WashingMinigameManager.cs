@@ -1,4 +1,5 @@
 using UnityEngine;
+using MoreMountains.Feedbacks;
 
 public class WashingMinigameManager : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class WashingMinigameManager : MonoBehaviour
     [SerializeField] private Material dirtMaterial;
     [SerializeField] private VoidEvent _onWinGame;
     [SerializeField] private FloatVariable hygiene;
+    [SerializeField] private MMFeedbacks _finishedSFX;
     private int _totalDirtTransparency = 0;
     private void OnEnable()
     {
@@ -18,6 +20,7 @@ public class WashingMinigameManager : MonoBehaviour
     
     private void OnFinish()
     {
+        _finishedSFX.PlayFeedbacks();
         AudioManager.instance.ReturnToDefault();
         hygiene.ApplyChange(20);
         _onWinGame.Raise();

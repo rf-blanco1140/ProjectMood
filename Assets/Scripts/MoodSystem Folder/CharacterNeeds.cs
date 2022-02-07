@@ -23,6 +23,9 @@ public class CharacterNeeds : MonoBehaviour
 
     private int lowThreshold;
     private int statToShow;
+    [SerializeField] private float cooldownTime;
+    [SerializeField] private float activeTime;
+    private float currentTime;
     private bool finishedCooldown;
     private enum Stats {None, Body, Mind, Appetite, Hygiene, Social};
 
@@ -30,14 +33,34 @@ public class CharacterNeeds : MonoBehaviour
     {
         mySpriteRenderer.sprite = null;
         mySpriteRenderer.color = Color.red;
-        StartCoroutine(WaitingForCooldown());
+        //StartCoroutine(WaitingForCooldown());
+        currentTime = activeTime;
+    }
+
+    private void FixedUpdate()
+    {
+        currentTime -= Time.deltaTime;
+        if(currentTime <= 0)
+        {
+            if(finishedCooldown)
+            {
+                finishedCooldown = false;
+                HideIcon();
+                currentTime = cooldownTime;
+            }
+            else
+            {
+                finishedCooldown = true;
+                ShowLowStat();
+                currentTime = activeTime;
+            }
+        }
     }
 
     private void Update()
     {
         if(finishedCooldown)
         {
-            //ShowLowStat();
             transform.rotation = Quaternion.Euler(followCamera.transform.eulerAngles.x, 0, 0);
         }
     }
@@ -75,8 +98,6 @@ public class CharacterNeeds : MonoBehaviour
         switch (ret)
         {
             case Stats.Body:
-                //Show body icon
-                //mySpriteRenderer.enabled = true;
                 mySpriteRenderer.sprite = bodyIcon;
                 break;
             case Stats.Mind:
@@ -99,7 +120,7 @@ public class CharacterNeeds : MonoBehaviour
         mySpriteRenderer.sprite = null;
     }
 
-    public IEnumerator CooldownTime()
+    /**public IEnumerator CooldownTime()
     {
         HideIcon();
         Debug.LogError(":v");
@@ -115,5 +136,5 @@ public class CharacterNeeds : MonoBehaviour
         yield return new WaitForSeconds(10f);
         finishedCooldown = true;
         StartCoroutine(CooldownTime());
-    }
+    }*/
 }
