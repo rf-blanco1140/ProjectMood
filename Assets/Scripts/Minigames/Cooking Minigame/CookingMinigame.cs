@@ -14,6 +14,8 @@ public class CookingMinigame : MonoBehaviour
     [SerializeField] private AudioClip _fryingSFX;
 
     [SerializeField] private MMFeedbacks _fader;
+    [SerializeField] private MMFeedbacks _winSFX;
+    [SerializeField] private MMFeedbacks _failSFX;
     private GameObject _cookingIngredient;
     private int _ingredientState;
 
@@ -66,12 +68,14 @@ public class CookingMinigame : MonoBehaviour
 
         if (_ingredientState == 1)
         {
+            _winSFX.PlayFeedbacks();
             Debug.Log("Best Win");
             _appetite.ApplyChange(20);
             _onWinGame.Raise();
         }
         else
         {
+            _failSFX.PlayFeedbacks();
             Debug.Log("Too early or late");
         }
         AudioManager.instance.ReturnToDefault();
