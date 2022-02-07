@@ -4,36 +4,24 @@ using Random = UnityEngine.Random;
 
 public class YogaManager : MonoBehaviour
 {
-    // pose appears on top
-    // buttons on bottom
-    // press correct one
-    // ints
-    //[SerializeField] private VoidEvent _onWinGame;
-    //[SerializeField] private FloatVariable body;
+    [SerializeField] private List<int> _poseID = new List<int>(0);
+    [SerializeField] private IntVariable _pressedID;
+    [SerializeField] private InstantiateYogaButton button;
+    [SerializeField] private YogaManagerUI UI;
     
-    [SerializeField] private List<int> _poseID = new List<int>(); // 5 poses
-    public int _pressedID;
-    private int _totalPoses = 10;
-    public void CopyList(List<int> list)
-    {
-        foreach (var pose in _poseID)
-        {
-            list.Add(pose);
-        }
-    }
+    private int _totalPoses = 5;
 
     private void RandomizePoseID()
     {
-        for (int i = 0; i < _totalPoses +1; i++)
+        for (int i = 0; i < _totalPoses; i++)
         {        
-            _poseID.Add(Random.Range(0,4));
-            if (i == _totalPoses +1) _poseID.Add(0);
+            _poseID.Add(Random.Range(0,10));
         }
     }
 
-    public void LookForCorrectID()
+    private void LookForCorrectID()
     {
-        if (_poseID[0] == _pressedID)
+        if (_poseID[0] == _pressedID.Value)
         {
             GoToNextPose(); 
             Debug.Log("correct");
@@ -53,19 +41,25 @@ public class YogaManager : MonoBehaviour
         {
             Debug.Log("no more poses");
             //OnFinish();
+            // ienumerator for finish ?
             return;
         }
         
-        Debug.Log($"poseID before {_poseID[0]}");
         _poseID.RemoveAt(0);
-        Debug.Log($"poseID after {_poseID[0]}");
     }
     
     private void OnEnable()
     {
-        _poseID = new List<int>();
+        _poseID = new List<int>(0);
         RandomizePoseID();
-        _pressedID = 0;
+        
+        UI.DrawImages(_poseID);
+        button.RemoveDuplicateButtons(_poseID);
+    }
+
+    public void OnButtonPressed()
+    {
+        LookForCorrectID();
     }
 
     /*private void OnFinish()
