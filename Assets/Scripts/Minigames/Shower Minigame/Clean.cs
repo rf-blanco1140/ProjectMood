@@ -15,10 +15,12 @@ public class Clean : MonoBehaviour
     private float duration = 0f;
     private float durationPassed = 0f;
 
-    private void Awake()
+    private void OnEnable()
     {
         renderer = GetComponent<Renderer>();
         renderer.material = dirty;
+        duration = 0f;
+        durationPassed = 0f;
     }
 
     private void OnTriggerEnter(Collider other)

@@ -14,6 +14,8 @@ public class WashingMinigameManager : MonoBehaviour
         for (int i = 0; i < dirt.Length; i++)
         {
             dirt[i].GetComponent<Renderer>().material = dirtMaterial;
+            _totalDirtTransparency = 0;
+
         }
         Debug.Log(dirt.Length);
     }
