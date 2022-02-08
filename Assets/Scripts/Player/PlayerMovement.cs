@@ -7,7 +7,6 @@ namespace Player
     public class PlayerMovement : MonoBehaviour
     {
         private Rigidbody body;
-        [SerializeField] private float _movementSpeed; // SO ?
         public Vector2 inputDirection;
         Vector3 previousDirection = Vector3.forward;
 
@@ -58,56 +57,47 @@ namespace Player
                 Animator2.SetBool("isWalking", _isWalkingBool);
             if (Animator3.gameObject.activeSelf)
                 Animator3.SetBool("isWalking", _isWalkingBool);
-        }
-
-        private void FixedUpdate()
-        {
+        
             if (canWalk.boolValue)
             {
                 PlayerMove();
                 PlayerFaceDirection();
-                //NewMove();
             }
         }
 
         private void PlayerMove()
         {
-            /**Vector3 rotatedVector = new Vector3(inputDirection.x, 0, inputDirection.y);
-            Vector3 velocity = rotatedVector * _movementSpeed;
-            body.AddForce(velocity, ForceMode.Force);*/
+            //rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
+            //rb.velocity = movement * moveSpeed;
+            //Vector3 dPos = movement*moveSpeed*Time.deltaTime;
+            //transform.position = new Vector3(transform.position.x+dPos.x,transform.position.y, transform.position.z+dPos.z);
+            float horizontal = 0;
+            if (Input.GetKey(KeyCode.A))
+                horizontal = -1;
+            else if (Input.GetKey(KeyCode.D))
+                horizontal = 1;
 
-            rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
-        }
-
-        private void NewMove()
-        {
-            // if inputdirection = 1, input goes from 0-1 * time.fixeddeltatime / float
-            // if inputdirection = 0, input stops ? 
-
-            float targetFloat = 5f;
-            Vector2 input = default;
-            Vector3 inputTarget = new Vector3(input.x,0,input.y) * targetFloat;
+            float vertical = 0;
+            if (Input.GetKey(KeyCode.S))
+                vertical = -1f;
+            else if (Input.GetKey(KeyCode.W))
+                vertical = 1f;
             
-            
-            if (inputDirection.x >= 1f)
-            {
-                Vector2.MoveTowards(input, inputTarget, Time.fixedDeltaTime);
-            }
-            
+            Vector3 mov = Vector3.right * horizontal + Vector3.forward * vertical;
+            transform.position += mov * moveSpeed * Time.deltaTime;
         }
         
         private void PlayerFaceDirection()
         {
-            if (inputDirection != Vector2.zero)
-            {
-                Vector3 rotatedDirection = new Vector3(inputDirection.x, 0, inputDirection.y);
-                previousDirection = rotatedDirection;
-                body.rotation = quaternion.LookRotation(rotatedDirection, Vector3.up);
-            }
-            else
-            {
-                body.rotation = quaternion.LookRotation(previousDirection, Vector3.up);
-            }
+            if (Input.GetKey(KeyCode.A))
+                body.transform.eulerAngles = Vector3.up * -90;
+            else if (Input.GetKey(KeyCode.D))
+                body.transform.eulerAngles = Vector3.up * 90;
+
+            if (Input.GetKey(KeyCode.S))
+                body.transform.eulerAngles = Vector3.up * 180;
+            else if (Input.GetKey(KeyCode.W))
+                body.transform.eulerAngles = Vector3.zero;
         }
         
         public void PlaySound()
@@ -120,7 +110,6 @@ namespace Player
             {
                 return;
             }
-
         }
 
         public void StopSound()
@@ -133,7 +122,6 @@ namespace Player
             {
                 return;
             }
-            
         }
 
     }
