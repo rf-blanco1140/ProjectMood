@@ -11,11 +11,10 @@ public class WashingMinigameManager : MonoBehaviour
     private int _totalDirtTransparency = 0;
     private void OnEnable()
     {
+        _totalDirtTransparency = 0;
         for (int i = 0; i < dirt.Length; i++)
         {
             dirt[i].GetComponent<Renderer>().material = dirtMaterial;
-            _totalDirtTransparency = 0;
-
         }
         Debug.Log(dirt.Length);
     }

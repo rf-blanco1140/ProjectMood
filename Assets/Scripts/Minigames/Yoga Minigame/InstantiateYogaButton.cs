@@ -8,7 +8,7 @@ public class InstantiateYogaButton : MonoBehaviour
     [SerializeField] private YogaManagerUI managerUI;
     
     private List<GameObject> gameObjectList = new List<GameObject>();
-    private float currentValue = 2.5f;
+    private float currentValue = 17.2f;
     float j = 0f;
     
     public void RemoveDuplicateButtons(List<int> intList)
@@ -29,7 +29,7 @@ public class InstantiateYogaButton : MonoBehaviour
     {
         foreach (var variable in intList)
         {
-            GameObject newButton = Instantiate(button,new Vector3((currentValue -= j),7,19),Quaternion.identity);
+            GameObject newButton = Instantiate(button,new Vector3((currentValue += j),-1.4f,-2f),Quaternion.identity);
             j = 0.6f;
             
             newButton.GetComponent<YogaButton>().i = variable;
