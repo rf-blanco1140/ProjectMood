@@ -13,7 +13,9 @@ public class Bubble : MonoBehaviour
     [SerializeField] private bool _GoRight = true;
 
     [SerializeField] private Vector3Event _onBubblePop;
-    
+ 
+
+
 
     private void OnEnable()
     {

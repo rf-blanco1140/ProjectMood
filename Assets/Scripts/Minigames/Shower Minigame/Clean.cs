@@ -9,6 +9,7 @@ public class Clean : MonoBehaviour
     [SerializeField] [Range(0f,0.5f)] private float soapPower;
     [SerializeField] private VoidEvent onTransparent;
     [SerializeField] private MMFeedbacks soapSfx;
+    [SerializeField] private GameObject bubblesParticles;
 
     private bool _transparent = false;
     private Renderer renderer;
@@ -29,8 +30,12 @@ public class Clean : MonoBehaviour
         {
             durationPassed = washerPower;
         }
-        else durationPassed = soapPower;
-        soapSfx.PlayFeedbacks();
+        else
+        {
+            durationPassed = soapPower;
+            Instantiate(bubblesParticles, transform.position, transform.rotation);
+            soapSfx.PlayFeedbacks();     
+        }
         LerpToTransparency();
     }
 

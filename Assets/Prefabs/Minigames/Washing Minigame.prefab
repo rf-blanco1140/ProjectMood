@@ -280,6 +280,7 @@ MonoBehaviour:
   soapPower: 0.104
   onTransparent: {fileID: 11400000, guid: d5c38802993ef9c439fb37db07239ec5, type: 2}
   soapSfx: {fileID: 4127864129010477507}
+  bubblesParticles: {fileID: 7895647621921020795, guid: bf0aab2df2f367e4fabd651a805de326, type: 3}
 --- !u!65 &4406042318657647776
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -745,6 +746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraManager: {fileID: 6254183486184730592, guid: 1a919c32925869547882ebcdeba08422, type: 3}
+  _moodManager: {fileID: 0}
   _canWalk: {fileID: 11400000, guid: d54b5c11946b22a469b4b0b173c5109f, type: 2}
 --- !u!1 &4406042319225787935
 GameObject:
@@ -847,6 +849,7 @@ MonoBehaviour:
   soapPower: 0.104
   onTransparent: {fileID: 11400000, guid: d5c38802993ef9c439fb37db07239ec5, type: 2}
   soapSfx: {fileID: 4127864129010477507}
+  bubblesParticles: {fileID: 7895647621921020795, guid: bf0aab2df2f367e4fabd651a805de326, type: 3}
 --- !u!65 &4406042319225787921
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -961,6 +964,7 @@ MonoBehaviour:
   soapPower: 0.104
   onTransparent: {fileID: 11400000, guid: d5c38802993ef9c439fb37db07239ec5, type: 2}
   soapSfx: {fileID: 4127864129010477507}
+  bubblesParticles: {fileID: 7895647621921020795, guid: bf0aab2df2f367e4fabd651a805de326, type: 3}
 --- !u!65 &4406042319298083213
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1075,6 +1079,7 @@ MonoBehaviour:
   soapPower: 0.104
   onTransparent: {fileID: 11400000, guid: d5c38802993ef9c439fb37db07239ec5, type: 2}
   soapSfx: {fileID: 4127864129010477507}
+  bubblesParticles: {fileID: 7895647621921020795, guid: bf0aab2df2f367e4fabd651a805de326, type: 3}
 --- !u!65 &4406042319468116221
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1189,6 +1194,7 @@ MonoBehaviour:
   soapPower: 0.104
   onTransparent: {fileID: 11400000, guid: d5c38802993ef9c439fb37db07239ec5, type: 2}
   soapSfx: {fileID: 4127864129010477507}
+  bubblesParticles: {fileID: 7895647621921020795, guid: bf0aab2df2f367e4fabd651a805de326, type: 3}
 --- !u!65 &4406042319577502180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1303,6 +1309,7 @@ MonoBehaviour:
   soapPower: 0.104
   onTransparent: {fileID: 11400000, guid: d5c38802993ef9c439fb37db07239ec5, type: 2}
   soapSfx: {fileID: 4127864129010477507}
+  bubblesParticles: {fileID: 7895647621921020795, guid: bf0aab2df2f367e4fabd651a805de326, type: 3}
 --- !u!65 &4406042319659656833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1417,6 +1424,7 @@ MonoBehaviour:
   soapPower: 0.104
   onTransparent: {fileID: 11400000, guid: d5c38802993ef9c439fb37db07239ec5, type: 2}
   soapSfx: {fileID: 4127864129010477507}
+  bubblesParticles: {fileID: 7895647621921020795, guid: bf0aab2df2f367e4fabd651a805de326, type: 3}
 --- !u!65 &4406042319691676487
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1656,6 +1664,7 @@ MonoBehaviour:
   soapPower: 0.104
   onTransparent: {fileID: 11400000, guid: d5c38802993ef9c439fb37db07239ec5, type: 2}
   soapSfx: {fileID: 4127864129010477507}
+  bubblesParticles: {fileID: 7895647621921020795, guid: bf0aab2df2f367e4fabd651a805de326, type: 3}
 --- !u!65 &4406042319940890441
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2390,6 +2399,7 @@ MonoBehaviour:
   soapPower: 0.104
   onTransparent: {fileID: 11400000, guid: d5c38802993ef9c439fb37db07239ec5, type: 2}
   soapSfx: {fileID: 4127864129010477507}
+  bubblesParticles: {fileID: 7895647621921020795, guid: bf0aab2df2f367e4fabd651a805de326, type: 3}
 --- !u!65 &4406042320652543815
 BoxCollider:
   m_ObjectHideFlags: 0
