@@ -29,10 +29,7 @@ public class AudioManager : MonoBehaviour
             --_skipFirstTwo;
             return;
         }
-        if (track2.isPlaying)
-        {
-            return;
-        }
+       
 
         if(currentMood == 1)
         {
@@ -51,6 +48,11 @@ public class AudioManager : MonoBehaviour
             isSad = false;
             isNeutral = false;
             isHappy = true;
+        }
+
+        if (track1.isPlaying)
+        {
+            return;
         }
 
         ReturnToDefault();
@@ -78,7 +80,8 @@ public class AudioManager : MonoBehaviour
     }
      public void ReturnToDefault()
     {
-        if(isHappy == true)
+        
+        if (isHappy == true)
         SwapTrack(defaultMusic);
         if(isSad == true)
             SwapTrack(sadMusic);

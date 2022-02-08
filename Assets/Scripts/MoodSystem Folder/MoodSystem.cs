@@ -29,7 +29,7 @@ public class MoodSystem : MonoBehaviour
 
     [SerializeField] private MoodEnum currentMood;
     
-    private void CalculateAverageMood()
+    public void CalculateAverageMood()
     {
         _overAllMood = (body.Value + appetite.Value + hygiene.Value + mind.Value + social.Value) / 5;
 
