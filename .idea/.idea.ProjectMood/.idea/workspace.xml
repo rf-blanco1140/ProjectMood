@@ -2,19 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f201c596-5ae4-4312-bd06-349e50fd4f1e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SleepUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectMood/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectMood/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Character/Yoga Animation Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Character/Yoga Animation Controller.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/End Day Summary.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/End Day Summary.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/Sleep Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/Sleep Manager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Extras/Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Extras/Button.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Minigame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Minigame.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Indoor Mainscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Indoor Mainscene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Clean.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Clean.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/PickWashingObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/PickWashingObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/WashingMinigameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/WashingMinigameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/InstantiateYogaButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/InstantiateYogaButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManagerUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManagerUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/NiceVibrationsAHAPConverters.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/OlderVersions/v1.7/NiceVibrations-v-1-7.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/OlderVersions/v2.0.1/NiceVibrations-v-2-0-1.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Indoor Mainscene/Scene Light Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Indoor Mainscene/Scene Light Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/JespersScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/JespersScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/DaysendBGInverted.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/DaysendBGInverted.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/LightController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/LightController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/TimeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndOfDaySummary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EndOfDaySummary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaAnimations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrollEndOfDayImage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrollEndOfDayImage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SleepUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sleep/Sleep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sleep/Sleep.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +52,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/WashingMinigameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManagerUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScrollEndOfDayImage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SleepUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoodSystem Folder/MoodSystemUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rooms/DistanceToRooms.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/52994e3c8ab849239eb659a65ee32d9959c00/4b/980e75b2/EditorElement.cs" root0="SKIP_HIGHLIGHTING" />
@@ -144,7 +147,7 @@
       <workItem from="1644064635509" duration="9864000" />
       <workItem from="1644220682068" duration="20772000" />
       <workItem from="1644246314474" duration="9423000" />
-      <workItem from="1644307150566" duration="9693000" />
+      <workItem from="1644307150566" duration="28731000" />
     </task>
     <servers />
   </component>

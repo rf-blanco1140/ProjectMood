@@ -39,20 +39,6 @@ public class EndOfDaySummary : MonoBehaviour
     private List<FloatVariable> moodList = new List<FloatVariable>();
     private List<int> intValues = new List<int>();
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            TestText();
-        }
-    }
-
-    private void TestText()
-    {
-        textObject.GetComponent<Text>().text =
-            $"hahahahahahahahahahahahhahahahahahahahahahahahahhahahahahahahahahahahahahahhahahahahah";
-    }
-
     public void DisplayText()
     {
         CalculateAverageMood();

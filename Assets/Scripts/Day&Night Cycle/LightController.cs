@@ -9,6 +9,8 @@ public class LightController : MonoBehaviour
     
     [SerializeField] private FloatVariable elapsedTime;
     [SerializeField] private BoolVariable nightTime;
+    [SerializeField] private BoolVariable pauseRotation;
+    
     [SerializeField] private float _timeInSeconds;
     private float _timeDividedByDegrees = 0.75f;
 
@@ -26,6 +28,7 @@ public class LightController : MonoBehaviour
 
     private void Update()
     {
+        if(pauseRotation) return;
         elapsedTime.Value += Time.deltaTime;
         //_timeDividedByDegrees = 90 / _timeInSeconds;
 

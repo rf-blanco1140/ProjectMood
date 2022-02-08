@@ -9,19 +9,6 @@ public class YogaAnimations : MonoBehaviour
     [SerializeField] private BoolVariable animationIsPlaying;
     private float timeBeforeTransition = 2f;
     private int hihi = 0;
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            hihi = 1;
-            StartCoroutine(PlayYogaAnimation(hihi));
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            hihi = 2;
-            StartCoroutine(PlayYogaAnimation(hihi));
-        }
-    }
 
     public IEnumerator PlayYogaAnimation(int i)
     {
