@@ -10,16 +10,14 @@ public class MinigameStartAndStop : MonoBehaviour
     public GameObject _cameraManager;
     public MoodSystem _moodManager;
     [SerializeField] private BoolVariable _canWalk;
-    
 
+    [SerializeField] private int _cameraIndex;
 
     private void OnEnable()
     {
-        
-        Debug.Log("MiniGame Time!");
         _canWalk.boolValue = false;
         _moodManager.DisableMoodUI();
-        _cameraManager.GetComponent<CameraManager>().SwapCamera();
+        _cameraManager.GetComponent<CameraManager>().SwapToMinigameCamera(_cameraIndex);
     }
 
     private void OnDisable()
@@ -27,7 +25,7 @@ public class MinigameStartAndStop : MonoBehaviour
         _canWalk.boolValue = true;
         _moodManager.EnableMoodUI();
         if (_cameraManager != null)
-            _cameraManager.GetComponent<CameraManager>().SwapCamera();
+            _cameraManager.GetComponent<CameraManager>().SwapToMainCamera(_cameraIndex);
     }
 }
 
