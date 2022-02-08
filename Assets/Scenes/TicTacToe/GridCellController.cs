@@ -18,15 +18,15 @@ public class GridCellController : MonoBehaviour
 
     private void OnMouseDown()
     {
-        //safe that it was marked by the player
-        if(myOwner == Owner.None)
+        if(boardController.GetIsPlayerTurn())
         {
-            boardController.AffectGrandma(GrandmaStats.Worried);
-            SetNewOwner(Owner.Player);
-            boardController.PlayAiTurn();
+            if(myOwner == Owner.None)
+            {
+                boardController.AffectGrandma(GrandmaStats.Worried);
+                SetNewOwner(Owner.Player);
+                boardController.PlayAiTurn();
+            }
         }
-        //mark this cell with the player's mark
-        //Notify the board of what mark it received
     }
 
     public Owner GetOwner()
