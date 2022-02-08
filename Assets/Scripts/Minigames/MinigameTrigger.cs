@@ -9,6 +9,7 @@ public class MinigameTrigger : MonoBehaviour
     [SerializeField] private GameObject _textGameObject;
     [SerializeField] private GameObject _miniGame;
     [SerializeField] private GameObject _imageF;
+    [SerializeField] private GameObject _imageStat;
     [SerializeField] private AudioClip _newTrack;
     [SerializeField] private MMFeedbacks _fadeIn;
     [SerializeField] private MMFeedbacks _fadeOut;
@@ -29,6 +30,7 @@ public class MinigameTrigger : MonoBehaviour
             _canInteract = true;
             _textGameObject.SetActive(true);
             _imageF.SetActive(true);
+            _imageStat.SetActive(true);
         }
     }
 
@@ -37,6 +39,7 @@ public class MinigameTrigger : MonoBehaviour
         _canInteract = false;
         _textGameObject.SetActive(false);
         _imageF.SetActive(false);
+        _imageStat.SetActive(false);
     }
 
     private void Update()
@@ -59,5 +62,6 @@ public class MinigameTrigger : MonoBehaviour
         _canInteract = false;
         _textGameObject.SetActive(false);
         _imageF.SetActive(false);
+        _imageStat.SetActive(false);
     }
 }
