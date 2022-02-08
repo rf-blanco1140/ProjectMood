@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 4558495118859734763, guid: a1d43b54a5f5ebd46b2dad52309d0e56, type: 3}
   managerUI: {fileID: 5607268052075854886}
+  parent: {fileID: 5607268053002844866}
 --- !u!1 &727398963
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,8 +137,8 @@ MonoBehaviour:
   icon: {fileID: 4379273601094167101, guid: 26c894c24d58ae04dbd04279888ede68, type: 3}
   newSprite:
   - {fileID: 21300000, guid: 3e47e42a66432684ea7e76a7dc8b3704, type: 3}
-  - {fileID: 21300000, guid: feb4247c902e1144ca6d08023dc62ebf, type: 3}
-  - {fileID: 21300000, guid: d2c2b4a5689acf946bd77e72d6e4cf28, type: 3}
+  - {fileID: 21300000, guid: 5944cb4873b33964782dbbb3200112fc, type: 3}
+  - {fileID: 21300000, guid: d7613147d3d41f44d85b80afbb06f4fc, type: 3}
   - {fileID: 21300000, guid: 5b4d856a6591e4a4d86a83436a146d17, type: 3}
   - {fileID: 21300000, guid: 94c70f65fd3c2904898745fb23458c67, type: 3}
   - {fileID: 21300000, guid: 8a223cb23a1c4034cac2575705497335, type: 3}
@@ -145,6 +146,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 269054620080ef343a1ef6a5afe24d9b, type: 3}
   - {fileID: 21300000, guid: d3784f685e5a8d449bd561988b5c64fe, type: 3}
   - {fileID: 21300000, guid: 9888636fba826db42ba7ab53e0ec731d, type: 3}
+  parent: {fileID: 5607268053002844866}
 --- !u!1 &5607268053002844866
 GameObject:
   m_ObjectHideFlags: 0

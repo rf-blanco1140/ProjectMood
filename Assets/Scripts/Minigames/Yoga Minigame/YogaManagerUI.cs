@@ -5,6 +5,7 @@ public class YogaManagerUI : MonoBehaviour
 {
     [SerializeField] private GameObject icon;
     [SerializeField] private Sprite[] newSprite;
+    [SerializeField] private GameObject parent;
     
     private List<GameObject> icons = new List<GameObject>(0);
     
@@ -18,6 +19,8 @@ public class YogaManagerUI : MonoBehaviour
             GameObject iconObject = Instantiate(icon, new Vector3((currentVectorX += increment),10,45), Quaternion.identity);
             increment = 7;
 
+            iconObject.transform.parent = parent.transform;
+            
             icons.Add(iconObject);
 
             GetCurrentImage(idList, iconObject);

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using MoreMountains.Feedbacks;
 
@@ -18,7 +19,12 @@ public class WashingMinigameManager : MonoBehaviour
         }
         Debug.Log(dirt.Length);
     }
-    
+
+    private void Update()
+    {
+        Debug.Log(_totalDirtTransparency);
+    }
+
     private void OnFinish()
     {
         _finishedSFX.PlayFeedbacks();

@@ -18,6 +18,7 @@ public class Clean : MonoBehaviour
 
     private void OnEnable()
     {
+        _transparent = false;
         renderer = GetComponent<Renderer>();
         renderer.material = dirty;
         duration = 0f;
@@ -26,7 +27,7 @@ public class Clean : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out WaterDrop water))
+        if (other.TryGetComponent(out WaterDrop waterDrop))
         {
             durationPassed = washerPower;
         }

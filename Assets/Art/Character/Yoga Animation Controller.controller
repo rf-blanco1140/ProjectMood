@@ -209,7 +209,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature|Yoga 8 Down
+  m_Name: Armature|Yoga 9 Down
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -236,7 +236,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature|Yoga 7 Up
+  m_Name: Armature|Yoga 6 Up
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -288,7 +288,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature|Yoga 9 Down
+  m_Name: Armature|Yoga 8 Down
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -315,7 +315,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature|Yoga 8 Up
+  m_Name: Armature|Yoga 9 Up
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -341,7 +341,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature|Yoga 5 Down
+  m_Name: Armature|Yoga 4 Down
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -368,7 +368,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature|Yoga 5 Up
+  m_Name: Armature|Yoga 4 Up
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -491,7 +491,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature|Yoga 7 Down
+  m_Name: Armature|Yoga 6 Down
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -540,7 +540,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature|Yoga 6 Down
+  m_Name: Armature|Yoga 7 Down
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -637,7 +637,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature|Yoga 4 Down
+  m_Name: Armature|Yoga 5 Down
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -686,7 +686,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature|Yoga 6 Up
+  m_Name: Armature|Yoga 7 Up
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -809,7 +809,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature|Yoga 4 Up
+  m_Name: Armature|Yoga 5 Up
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -835,7 +835,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature|Yoga 9 Up
+  m_Name: Armature|Yoga 8 Up
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

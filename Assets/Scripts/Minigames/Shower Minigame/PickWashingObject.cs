@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PickWashingObject : MonoBehaviour
@@ -8,14 +9,15 @@ public class PickWashingObject : MonoBehaviour
     private AudioSource audioSource;
 
     private bool _active;
-    Vector3 soapStartPosition;
-    Vector3 washerStartPosition;
+    private Vector3 soapStartPosition = new Vector3(-4.27f,0f,10.31f);
+    private Vector3 washerStartPosition = new Vector3(2.33f, -1.34f, 5.67f);
 
     private void OnEnable()
     {
         audioSource = GetComponent<AudioSource>();
-        soapStartPosition = soap.transform.position;
-        washerStartPosition = powerWash.transform.position;
+
+        SetPosition(soap, soapStartPosition);
+        SetPosition(powerWash, washerStartPosition);
     }
 
     public void UseSoap()
@@ -38,5 +40,4 @@ public class PickWashingObject : MonoBehaviour
     {
         return washObject.transform.position = targetPosition;
     }
- 
 }
