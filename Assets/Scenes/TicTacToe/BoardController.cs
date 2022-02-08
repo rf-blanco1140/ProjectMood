@@ -221,4 +221,9 @@ public class BoardController : MonoBehaviour
     {
         grandmaReference.ChangeExpression(newStat);
     }
+
+    public bool GetIsPlayerTurn()
+    {
+        return isPlayerTurn;
+    }
 }
