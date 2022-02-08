@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4558495118859734763}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -30.86, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -60,6 +60,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pressedID: {fileID: 11400000, guid: c0f0222b38100fa44941af02a796ebf6, type: 2}
   OnButtonPressed: {fileID: 11400000, guid: 072663e3bb389c14da2d433e3f2b4f4b, type: 2}
+  animationIsPlaying: {fileID: 11400000, guid: 41fe24aa8eb79bb42b66ff72a6bf9c42, type: 2}
   i: 0
 --- !u!212 &-3437961075100673655
 SpriteRenderer:

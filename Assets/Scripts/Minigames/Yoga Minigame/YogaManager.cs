@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -8,9 +9,17 @@ public class YogaManager : MonoBehaviour
     [SerializeField] private IntVariable _pressedID;
     [SerializeField] private InstantiateYogaButton button;
     [SerializeField] private YogaManagerUI UI;
+    [SerializeField] private YogaAnimations animations;
+
+    [SerializeField] private VoidEvent _onWinGame;
+    [SerializeField] private FloatVariable body;
     
+    [SerializeField] private BoolVariable animationIsPlaying;
     private int _totalPoses = 5;
 
+    private float currentPoints;
+    private bool test;
+    
     private void RandomizePoseID()
     {
         for (int i = 0; i < _totalPoses; i++)
@@ -19,19 +28,23 @@ public class YogaManager : MonoBehaviour
         }
     }
 
-    private void LookForCorrectID()
+    private IEnumerator PlayAnimation()
+    {
+        StartCoroutine(animations.PlayYogaAnimation(_pressedID.Value));
+        yield return new WaitForSeconds(4);
+        GoToNextPose();
+    }
+    
+    private void LookForCorrectID() // redo ?
     {
         if (_poseID[0] == _pressedID.Value)
         {
-            GoToNextPose(); 
+            StartCoroutine(PlayAnimation());
             Debug.Log("correct");
-            // + points
         }
         else
         {
-            GoToNextPose();
             Debug.Log("incorrect");
-            // - points
         }
     }
 
@@ -40,8 +53,7 @@ public class YogaManager : MonoBehaviour
         if (_poseID.Count <= 1)
         {
             Debug.Log("no more poses");
-            //OnFinish();
-            // ienumerator for finish ?
+            StartCoroutine(OnFinish());
             return;
         }
         
@@ -50,6 +62,7 @@ public class YogaManager : MonoBehaviour
     
     private void OnEnable()
     {
+        animationIsPlaying.boolValue = false;
         _poseID = new List<int>(0);
         RandomizePoseID();
         
@@ -60,12 +73,19 @@ public class YogaManager : MonoBehaviour
     public void OnButtonPressed()
     {
         LookForCorrectID();
+            
+        if (_poseID[0] == _pressedID.Value)
+        {
+            UI.OnButtonPressed();
+        }
     }
 
-    /*private void OnFinish()
+    private IEnumerator OnFinish()
     {
         body.ApplyChange(20);
         _onWinGame.Raise();
         transform.parent.gameObject.SetActive(false);
-    }*/
+        Debug.Log("won!");
+        yield return new WaitForSeconds(1);
+    }
 }

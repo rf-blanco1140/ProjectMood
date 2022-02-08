@@ -9,13 +9,13 @@ public class YogaManagerUI : MonoBehaviour
     private List<GameObject> icons = new List<GameObject>(0);
     
     private float increment = 0f;
-    private float currentVectorX = 0f;
+    private float currentVectorX = -2.5f;
 
     public void DrawImages(List<int> _IDList)
     {
         foreach (var idList in _IDList)
         {
-            GameObject iconObject = Instantiate(icon, new Vector3((currentVectorX -= increment),12,0), Quaternion.identity);
+            GameObject iconObject = Instantiate(icon, new Vector3((currentVectorX -= increment),10,0), Quaternion.identity);
             increment = 7;
 
             icons.Add(iconObject);
@@ -32,7 +32,7 @@ public class YogaManagerUI : MonoBehaviour
         {
             if (j == 0)
             {
-                ugh.transform.localScale = new Vector3(2, 2, 2);
+                ugh.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
             }
             
             else return;
@@ -83,7 +83,7 @@ public class YogaManagerUI : MonoBehaviour
         foreach (GameObject game in icons)
         {
             Vector3 transformPosition = game.transform.position;
-            game.transform.position = new Vector3(transformPosition.x += 7f, 12,0);
+            game.transform.position = new Vector3(transformPosition.x += 7f, 10,0);
         }
         
         SetScale(icons[0]);
