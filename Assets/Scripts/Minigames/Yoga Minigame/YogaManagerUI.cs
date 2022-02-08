@@ -1,115 +1,98 @@
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class YogaManagerUI : MonoBehaviour
 {
-    // set images same as ID
-    // foreach int in list check switch case with ID value
-    // draw all of them in a line
-
-    [SerializeField] private List<GameObject> icons = new List<GameObject>();
-    [SerializeField] private YogaManager manager;
+    [SerializeField] private GameObject icon;
     [SerializeField] private Sprite[] newSprite;
     
-    [SerializeField] private List<int> _IDlist = new List<int>();
-    private int ID = 0;
-    private int i = 0;
+    private List<GameObject> icons = new List<GameObject>(0);
+    
+    private float increment = 0f;
+    private float currentVectorX = -2.5f;
 
-    private void OnEnable()
+    public void DrawImages(List<int> _IDList)
     {
-        _IDlist = new List<int>();
-        DrawImages();
+        foreach (var idList in _IDList)
+        {
+            GameObject iconObject = Instantiate(icon, new Vector3((currentVectorX -= increment),10,0), Quaternion.identity);
+            increment = 7;
+
+            icons.Add(iconObject);
+
+            GetCurrentImage(idList, iconObject);
+        }
+        
+        SetScale(icons[0]);
     }
 
-    private void DrawImages()
+    private void SetScale(GameObject ugh)
     {
-        manager.CopyList(_IDlist);
-        Debug.Log(_IDlist.Count);
-        
-        foreach (var icon in icons)
+        for (int j = 0; j < icons.Count; j++)
         {
-            //set ID and Image
-            ID = _IDlist[i];
-            Debug.Log($"{ID} \n");
-            GetCurrentImage(ID, icon);
-            i++;
+            if (j == 0)
+            {
+                ugh.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            }
+            
+            else return;
         }
     }
     
-    private void GetCurrentImage(int ID, GameObject icon)
+    public void GetCurrentImage(int ID, GameObject icon) // rename
     {
         switch (ID)
         {
             case 0: 
-                Debug.Log("image 1");
                 icon.GetComponent<SpriteRenderer>().sprite = newSprite[ID];
                 break;
             case 1: 
-                Debug.Log("image 2");
                 icon.GetComponent<SpriteRenderer>().sprite = newSprite[ID];
                 break;
             case 2: 
-                Debug.Log("image 3");
                 icon.GetComponent<SpriteRenderer>().sprite = newSprite[ID];
                 break;
             case 3: 
-                Debug.Log("image 4");
                 icon.GetComponent<SpriteRenderer>().sprite = newSprite[ID];
                 break;
             case 4: 
-                Debug.Log("image 5");
+                icon.GetComponent<SpriteRenderer>().sprite = newSprite[ID];
+                break;
+            case 5: 
+                icon.GetComponent<SpriteRenderer>().sprite = newSprite[ID];
+                break;
+            case 6: 
+                icon.GetComponent<SpriteRenderer>().sprite = newSprite[ID];
+                break;
+            case 7: 
+                icon.GetComponent<SpriteRenderer>().sprite = newSprite[ID];
+                break;
+            case 8: 
+                icon.GetComponent<SpriteRenderer>().sprite = newSprite[ID];
+                break;
+            case 9: 
                 icon.GetComponent<SpriteRenderer>().sprite = newSprite[ID];
                 break;
         }
     }
 
-    private void RemoveCurrentPose()
+    public void OnButtonPressed()
     {
-        _IDlist.RemoveAt(0);
-        GameObject _toBeDestroyed = icons[0];
+        RemoveLastIcon();
+        
+        foreach (GameObject game in icons)
+        {
+            Vector3 transformPosition = game.transform.position;
+            game.transform.position = new Vector3(transformPosition.x += 7f, 10,0);
+        }
+        
+        SetScale(icons[0]);
+    }
+
+    private void RemoveLastIcon()
+    {
+        GameObject iconToBeDeleted = icons[0];
         icons.RemoveAt(0);
-        Destroy(_toBeDestroyed);
+        Destroy(iconToBeDeleted);
     }
-    
-
-    #region HardCodedButtons
-
-    // giga hard code for epic pro gamers
-    public void ButtonOne()
-    {
-        manager._pressedID = 0;
-        manager.LookForCorrectID();
-        RemoveCurrentPose();
-    }
-    public void ButtonTwo()
-    {
-        manager._pressedID = 1;
-        manager.LookForCorrectID();
-        RemoveCurrentPose();
-
-    }
-    public void ButtonThree()
-    {
-        manager._pressedID = 2;
-        manager.LookForCorrectID();
-        RemoveCurrentPose();
-
-    }
-    public void ButtonFour()
-    {
-        manager._pressedID = 3;
-        manager.LookForCorrectID();
-        RemoveCurrentPose();
-
-    }
-    public void ButtonFive()
-    {
-        manager._pressedID = 4;
-        manager.LookForCorrectID();
-        RemoveCurrentPose();
-
-    }
-    
-    #endregion
 }

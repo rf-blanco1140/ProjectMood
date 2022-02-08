@@ -11,7 +11,7 @@ public class PickWashingObject : MonoBehaviour
     Vector3 soapStartPosition;
     Vector3 washerStartPosition;
 
-    private void Start()
+    private void OnEnable()
     {
         audioSource = GetComponent<AudioSource>();
         soapStartPosition = soap.transform.position;

@@ -1,49 +1,50 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class YogaManager : MonoBehaviour
 {
-    // pose appears on top
-    // buttons on bottom
-    // press correct one
-    // ints
-    //[SerializeField] private VoidEvent _onWinGame;
-    //[SerializeField] private FloatVariable body;
-    
-    [SerializeField] private List<int> _poseID = new List<int>(); // 5 poses
-    public int _pressedID;
-    private int _totalPoses = 10;
-    public void CopyList(List<int> list)
-    {
-        foreach (var pose in _poseID)
-        {
-            list.Add(pose);
-        }
-    }
+    [SerializeField] private List<int> _poseID = new List<int>(0);
+    [SerializeField] private IntVariable _pressedID;
+    [SerializeField] private InstantiateYogaButton button;
+    [SerializeField] private YogaManagerUI UI;
+    [SerializeField] private YogaAnimations animations;
 
+    [SerializeField] private VoidEvent _onWinGame;
+    [SerializeField] private FloatVariable body;
+    
+    [SerializeField] private BoolVariable animationIsPlaying;
+    private int _totalPoses = 5;
+
+    private float currentPoints;
+    private bool test;
+    
     private void RandomizePoseID()
     {
-        for (int i = 0; i < _totalPoses +1; i++)
+        for (int i = 0; i < _totalPoses; i++)
         {        
-            _poseID.Add(Random.Range(0,4));
-            if (i == _totalPoses +1) _poseID.Add(0);
+            _poseID.Add(Random.Range(0,10));
         }
     }
 
-    public void LookForCorrectID()
+    private IEnumerator PlayAnimation()
     {
-        if (_poseID[0] == _pressedID)
+        StartCoroutine(animations.PlayYogaAnimation(_pressedID.Value));
+        yield return new WaitForSeconds(4);
+        GoToNextPose();
+    }
+    
+    private void LookForCorrectID() // redo ?
+    {
+        if (_poseID[0] == _pressedID.Value)
         {
-            GoToNextPose(); 
+            StartCoroutine(PlayAnimation());
             Debug.Log("correct");
-            // + points
         }
         else
         {
-            GoToNextPose();
             Debug.Log("incorrect");
-            // - points
         }
     }
 
@@ -52,26 +53,39 @@ public class YogaManager : MonoBehaviour
         if (_poseID.Count <= 1)
         {
             Debug.Log("no more poses");
-            //OnFinish();
+            StartCoroutine(OnFinish());
             return;
         }
         
-        Debug.Log($"poseID before {_poseID[0]}");
         _poseID.RemoveAt(0);
-        Debug.Log($"poseID after {_poseID[0]}");
     }
     
     private void OnEnable()
     {
-        _poseID = new List<int>();
+        animationIsPlaying.boolValue = false;
+        _poseID = new List<int>(0);
         RandomizePoseID();
-        _pressedID = 0;
+        
+        UI.DrawImages(_poseID);
+        button.RemoveDuplicateButtons(_poseID);
     }
 
-    /*private void OnFinish()
+    public void OnButtonPressed()
+    {
+        LookForCorrectID();
+            
+        if (_poseID[0] == _pressedID.Value)
+        {
+            UI.OnButtonPressed();
+        }
+    }
+
+    private IEnumerator OnFinish()
     {
         body.ApplyChange(20);
         _onWinGame.Raise();
         transform.parent.gameObject.SetActive(false);
-    }*/
+        Debug.Log("won!");
+        yield return new WaitForSeconds(1);
+    }
 }
