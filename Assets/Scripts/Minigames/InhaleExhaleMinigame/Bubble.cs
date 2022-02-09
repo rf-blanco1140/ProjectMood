@@ -12,6 +12,7 @@ public class Bubble : MonoBehaviour
     [SerializeField] private float _swayAmount = 1f;
     [SerializeField] private bool _GoRight = true;
 
+    [SerializeField] private IntVariable _shouldBubblePop;
     [SerializeField] private Vector3Event _onBubblePop;
  
 
@@ -21,17 +22,17 @@ public class Bubble : MonoBehaviour
     {
         _boundaryLeftX = transform.position.x - _swayAmount;
         _boundaryRightX = transform.position.x + _swayAmount;
+
+        if(_shouldBubblePop.Value % 5 == 0)
+        {
+            StartCoroutine(WhenToPop());
+        }
+
+        _shouldBubblePop.ApplyChange(1);
     }
 
     private void OnBecameInvisible()
     {
-        Destroy(gameObject);
-    }
-
-    private void OnMouseDown()
-    {
-        
-        _onBubblePop.Raise(transform.position);
         Destroy(gameObject);
     }
 
@@ -40,7 +41,17 @@ public class Bubble : MonoBehaviour
     {
         transform.position += new Vector3(0,_movementSpeedY * Time.deltaTime,0);
         MoveLeftAndRight();
-        CheckTimeScale();
+        //CheckTimeScale();
+    }
+
+    IEnumerator WhenToPop()
+    {
+        int _timeWhenPop = Random.Range(15, 35);
+
+        yield return new WaitForSeconds(_timeWhenPop);
+
+        _onBubblePop.Raise(transform.position);
+        Destroy(gameObject);
     }
 
     void MoveLeftAndRight()
@@ -72,16 +83,16 @@ public class Bubble : MonoBehaviour
         }
 
     }
-    public void CheckTimeScale()
-    {
-        if(Time.timeScale == 0)
-        {
-            GetComponent<CircleCollider2D>().enabled = false;
-        }
-        else
-        {
-            GetComponent<CircleCollider2D>().enabled = true;
-        }
-    }
+    //public void CheckTimeScale()
+    //{
+    //    if(Time.timeScale == 0)
+    //    {
+    //        GetComponent<CircleCollider2D>().enabled = false;
+    //    }
+    //    else
+    //    {
+    //        GetComponent<CircleCollider2D>().enabled = true;
+    //    }
+    //}
  
 }

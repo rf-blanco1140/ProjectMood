@@ -112,11 +112,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4362e89af73a504eb0e770c96e3f3d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSpeedY: 0.25
-  _movementSpeedX: 0.15
+  _movementSpeedY: 0.5
+  _movementSpeedX: 0.3
   _boundaryRightX: 0
   _boundaryLeftX: 0
-  _swayAmount: 0.4
+  _swayAmount: 0.8
   _GoRight: 1
+  _shouldBubblePop: {fileID: 11400000, guid: 30ecfd77baadff84fbb03b88d6caabe4, type: 2}
   _onBubblePop: {fileID: 11400000, guid: 425b2ed6c6b1ea243a7c357b24c5de01, type: 2}
-  particles: {fileID: 7895647621921020795, guid: bf0aab2df2f367e4fabd651a805de326, type: 3}
