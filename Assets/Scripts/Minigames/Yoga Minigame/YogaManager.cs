@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using MoreMountains.Feedbacks;
 
 public class YogaManager : MonoBehaviour
 {
@@ -13,7 +14,9 @@ public class YogaManager : MonoBehaviour
 
     [SerializeField] private VoidEvent _onWinGame;
     [SerializeField] private FloatVariable body;
-    
+    [SerializeField] private MMFeedbacks failSFX;
+    [SerializeField] private MMFeedbacks correctSFX;
+
     [SerializeField] private BoolVariable animationIsPlaying;
     private int _totalPoses = 5;
 
@@ -40,10 +43,12 @@ public class YogaManager : MonoBehaviour
         if (_poseID[0] == _pressedID.Value)
         {
             StartCoroutine(PlayAnimation());
+            correctSFX.PlayFeedbacks();
             Debug.Log("correct");
         }
         else
         {
+            failSFX.PlayFeedbacks();
             Debug.Log("incorrect");
         }
     }
