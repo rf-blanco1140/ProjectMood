@@ -429,6 +429,11 @@ MonoBehaviour:
   appetiteText: {fileID: 763247483061800820}
   hygieneText: {fileID: 763247483113048627}
   socialText: {fileID: 763247483984985257}
+  bodyIcon: {fileID: 6898793693174181585}
+  mindIcon: {fileID: 7720058234201825195}
+  appetiteIcon: {fileID: 0}
+  hygieneIcon: {fileID: 0}
+  socialIcon: {fileID: 0}
   body: {fileID: 11400000, guid: f045ca282858c7a4489ce349ce5596fe, type: 2}
   mind: {fileID: 11400000, guid: a8a362f73da062247ba80f5a95d48dad, type: 2}
   appetite: {fileID: 11400000, guid: 752e9e33e00c7b342afc4b649e86d734, type: 2}

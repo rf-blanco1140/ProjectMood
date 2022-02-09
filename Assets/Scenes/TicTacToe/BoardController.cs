@@ -27,6 +27,9 @@ public class BoardController : MonoBehaviour
     [SerializeField] private MMFeedbacks failSFX;
     [SerializeField] private MMFeedbacks winSFX;
 
+    [SerializeField] private MoodSystem moodSystemRef;
+
+
     private int numberTurns;
 
     private float exitTime;
@@ -227,6 +230,8 @@ public class BoardController : MonoBehaviour
         AudioManager.instance.ReturnToDefault();
         social.ApplyChange(30);
         _onWinGame.Raise();
+
+        moodSystemRef.PlayIncreaseStatAnim(Stats.Social);
     }
 
     private void Update()

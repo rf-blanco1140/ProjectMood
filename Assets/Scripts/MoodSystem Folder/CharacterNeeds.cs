@@ -27,7 +27,7 @@ public class CharacterNeeds : MonoBehaviour
     [SerializeField] private float activeTime;
     private float currentTime;
     private bool finishedCooldown;
-    private enum Stats {None, Body, Mind, Appetite, Hygiene, Social};
+    //private enum Stats {None, Body, Mind, Appetite, Hygiene, Social};
 
     private void Start()
     {
