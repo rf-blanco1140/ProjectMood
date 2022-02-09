@@ -14,6 +14,8 @@ public class Bubble : MonoBehaviour
 
     [SerializeField] private IntVariable _shouldBubblePop;
     [SerializeField] private Vector3Event _onBubblePop;
+
+    [SerializeField] private Animator _animator;
  
 
 
@@ -50,7 +52,9 @@ public class Bubble : MonoBehaviour
 
         yield return new WaitForSeconds(_timeWhenPop);
 
+        _animator.SetBool("BubblePop", true);
         _onBubblePop.Raise(transform.position);
+        yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
 

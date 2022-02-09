@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3046419624227895387}
   - component: {fileID: 3046419624227895386}
   - component: {fileID: 3046419624227895389}
+  - component: {fileID: 487573316976013752}
   m_Layer: 5
   m_Name: Bubble
   m_TagString: Untagged
@@ -120,3 +121,23 @@ MonoBehaviour:
   _GoRight: 1
   _shouldBubblePop: {fileID: 11400000, guid: 30ecfd77baadff84fbb03b88d6caabe4, type: 2}
   _onBubblePop: {fileID: 11400000, guid: 425b2ed6c6b1ea243a7c357b24c5de01, type: 2}
+  _animator: {fileID: 487573316976013752}
+--- !u!95 &487573316976013752
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3046419624227895388}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 70aa642d8374e214dab3606470e05a31, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
