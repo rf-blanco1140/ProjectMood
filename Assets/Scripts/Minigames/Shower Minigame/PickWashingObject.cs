@@ -16,8 +16,8 @@ public class PickWashingObject : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
 
-        SetPosition(soap, soapStartPosition);
-        SetPosition(powerWash, washerStartPosition);
+        SetPosition(soap, new Vector3(-4.27f,0f,10.31f));
+        SetPosition(powerWash, new Vector3(2.33f, -1.34f, 5.67f));
     }
 
     public void UseSoap()
