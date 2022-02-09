@@ -1,8 +1,6 @@
-using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
 {
@@ -22,7 +20,7 @@ public class TimeManager : MonoBehaviour
     private int _dayTimeEnds = 5;
     private int _nightTimeStarts = 6;
     private int _day = 1; // don't need
-    private float _clockHours = 9f;
+    public float _clockHours = 9f;
     private int _dropTime = 0;
     
     private void Awake()
@@ -90,7 +88,7 @@ public class TimeManager : MonoBehaviour
 
     public void CheckForBuffer()
     {
-        if (_hoursInDay >= 21)
+        if (_clockHours >= 21)
         {
             _day++; // don't need ?
             // update day saturday => Sunday

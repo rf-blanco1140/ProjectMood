@@ -18,18 +18,6 @@ public class Sleep : MonoBehaviour
 
     [SerializeField] private GameObject nextButton;
     [SerializeField] private GameObject player;
-    
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            StartCoroutine(GoingToSleep());
-        }
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            StartCoroutine(WakingUp());
-        }
-    }
 
     public IEnumerator GoingToSleep()
     {
