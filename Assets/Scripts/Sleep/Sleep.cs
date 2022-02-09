@@ -1,82 +1,69 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class Sleep : MonoBehaviour
 {
-    [SerializeField] private VoidEvent onNextDay;
     [SerializeField] private VoidEvent onSummary;
-    
-    [SerializeField] private FloatVariable body;
-    
-    [SerializeField] private GameObject exhausted;
-    [SerializeField] private GameObject summary;
-    [SerializeField] private GameObject sleepUI;
-    
+    [SerializeField] private VoidEvent onToggleUI;
+
     [SerializeField] private BoolVariable canWalk;
     [SerializeField] private BoolVariable pauseRotation;
     [SerializeField] private BoolVariable timePaused;
-
+    
+    [SerializeField] private GameObject summary;
     [SerializeField] private GameObject nextButton;
+    
     [SerializeField] private GameObject player;
+    private Vector3 playerStartPosition = new Vector3(-7f, 1f, 10.5f);
+    
+    [SerializeField] private SleepUI sleepUI;
 
-    public IEnumerator GoingToSleep()
+    public void StartSleeping()
     {
-        sleepUI.GetComponent<SleepUI>().ResetTimers();
-        sleepUI.GetComponent<SleepUI>().FadeToBlack();
+        StartCoroutine(Sleeping());
+    }
+    
+    public IEnumerator Sleeping()
+    {
+        sleepUI.ResetTimers();
+        sleepUI.FadeToBlack();
+        onToggleUI.Raise();
         
         canWalk.boolValue = false;
         pauseRotation.boolValue = true;
         timePaused.boolValue = true;
 
-        yield return new WaitForSeconds(3); // fade to black    
+        yield return new WaitForSeconds(3);  
         
         summary.SetActive(true);
-        onSummary.Raise(); //doesn't work in testing but will work in mainscene
-        sleepUI.GetComponent<SleepUI>().SetStartPosition();
-        sleepUI.GetComponent<SleepUI>().ResetTimers();
-        sleepUI.GetComponent<SleepUI>().TransitionToEndOfDaySummary();
+        onSummary.Raise(); 
+        sleepUI.SetStartPosition();
+        sleepUI.ResetTimers();
+        sleepUI.TransitionToEndOfDaySummary();
         
-        body.ApplyChange(20); // whatever stats 
-        
-        yield return new WaitForSeconds(8); // fade to black    
+        yield return new WaitForSeconds(8);  
         nextButton.SetActive(true);
     }
 
     public IEnumerator WakingUp()
     {
-        sleepUI.GetComponent<SleepUI>().SetFinalPosition();
-        sleepUI.GetComponent<SleepUI>().ResetTimers();
-        sleepUI.GetComponent<SleepUI>().TransitionOutOfEndOfDaySummary();
+        sleepUI.SetFinalPosition();
+        sleepUI.ResetTimers();
+        sleepUI.TransitionOutOfEndOfDaySummary();
 
-        yield return new WaitForSeconds(3); // amount it takes for transition to end 
-        sleepUI.GetComponent<SleepUI>()._startUI = false;
-        sleepUI.GetComponent<SleepUI>()._continueUI = false;
+        yield return new WaitForSeconds(3); 
+        sleepUI._startUI = false;
+        sleepUI._continueUI = false;
 
         summary.SetActive(false);
 
         pauseRotation.boolValue = false;
         timePaused.boolValue = false;
-        onNextDay.Raise();
         canWalk.boolValue = true;
-
-        player.transform.position = new Vector3(-7f, 1f, 10.5f);
-    }
-
-    public void StartExhaustion()
-    {
-        //StartCoroutine(Exhausted());
-    }
-    
-    private IEnumerator Exhausted()
-    {
-        sleepUI.GetComponent<SleepUI>().ResetTimers();
-        sleepUI.GetComponent<SleepUI>().FadeToBlack();
         
-        exhausted.SetActive(true); // fade in
-        sleepUI.GetComponent<SleepUI>().FadeText(exhausted);
-        
-        yield return new WaitForSeconds(4); // however long it should be up
-        StartCoroutine(GoingToSleep());
+        onToggleUI.Raise();
+        player.transform.position = playerStartPosition;
     }
 
     public void Button()

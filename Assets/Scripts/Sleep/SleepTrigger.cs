@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using MoreMountains.Feedbacks;
 using TMPro;
@@ -7,7 +8,7 @@ public class SleepTrigger : MonoBehaviour
     [SerializeField] private GameObject textObject;
     [SerializeField] private MMFeedbacks _endSound;
     [SerializeField] private TimeManager timeManager;
-    [SerializeField] private TextMeshProUGUI text;
+    [SerializeField] private TextMeshProUGUI notTiredResponseText;
     
    private void OnTriggerStay(Collider other)
     {
@@ -17,15 +18,21 @@ public class SleepTrigger : MonoBehaviour
             if (timeManager._clockHours >= 19)
             {
                 _endSound.PlayFeedbacks();
-                StartCoroutine(sleep.GoingToSleep());
+                StartCoroutine(sleep.Sleeping());
             }
             else
             {
-                text.text = $"I don't feel tired yet..";
+                StartCoroutine(Response());
             }
         }
-            
     }
+
+   private IEnumerator Response()
+   {
+       notTiredResponseText.text = $"I don't feel tired yet..";
+       yield return new WaitForSeconds(2);
+       notTiredResponseText.text = $"";
+   }
 
     private void OnTriggerExit(Collider other)
     {

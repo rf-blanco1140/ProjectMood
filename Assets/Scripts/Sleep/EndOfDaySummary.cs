@@ -151,7 +151,7 @@ public class EndOfDaySummary : MonoBehaviour
     
     #endregion
     
-    private string GetLowestMoods(int test)
+    private string GetLowestMoods(int index)
     {
         ConvertListToIntValues();
         Sort(intValues);
@@ -159,7 +159,7 @@ public class EndOfDaySummary : MonoBehaviour
 
         string returnString = null;
         
-        switch (test)
+        switch (index)
         {
             case 1:
                 returnString = moodList[0].name;
@@ -187,6 +187,12 @@ public class EndOfDaySummary : MonoBehaviour
     private void CalculateAverageMood()
     {
         _overAllMood = (body.Value + appetite.Value + hygiene.Value + mind.Value + social.Value) / 5;
+    }
+
+    public float GetAverageMood()
+    {
+        CalculateAverageMood();
+        return _overAllMood;
     }
 
     private string PickFiller(FloatVariable a, FloatVariable b)

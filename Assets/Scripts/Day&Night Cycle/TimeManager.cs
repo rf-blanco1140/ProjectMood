@@ -4,115 +4,56 @@ using UnityEngine;
 
 public class TimeManager : MonoBehaviour
 {
-    [SerializeField] private BoolVariable _timePaused;
-    [SerializeField] private FloatVariable elapsedTime;
-    [SerializeField] private BoolVariable nightTime;
     [SerializeField] private BoolVariable bufferNextDay;
-
-    [SerializeField] private GameEvent onResetDay;
     [SerializeField] private VoidEvent onDropEachHour;
-    [SerializeField] private VoidEvent onExhaustion;
-
+    [SerializeField] private VoidEvent onSleep;
     [SerializeField] private TextMeshProUGUI clock;
+    [SerializeField] private IntVariable day;
+    [SerializeField] private Ending ending;
 
-    private float _inGameHourInSeconds = 5f;
-    private int _hoursInDay = 1;
-    private int _dayTimeEnds = 5;
-    private int _nightTimeStarts = 6;
-    private int _day = 1; // don't need
+    private float _inGameHourInSeconds = 30f;
     public float _clockHours = 9f;
-    private int _dropTime = 0;
     
     private void Awake()
     {
-        StartCoroutine(HourlyTimer());
+        day.Value = 0;
+        StartCoroutine(DailyTimer());
     }
 
-    private IEnumerator HourlyTimer()
+    private IEnumerator DailyTimer()
     {
-        if (_timePaused.boolValue = true)
+        if (day.Value == 2)
         {
-            yield return WaitForSeconds(2);
-            StartCoroutine(HourlyTimer());
+            Debug.Log("end");
+            //ending.GetAverageForEnding();
         }
-        else
-        {
-            HourManager();
+        
+        GoingToSleepExhausted();
+        
+        UpdateClock();
+        _clockHours++;
+        
+        onDropEachHour.Raise();
+        
+        yield return new WaitForSeconds(_inGameHourInSeconds);
+        StartCoroutine(DailyTimer());
+    }
 
-            DayTime();
-            NightTime();
-            UpdateClock();
-        
-            _clockHours++;
-            _hoursInDay++;
-        
-            onDropEachHour.Raise();
-        
-            yield return new WaitForSeconds(_inGameHourInSeconds);
-        }
+    public void GoingToSleep()
+    {
+        onSleep.Raise();
+        _clockHours = 8;
     }
     
-    private void DayTime()
+    private void GoingToSleepExhausted()
     {
-        if (_hoursInDay <= _dayTimeEnds)
+        if (_clockHours >= 21 && bufferNextDay.boolValue == false)
         {
+            onSleep.Raise();
+            // play some tired sound bell noise idk
+            _clockHours = 8;
+            day.Value++;
         }
-
-        if (_hoursInDay == 1)
-        {
-            nightTime.boolValue = false;
-            elapsedTime.Value = 0;
-        }
-    }
-
-    private void NightTime()
-    {
-        if (_hoursInDay >= _nightTimeStarts)
-        {
-        }
-
-        if (_hoursInDay == _nightTimeStarts)
-        {
-            nightTime.boolValue = true;
-            elapsedTime.Value = 0;
-        }
-    }
-
-    public void NextDay()
-    {
-        if (bufferNextDay.boolValue == false)
-        {
-            _day++; // don't need ?
-            // update day saturday => Sunday
-            // 
-            _clockHours = 9;
-            onResetDay.Raise();
-            _hoursInDay = 1; 
-        }
-    }
-
-    public void CheckForBuffer()
-    {
-        if (_clockHours >= 21)
-        {
-            _day++; // don't need ?
-            // update day saturday => Sunday
-            // 
-            _clockHours = 9;
-            onResetDay.Raise();
-            _hoursInDay = 1; 
-        }
-    }
-    
-    private int HourManager()
-    {
-        if (_hoursInDay >= 12)
-        {
-            onExhaustion.Raise();
-            _hoursInDay = 1;
-            return _hoursInDay;
-        }
-        return _hoursInDay;
     }
 
     private void UpdateClock()

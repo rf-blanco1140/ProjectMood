@@ -25,13 +25,13 @@ MonoBehaviour:
     m_Value: 1
   fixedExposure:
     m_OverrideState: 1
-    m_Value: -0.87
+    m_Value: 0.67654413
   compensation:
     m_OverrideState: 0
     m_Value: 0
   limitMin:
     m_OverrideState: 0
-    m_Value: -1
+    m_Value: -5
   limitMax:
     m_OverrideState: 0
     m_Value: 14
@@ -302,17 +302,17 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 2.24
+    m_Value: 2.71
     min: 0
     max: 4
   directLightingStrength:
     m_OverrideState: 1
-    m_Value: 0.094
+    m_Value: 0.083
     min: 0
     max: 1
   radius:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 2.08
     min: 0.25
     max: 5
   spatialBilateralAggressiveness:
@@ -348,7 +348,7 @@ MonoBehaviour:
     m_Value: 1
   m_MaximumRadiusInPixels:
     m_OverrideState: 1
-    m_Value: 80
+    m_Value: 82
     min: 16
     max: 256
   m_BilateralUpsample:
@@ -770,13 +770,13 @@ MonoBehaviour:
   m_AdvancedMode: 0
   lift:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.9533333, z: 0.95, w: 0.01730097}
+    m_Value: {x: 1, y: 0.97, z: 0.995, w: 0.01730097}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0.06920416}
+    m_Value: {x: 0.99, y: 0.998, z: 1, w: 0.06920416}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 0.95, y: 1, z: 0.99833333, w: -0.034602083}
+    m_Value: {x: 0.9971667, y: 0.99, z: 1, w: -0.034602083}
 --- !u!114 &3121732912853011053
 MonoBehaviour:
   m_ObjectHideFlags: 3

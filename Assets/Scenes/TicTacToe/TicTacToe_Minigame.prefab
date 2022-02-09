@@ -775,7 +775,7 @@ GameObject:
   - component: {fileID: 2101501024871864073}
   - component: {fileID: 2884932101312009894}
   - component: {fileID: 6392367986644825040}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Tic-tac-toe Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -880,6 +880,7 @@ MonoBehaviour:
   social: {fileID: 11400000, guid: 3c3f2de5d3013a44cb21e516d7c23307, type: 2}
   failSFX: {fileID: 2106390936063492153}
   winSFX: {fileID: 864872572154250635}
+  moodSystemRef: {fileID: 0}
 --- !u!1 &8726300598306492187
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,7 +890,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8726300598306492188}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 0-0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -919,7 +920,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8726300598335472124}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 1-0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -949,7 +950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8726300598352984726}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 2-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -980,7 +981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8726300598643143135}
   - component: {fileID: 8726300598643143134}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: AI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1023,7 +1024,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8726300598651071957}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 0-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1053,7 +1054,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8726300598843696771}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 2-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1083,7 +1084,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8726300599158971920}
-  m_Layer: 0
+  - component: {fileID: 1126069000}
+  m_Layer: 5
   m_Name: TicTacToe_Minigame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1110,6 +1112,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1126069000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8726300599158971935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f9f70269fdaac44b859fb209f058d67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cameraManager: {fileID: 0}
+  _moodManager: {fileID: 0}
+  _canWalk: {fileID: 11400000, guid: d54b5c11946b22a469b4b0b173c5109f, type: 2}
+  bufferNextDay: {fileID: 11400000, guid: c5ed15d494fcd58419471a63a5da266b, type: 2}
+  OnToggleUI: {fileID: 11400000, guid: 50c480ad61f19ff459f137b81c4c336b, type: 2}
+  _cameraIndex: 4
 --- !u!1 &8726300599479882489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,7 +1139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8726300599479882490}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Positions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1158,7 +1178,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8726300599573033302}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 0-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1384,7 +1404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8726300599867223251}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 1-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1414,7 +1434,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8726300600145187945}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 1-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1444,7 +1464,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8726300600275806727}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: 2-0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

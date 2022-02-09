@@ -129,9 +129,9 @@ MonoBehaviour:
   _animator1: {fileID: 0}
   _animator2: {fileID: 0}
   _animator3: {fileID: 0}
-  _dropValue: -7.5
-  _startValue: 70
-  moodSystemUI: {fileID: 0}
+  _dropValue: -5
+  _startValue: 75
+  moodSystemUI: {fileID: 763247482759377445}
   currentMood: 2
 --- !u!114 &763247482136738134
 MonoBehaviour:

@@ -322,6 +322,8 @@ MonoBehaviour:
   _cameraManager: {fileID: 0}
   _moodManager: {fileID: 0}
   _canWalk: {fileID: 11400000, guid: d54b5c11946b22a469b4b0b173c5109f, type: 2}
+  bufferNextDay: {fileID: 11400000, guid: c5ed15d494fcd58419471a63a5da266b, type: 2}
+  OnToggleUI: {fileID: 11400000, guid: 50c480ad61f19ff459f137b81c4c336b, type: 2}
   _cameraIndex: 0
 --- !u!1 &5607268053185483363
 GameObject:
@@ -377,6 +379,7 @@ MonoBehaviour:
   failSFX: {fileID: 7003890850041392723}
   correctSFX: {fileID: 7171918157021748492}
   animationIsPlaying: {fileID: 11400000, guid: 41fe24aa8eb79bb42b66ff72a6bf9c42, type: 2}
+  moodSystemRef: {fileID: 0}
 --- !u!114 &1047511582
 MonoBehaviour:
   m_ObjectHideFlags: 0
