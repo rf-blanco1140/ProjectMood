@@ -241,6 +241,7 @@ public class BoardController : MonoBehaviour
             exitTime -= Time.deltaTime;
             if(exitTime<=0)
             {
+                ResetBoard();
                 transform.parent.gameObject.SetActive(false);
             }
         }
