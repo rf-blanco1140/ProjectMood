@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -18,8 +17,8 @@ public class Sleep : MonoBehaviour
     [SerializeField] private BoolVariable timePaused;
 
     [SerializeField] private GameObject nextButton;
+    [SerializeField] private GameObject player;
     
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.U))
@@ -44,7 +43,7 @@ public class Sleep : MonoBehaviour
         yield return new WaitForSeconds(3); // fade to black    
         
         summary.SetActive(true);
-        //onSummary.Raise(); //doesn't work in testing but will work in mainscene
+        onSummary.Raise(); //doesn't work in testing but will work in mainscene
         sleepUI.GetComponent<SleepUI>().SetStartPosition();
         sleepUI.GetComponent<SleepUI>().ResetTimers();
         sleepUI.GetComponent<SleepUI>().TransitionToEndOfDaySummary();
@@ -71,6 +70,8 @@ public class Sleep : MonoBehaviour
         timePaused.boolValue = false;
         onNextDay.Raise();
         canWalk.boolValue = true;
+
+        player.transform.position = new Vector3(-7f, 1f, 10.5f);
     }
 
     public void StartExhaustion()
@@ -84,8 +85,9 @@ public class Sleep : MonoBehaviour
         sleepUI.GetComponent<SleepUI>().FadeToBlack();
         
         exhausted.SetActive(true); // fade in
+        sleepUI.GetComponent<SleepUI>().FadeText(exhausted);
         
-        yield return new WaitForSeconds(2); // however long it should be up
+        yield return new WaitForSeconds(4); // however long it should be up
         StartCoroutine(GoingToSleep());
     }
 

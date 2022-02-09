@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +14,7 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private VoidEvent onDropEachHour;
     [SerializeField] private VoidEvent onExhaustion;
 
-    [SerializeField] private Text clock;
+    [SerializeField] private TextMeshProUGUI clock;
 
     private float _inGameHourInSeconds = 30f;
     private int _hoursInDay = 1;
@@ -21,10 +23,19 @@ public class TimeManager : MonoBehaviour
     private int _day = 1; // don't need
     private float _clockHours = 9f;
     private int _dropTime = 0;
-
+    private bool bufferNextDay;
+    
     private void Awake()
     {
         StartCoroutine(HourlyTimer());
+    }
+
+    private void Update()
+    {
+        if (bufferNextDay)
+        {
+            
+        }
     }
 
     private IEnumerator HourlyTimer()

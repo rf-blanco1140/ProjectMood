@@ -1,9 +1,10 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SleepUI : MonoBehaviour
 {
-    [SerializeField] private Text textUI;
+    [SerializeField] private TextMeshProUGUI textUI;
     [SerializeField] private RawImage fade;
 
     private Color _transparentColor;
@@ -36,6 +37,8 @@ public class SleepUI : MonoBehaviour
 
     private void Update()
     {
+        //_colorLerpTime = Time.deltaTime / 5; 
+        
         if (_fadeToBlack)
         {
             FadeToBlack();
@@ -113,5 +116,11 @@ public class SleepUI : MonoBehaviour
         _lerpTime = 0f;
         _colorLerpTime = 0f;
         _fadeLerpTime = 0f;
+    }
+
+    public void FadeText(GameObject gameObject)
+    {
+        _lerpTime = 0f;
+        gameObject.GetComponent<Text>().color = Color.Lerp(_transparentColor, _whiteColor, _fadeLerpTime);
     }
 }
