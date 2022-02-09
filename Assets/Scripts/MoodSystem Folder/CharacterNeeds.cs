@@ -67,30 +67,30 @@ public class CharacterNeeds : MonoBehaviour
 
     private void ShowLowStat()
     {
-        float retNumb = 0f;
+        float retNumb = 100f;
         Stats ret = Stats.None;
 
-        if (body.Value > retNumb)
+        if (body.Value < retNumb)
         {
             retNumb = body.Value;
             ret = Stats.Body;
         }
-        if (mind.Value > retNumb)
+        if (mind.Value < retNumb)
         {
             retNumb = mind.Value;
             ret = Stats.Mind;
         }
-        if (appetite.Value > retNumb)
+        if (appetite.Value < retNumb)
         {
             retNumb = appetite.Value;
             ret = Stats.Appetite;
         }
-        if (hygiene.Value > retNumb)
+        if (hygiene.Value < retNumb)
         {
             retNumb = hygiene.Value;
             ret = Stats.Hygiene;
         }
-        if (social.Value > retNumb)
+        if (social.Value < retNumb)
         {
             retNumb = social.Value;
             ret = Stats.Social;
