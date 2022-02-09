@@ -26,4 +26,9 @@ public class MinigameText : MonoBehaviour
         _text.anchoredPosition = anchoredPos;
 
     }
+
+    private void OnDisable()
+    {
+        _text.gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+    }
 }

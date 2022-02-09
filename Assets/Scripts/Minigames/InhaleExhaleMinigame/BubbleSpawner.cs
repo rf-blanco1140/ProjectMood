@@ -23,8 +23,6 @@ public class BubbleSpawner : MonoBehaviour
 
     private IEnumerator SpawnObjects()
     {
-        yield return new WaitForSeconds(_timeBeforeFirstSpawn);
-
         while (true)
         {
             CreateObject();
