@@ -5943,6 +5943,10 @@ PrefabInstance:
       propertyPath: _miniGame
       value: 
       objectReference: {fileID: 1266717572}
+    - target: {fileID: 612957151311204535, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
+      propertyPath: _newTrack
+      value: 
+      objectReference: {fileID: 8300000, guid: 2d2dac4e774c22d4fb81b0f5b5ec5d3e, type: 3}
     - target: {fileID: 1930923708845300735, guid: c2f8e4cd6bf600f458f6a1deb1fb0b1d, type: 3}
       propertyPath: m_CastShadows
       value: 0
@@ -13759,6 +13763,14 @@ PrefabInstance:
     - target: {fileID: 9208396487720961065, guid: 215d2e486f78b624fb84e1ae0857e878, type: 3}
       propertyPath: m_Name
       value: TutorialManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 9208396487830988312, guid: 215d2e486f78b624fb84e1ae0857e878, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 404277218}
+    - target: {fileID: 9208396487830988312, guid: 215d2e486f78b624fb84e1ae0857e878, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: FadeOut
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 215d2e486f78b624fb84e1ae0857e878, type: 3}
@@ -32029,7 +32041,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482156457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.060699932, y: 0.006000459, z: 0.41409665}
+  m_LocalPosition: {x: 0.060699932, y: 0.006000459, z: 0.41409677}
   m_LocalScale: {x: 1, y: 0.91652, z: 1}
   m_Children: []
   m_Father: {fileID: 1713742908}
@@ -44890,7 +44902,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067125896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.313894, y: 30.746515, z: -144.89998}
+  m_LocalPosition: {x: -14.313513, y: 30.74661, z: -144.89998}
   m_LocalScale: {x: 1, y: 1, z: 0.4183}
   m_Children: []
   m_Father: {fileID: 7261780162239371421}
