@@ -25,6 +25,10 @@ public class BoardController : MonoBehaviour
     [SerializeField] private MMFeedbacks failSFX;
     [SerializeField] private MMFeedbacks winSFX;
 
+    private int numberTurns;
+
+    private float exitTime;
+
     private void Start()
     {
         grid = new GridCellController[3, 3];
@@ -45,6 +49,8 @@ public class BoardController : MonoBehaviour
         }
 
         isPlayerTurn = true;
+        exitTime = 3f;
+        numberTurns = 0;
     }
 
     private Owner WinCheck()
@@ -52,6 +58,13 @@ public class BoardController : MonoBehaviour
         Owner ret = Owner.None;
         
         Owner ownerCheck = Owner.None;
+
+        //Check for tie
+        if(numberTurns>=9)
+        {
+            ret = Owner.Tie;
+            return ret;
+        }
 
         //Check columns
         for (int i=0;i<3;i++)
@@ -161,7 +174,7 @@ public class BoardController : MonoBehaviour
     private void FinishGame()
     {
         textBubble.SetActive(true);
-        if(winner == Owner.Player)
+        if(winner == Owner.Player || winner == Owner.Tie)
         {
             winSFX.PlayFeedbacks();
             AffectGrandma(GrandmaStats.Lost);
@@ -176,6 +189,18 @@ public class BoardController : MonoBehaviour
         Debug.Log("a winner is " + winner);
         social.ApplyChange(30);
         _onWinGame.Raise();
+    }
+
+    private void Update()
+    {
+        if(winner!= Owner.None)
+        {
+            exitTime -= Time.deltaTime;
+            if(exitTime<=0)
+            {
+                transform.parent.gameObject.SetActive(false);
+            }
+        }
     }
 
     public bool IsCellAvaliable(int i, int j)
@@ -201,6 +226,7 @@ public class BoardController : MonoBehaviour
         {
             ai.ChoseCell();
         }
+        numberTurns++;
     }
 
     public void EndAiTurn()
@@ -215,6 +241,7 @@ public class BoardController : MonoBehaviour
         {
             isPlayerTurn = true;
         }
+        numberTurns++;
     }
 
     public void AffectGrandma(GrandmaStats newStat)

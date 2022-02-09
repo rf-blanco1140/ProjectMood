@@ -4,5 +4,5 @@ using UnityEngine;
 
 public enum Owner 
 {
-    None, Player, AI
+    None, Player, AI, Tie
 }
