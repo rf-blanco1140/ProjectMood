@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Dracaena_Dracaena Vase_BaseMap_sRGB
   m_Shader: {fileID: 4800000, guid: 6e4ae4064600d784cac1e41a9e6f2e59, type: 3}
-  m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT _NORMALMAP_TANGENT_SPACE
+  m_ShaderKeywords: _DISABLE_SSR_TRANSPARENT _MASKMAP _NORMALMAP _NORMALMAP_TANGENT_SPACE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -78,15 +78,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 18016dcb7fceec547b29d51f84113360, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 8a8495c7811576e4d8a4d905a5fbbf0f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 4610dd34376ae8744b53cae6f47f0ee0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
