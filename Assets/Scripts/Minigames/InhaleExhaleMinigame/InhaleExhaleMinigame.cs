@@ -28,6 +28,9 @@ public class InhaleExhaleMinigame : MonoBehaviour
     private bool _readyToPress;
     private bool _isInhale;
 
+    [SerializeField] private MoodSystem moodSystemRef;
+
+
     private void OnEnable()
     {
         _amountOfBreath = 0;
@@ -115,7 +118,8 @@ public class InhaleExhaleMinigame : MonoBehaviour
             AudioManager.instance.ReturnToDefault();
             _fadeOut.PlayFeedbacks();
             transform.parent.gameObject.SetActive(false);
-            
+
+            moodSystemRef.PlayIncreaseStatAnim(Stats.Mind);
         }
     }
     private void Update()

@@ -10,7 +10,8 @@ public class BonsaiManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _minText;
     [SerializeField] private VoidEvent _onWinGame;
     [SerializeField] private FloatVariable mind;
-    
+
+    [SerializeField] private MoodSystem moodSystemRef;
 
     [SerializeField] private IntVariable _currentLeafAmount;
     private int _totalLeafAmount = 0; // make non static
@@ -51,7 +52,6 @@ public class BonsaiManager : MonoBehaviour
         {
             _currentText.color = Color.red;
         }
-       
     }
 
     public void OnFinish() 
@@ -70,5 +70,7 @@ public class BonsaiManager : MonoBehaviour
             transform.parent.gameObject.SetActive(false);
         }
         AudioManager.instance.ReturnToDefault();
+        
+        moodSystemRef.PlayIncreaseStatAnim(Stats.Mind);
     }
 }

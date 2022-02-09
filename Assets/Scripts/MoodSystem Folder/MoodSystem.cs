@@ -96,4 +96,9 @@ public class MoodSystem : MonoBehaviour
     {
         moodSystemUI.gameObject.SetActive(false);
     }
+
+    public void PlayIncreaseStatAnim(Stats pStat)
+    {
+        moodSystemUI.GetComponent<MoodSystemUI>().PlayIncreaseStatFeedback(pStat);
+    }
 }

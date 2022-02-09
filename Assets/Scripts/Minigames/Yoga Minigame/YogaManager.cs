@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using MoreMountains.Feedbacks;
 
 public class YogaManager : MonoBehaviour
 {
@@ -13,12 +14,10 @@ public class YogaManager : MonoBehaviour
 
     [SerializeField] private VoidEvent _onWinGame;
     [SerializeField] private FloatVariable body;
-    
+    [SerializeField] private MMFeedbacks failSFX;
+    [SerializeField] private MMFeedbacks correctSFX;
+
     [SerializeField] private BoolVariable animationIsPlaying;
-
-    [SerializeField] private GameObject _happy;
-    [SerializeField] private GameObject _sad;
-
     private int _totalPoses = 5;
 
     private float currentPoints;
@@ -32,13 +31,6 @@ public class YogaManager : MonoBehaviour
         }
     }
 
-    private IEnumerator ToggleImage(GameObject gameObject)
-    {
-        gameObject.SetActive(true);
-        yield return new WaitForSeconds(2);
-        gameObject.SetActive(false);
-    }
-    
     private IEnumerator PlayAnimation()
     {
         StartCoroutine(animations.PlayYogaAnimation(_pressedID.Value));
@@ -51,11 +43,13 @@ public class YogaManager : MonoBehaviour
         if (_poseID[0] == _pressedID.Value)
         {
             StartCoroutine(PlayAnimation());
-            StartCoroutine(ToggleImage(_happy));
+            correctSFX.PlayFeedbacks();
+            Debug.Log("correct");
         }
         else
         {
-            StartCoroutine(ToggleImage(_sad));
+            failSFX.PlayFeedbacks();
+            Debug.Log("incorrect");
         }
     }
 
@@ -63,6 +57,7 @@ public class YogaManager : MonoBehaviour
     {
         if (_poseID.Count <= 1)
         {
+            Debug.Log("no more poses");
             StartCoroutine(OnFinish());
             return;
         }
@@ -84,8 +79,8 @@ public class YogaManager : MonoBehaviour
     {
         LookForCorrectID();
             
-        if (_poseID[0] == _pressedID.Value) 
-        { 
+        if (_poseID[0] == _pressedID.Value)
+        {
             UI.OnButtonPressed();
         }
     }
@@ -96,6 +91,7 @@ public class YogaManager : MonoBehaviour
         body.ApplyChange(20);
         _onWinGame.Raise();
         transform.parent.gameObject.SetActive(false);
+        Debug.Log("won!");
         yield return new WaitForSeconds(1);
     }
 }
