@@ -180,7 +180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You got exhausted and fell asleep on the floor
+  m_Text: It got late and you went to bed zZz
 --- !u!1 &2913800528855786391
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,10 +236,12 @@ MonoBehaviour:
   exhausted: {fileID: 2913800529351454816}
   summary: {fileID: 0}
   sleepUI: {fileID: 0}
-  sleepUIObject: {fileID: 0}
   canWalk: {fileID: 11400000, guid: d54b5c11946b22a469b4b0b173c5109f, type: 2}
   pauseRotation: {fileID: 11400000, guid: feb2a8f6c1015a04c935fe17ec6691f6, type: 2}
   timePaused: {fileID: 11400000, guid: 5ff11a90bd5309a4aa1cc3a2782f9338, type: 2}
+  nextButton: {fileID: 0}
+  player: {fileID: 0}
+  playerWakeUpPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &2913800528855786384
 MonoBehaviour:
   m_ObjectHideFlags: 0

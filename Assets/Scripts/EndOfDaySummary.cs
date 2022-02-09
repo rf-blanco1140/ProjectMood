@@ -1,7 +1,6 @@
-using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -33,7 +32,7 @@ public class EndOfDaySummary : MonoBehaviour
     [SerializeField] private string[] socialString;
     [SerializeField] private string[] badSocialString;
 
-    [SerializeField] private GameObject textObject;
+    [SerializeField] private TextMeshProUGUI moodText;
     private float _overAllMood;
 
     private List<FloatVariable> moodList = new List<FloatVariable>();
@@ -65,7 +64,7 @@ public class EndOfDaySummary : MonoBehaviour
     
     private void BadMood() 
     {
-        textObject.GetComponent<Text>().text =
+        moodText.text =
             $"Today was horrible!" +
             $"\n I feel like I'm going to break down if I don't work on " +
             $"{GetLowestMoods(1)} {GetLowestMoods(2)} {GetLowestMoods(3)}" +
@@ -74,7 +73,7 @@ public class EndOfDaySummary : MonoBehaviour
     
     private void OkayMood()
     {
-        textObject.GetComponent<Text>().text =
+        moodText.text =
             $"Dear diary." +
             $"\nToday felt so-so" +
             $"\n{ChooseBadOrGoodString(body, bodyString, badBodyString)} {PickFiller(body, hygiene)}" +
@@ -87,7 +86,7 @@ public class EndOfDaySummary : MonoBehaviour
     
     private void GoodMood()
     {
-        textObject.GetComponent<Text>().text =
+        moodText.text =
             $"Dear diary." +
             $"\nToday was great!" +
             $"\n{ChooseBadOrGoodString(body, bodyString, badBodyString)} {PickFiller(body, hygiene)}" +
@@ -100,7 +99,7 @@ public class EndOfDaySummary : MonoBehaviour
     
     private void PerfectMood()
     {
-        textObject.GetComponent<Text>().text =
+        moodText.text =
             $"Dear diary." +
             $"\nToday was perfect!" +
             $"\nI can't think of a single bad thing that happened today!";

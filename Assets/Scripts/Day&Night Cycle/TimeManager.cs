@@ -1,27 +1,28 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class TimeManager : MonoBehaviour
 {
     [SerializeField] private BoolVariable _timePaused;
     [SerializeField] private FloatVariable elapsedTime;
     [SerializeField] private BoolVariable nightTime;
+    [SerializeField] private BoolVariable bufferNextDay;
 
     [SerializeField] private GameEvent onResetDay;
     [SerializeField] private VoidEvent onDropEachHour;
     [SerializeField] private VoidEvent onExhaustion;
 
-    [SerializeField] private Text clock;
+    [SerializeField] private TextMeshProUGUI clock;
 
     private float _inGameHourInSeconds = 30f;
     private int _hoursInDay = 1;
     private int _dayTimeEnds = 5;
     private int _nightTimeStarts = 6;
     private int _day = 1; // don't need
-    private float _clockHours = 9f;
+    public float _clockHours = 9f;
     private int _dropTime = 0;
-
+    
     private void Awake()
     {
         StartCoroutine(HourlyTimer());
@@ -74,12 +75,28 @@ public class TimeManager : MonoBehaviour
 
     public void NextDay()
     {
-        _day++; // don't need ?
-        // update day saturday => Sunday
-        // 
-        _clockHours = 9;
-        onResetDay.Raise();
-        _hoursInDay = 1;
+        if (bufferNextDay.boolValue == false)
+        {
+            _day++; // don't need ?
+            // update day saturday => Sunday
+            // 
+            _clockHours = 9;
+            onResetDay.Raise();
+            _hoursInDay = 1; 
+        }
+    }
+
+    public void CheckForBuffer()
+    {
+        if (_clockHours >= 21)
+        {
+            _day++; // don't need ?
+            // update day saturday => Sunday
+            // 
+            _clockHours = 9;
+            onResetDay.Raise();
+            _hoursInDay = 1; 
+        }
     }
     
     private int HourManager()

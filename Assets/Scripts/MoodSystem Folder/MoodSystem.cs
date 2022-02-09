@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class MoodSystem : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class MoodSystem : MonoBehaviour
 
     [SerializeField] private float _dropValue = -7.5f;
     [SerializeField] private float _startValue = 70f;
-
+    
     [SerializeField] private GameObject moodSystemUI;
 
     private float _overAllMood = 0;
@@ -58,17 +59,21 @@ public class MoodSystem : MonoBehaviour
             _onMoodChange.Raise(2);
         } 
     }
-
-
+    
     private void Start()
     {
-        mind.SetValue(_startValue);
-        social.SetValue(_startValue);
-        hygiene.SetValue(_startValue);
-        body.SetValue(_startValue);
-        appetite.SetValue(_startValue);
+        RandomizeStartingStats();
         moodSystemUI.GetComponent<MoodSystemUI>().DisplayUI();
         CalculateAverageMood();
+    }
+
+    private void RandomizeStartingStats()
+    {
+        mind.SetValue(Random.Range(75,100));
+        social.SetValue(Random.Range(75,100));
+        hygiene.SetValue(Random.Range(75,100));
+        body.SetValue(Random.Range(75,100));
+        appetite.SetValue(Random.Range(75,100));
     }
 
     // drop over time
@@ -91,5 +96,4 @@ public class MoodSystem : MonoBehaviour
     {
         moodSystemUI.gameObject.SetActive(false);
     }
-
 }

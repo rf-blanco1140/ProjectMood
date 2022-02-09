@@ -12,12 +12,11 @@ public class LightController : MonoBehaviour
     [SerializeField] private BoolVariable pauseRotation;
     
     [SerializeField] private float _timeInSeconds;
-    private float _timeDividedByDegrees = 0.75f;
+    private float _timeDividedByDegrees = 0.5f;
 
     private quaternion _startRotation = quaternion.Euler(0,0,0);
     private quaternion _middleRotation = quaternion.Euler(90,0,0);
     private quaternion _endRotation = quaternion.Euler(180,0,0);
-    private quaternion _testRotation;
     
     private Light light;
 

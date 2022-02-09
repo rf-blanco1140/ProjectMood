@@ -16,6 +16,8 @@ public class BoardController : MonoBehaviour
     private Owner winner;
     [SerializeField] private GameObject playerVictoryMsg;
     [SerializeField] private GameObject playerDefeatMsg;
+    [SerializeField] private GameObject tieMsg;
+
     [SerializeField] private GameObject textBubble;
 
     private LayerMask UI = 5;
@@ -174,11 +176,17 @@ public class BoardController : MonoBehaviour
     private void FinishGame()
     {
         textBubble.SetActive(true);
-        if(winner == Owner.Player || winner == Owner.Tie)
+        if(winner == Owner.Player)
         {
             winSFX.PlayFeedbacks();
             AffectGrandma(GrandmaStats.Lost);
             playerVictoryMsg.SetActive(true);
+        }
+        else if(winner == Owner.Tie)
+        {
+            failSFX.PlayFeedbacks();
+            AffectGrandma(GrandmaStats.Lost);
+            tieMsg.SetActive(true);
         }
         else
         {
