@@ -224,6 +224,7 @@ public class BoardController : MonoBehaviour
             playerDefeatMsg.SetActive(true);
         }
         //Debug.Log("a winner is " + winner);
+        AudioManager.instance.ReturnToDefault();
         social.ApplyChange(30);
         _onWinGame.Raise();
     }
