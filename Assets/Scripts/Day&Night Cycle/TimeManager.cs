@@ -32,7 +32,7 @@ public class TimeManager : MonoBehaviour
     {
         if (_timePaused.boolValue = true)
         {
-            yield return new WaitForSeconds(2);
+            yield return WaitForSeconds(2);
             StartCoroutine(HourlyTimer());
         }
         else

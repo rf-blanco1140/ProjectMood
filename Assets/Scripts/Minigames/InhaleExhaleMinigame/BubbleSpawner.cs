@@ -34,7 +34,7 @@ public class BubbleSpawner : MonoBehaviour
         void CreateObject()
         {
             int spawnPoint;
-            spawnPoint = Random.Range(0, _spawnPos.Count);
+            spawnPoint = Random.Range(0, _spawnPos.Count - 1);
             Instantiate(_spawnObject, transform.position + _spawnPos[spawnPoint], Quaternion.identity);
         }
     }
