@@ -429,6 +429,7 @@ GameObject:
   - component: {fileID: 542809749}
   - component: {fileID: 542809748}
   - component: {fileID: 542809750}
+  - component: {fileID: 542809751}
   m_Layer: 0
   m_Name: Day&Night
   m_TagString: Untagged
@@ -451,6 +452,7 @@ MonoBehaviour:
   _timePaused: {fileID: 11400000, guid: 5ff11a90bd5309a4aa1cc3a2782f9338, type: 2}
   elapsedTime: {fileID: 11400000, guid: 0cb06d598e1b395409a04bf693c94d91, type: 2}
   nightTime: {fileID: 11400000, guid: 9382853585fcb454aa2d5c69ac941955, type: 2}
+  bufferNextDay: {fileID: 0}
   onResetDay: {fileID: 11400000, guid: ebe04ae2a0797cb47915dc2a71dbd49c, type: 2}
   onDropEachHour: {fileID: 11400000, guid: 8b04b5527619fec4ca997317bf1edc40, type: 2}
   onExhaustion: {fileID: 11400000, guid: e443997aeba42e547bf29de5072cae09, type: 2}
@@ -489,6 +491,34 @@ MonoBehaviour:
       - m_Target: {fileID: 542809748}
         m_TargetAssemblyTypeName: TimeManager, Assembly-CSharp
         m_MethodName: NextDay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &542809751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542809747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1febd85445ee4b34d87c96f029c63ee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEvent: {fileID: 11400000, guid: 2b4637068a9ee124bbbf219164e96d62, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 542809748}
+        m_TargetAssemblyTypeName: TimeManager, Assembly-CSharp
+        m_MethodName: CheckForBuffer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
