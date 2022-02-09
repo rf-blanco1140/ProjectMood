@@ -26,7 +26,7 @@ public class AI : MonoBehaviour
                 validOption = true;
                 boardController.GetCell(i, j).SetNewOwner(Owner.AI);
                 boardController.AffectGrandma(GrandmaStats.Confident);
-                Debug.LogError("cell [" + i + "," + j + "] owner is: " + boardController.GetCell(i, j).GetOwner());
+                //Debug.LogError("cell [" + i + "," + j + "] owner is: " + boardController.GetCell(i, j).GetOwner());
             }
             t++;
             if (t > 100)

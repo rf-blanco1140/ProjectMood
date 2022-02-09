@@ -223,7 +223,7 @@ public class BoardController : MonoBehaviour
             AffectGrandma(GrandmaStats.Vitorious);
             playerDefeatMsg.SetActive(true);
         }
-        Debug.Log("a winner is " + winner);
+        //Debug.Log("a winner is " + winner);
         social.ApplyChange(30);
         _onWinGame.Raise();
     }
