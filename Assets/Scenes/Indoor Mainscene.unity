@@ -32133,7 +32133,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482156457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.060699932, y: 0.006000459, z: 0.41410238}
+  m_LocalPosition: {x: 0.060699932, y: 0.006000459, z: 0.4141032}
   m_LocalScale: {x: 1, y: 0.91652, z: 1}
   m_Children: []
   m_Father: {fileID: 1713742908}
@@ -45013,7 +45013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067125896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.295584, y: 30.751093, z: -144.89998}
+  m_LocalPosition: {x: -14.292913, y: 30.75176, z: -144.89998}
   m_LocalScale: {x: 1, y: 1, z: 0.4183}
   m_Children: []
   m_Father: {fileID: 7261780162239371421}
@@ -45368,6 +45368,10 @@ PrefabInstance:
       propertyPath: _fader
       value: 
       objectReference: {fileID: 636675866}
+    - target: {fileID: 5382180382528289449, guid: 2c56f2d7d03c42b4bb884ef600cdaf6b, type: 3}
+      propertyPath: moodSystemRef
+      value: 
+      objectReference: {fileID: 678006742}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c56f2d7d03c42b4bb884ef600cdaf6b, type: 3}
 --- !u!1 &2088006919

@@ -20,6 +20,9 @@ public class CookingMinigame : MonoBehaviour
     private int _ingredientState;
     private bool _isCooking;
 
+    [SerializeField] private MoodSystem moodSystemRef;
+
+
     private void OnEnable()
     {
         _ingredientState = 0;
@@ -87,6 +90,7 @@ public class CookingMinigame : MonoBehaviour
         _fader.PlayFeedbacks();
         transform.parent.gameObject.SetActive(false);
 
+        moodSystemRef.PlayIncreaseStatAnim(Stats.Appetite);
     }
 
     private void Update()
