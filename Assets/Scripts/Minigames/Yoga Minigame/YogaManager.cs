@@ -82,6 +82,7 @@ public class YogaManager : MonoBehaviour
 
     private IEnumerator OnFinish()
     {
+        AudioManager.instance.ReturnToDefault();
         body.ApplyChange(20);
         _onWinGame.Raise();
         transform.parent.gameObject.SetActive(false);
