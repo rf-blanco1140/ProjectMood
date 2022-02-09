@@ -32133,7 +32133,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482156457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.060699932, y: 0.006000459, z: 0.41410202}
+  m_LocalPosition: {x: 0.060699932, y: 0.006000459, z: 0.41410238}
   m_LocalScale: {x: 1, y: 0.91652, z: 1}
   m_Children: []
   m_Father: {fileID: 1713742908}
@@ -35382,6 +35382,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 263307072}
     m_Modifications:
+    - target: {fileID: 975948702818254781, guid: bf56df8799aab4b4894f606c94d6657c, type: 3}
+      propertyPath: moodSystemRef
+      value: 
+      objectReference: {fileID: 678006742}
     - target: {fileID: 4406042319069163848, guid: bf56df8799aab4b4894f606c94d6657c, type: 3}
       propertyPath: m_Name
       value: Washing Minigame
@@ -45009,7 +45013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067125896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.296728, y: 30.750807, z: -144.89998}
+  m_LocalPosition: {x: -14.295584, y: 30.751093, z: -144.89998}
   m_LocalScale: {x: 1, y: 1, z: 0.4183}
   m_Children: []
   m_Father: {fileID: 7261780162239371421}

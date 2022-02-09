@@ -10,6 +10,10 @@ public class WashingMinigameManager : MonoBehaviour
     [SerializeField] private FloatVariable hygiene;
     [SerializeField] private MMFeedbacks _finishedSFX;
     private int _totalDirtTransparency = 0;
+
+    [SerializeField] private MoodSystem moodSystemRef;
+
+
     private void OnEnable()
     {
         _totalDirtTransparency = 0;
@@ -32,6 +36,8 @@ public class WashingMinigameManager : MonoBehaviour
         hygiene.ApplyChange(20);
         _onWinGame.Raise();
         transform.parent.gameObject.SetActive(false);
+
+        moodSystemRef.PlayIncreaseStatAnim(Stats.Body);
     }
 
     public void GetAverageTransparency()
