@@ -7,7 +7,7 @@ public class ClockUI : MonoBehaviour
     private Transform clockHandTransform;
     private Transform minHandTransform;
     private float day;
-    private float hoursPerDay = 24f;
+    private float hoursPerDay = 12f;
     private const float REAL_SECONDS_PER_INGAME_DAY = 600f;
     private Text timeText;
 
@@ -23,10 +23,10 @@ public class ClockUI : MonoBehaviour
         day += Time.deltaTime / REAL_SECONDS_PER_INGAME_DAY;
         float dayNormalized = day % 1f;
         float rotationDegreesPerDay = 360f;
-        clockHandTransform.eulerAngles = new Vector3(0, 0, -dayNormalized * rotationDegreesPerDay - 258.5f);
+        clockHandTransform.eulerAngles = new Vector3(0, 0, -dayNormalized * rotationDegreesPerDay - 270);
         minHandTransform.eulerAngles = new Vector3(0, 0, -dayNormalized * rotationDegreesPerDay * hoursPerDay);
 
-        string hoursString = Mathf.Floor(dayNormalized * hoursPerDay + 8).ToString("00");
+        string hoursString = Mathf.Floor(dayNormalized * hoursPerDay + 9).ToString("00");
         string minString = Mathf.Floor(((dayNormalized * hoursPerDay) % 1f) * 60f).ToString("00");
 
         timeText.text = hoursString + ":" + minString;

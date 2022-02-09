@@ -12,7 +12,7 @@ public class FadeManager : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        fadeOut.PlayFeedbacks();
+        
     }
 
     public void FadeIn()
