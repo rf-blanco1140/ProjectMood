@@ -22,7 +22,9 @@ public class YogaManager : MonoBehaviour
 
     private float currentPoints;
     private bool test;
-    
+
+    [SerializeField] private MoodSystem moodSystemRef;
+
     private void RandomizePoseID()
     {
         for (int i = 0; i < _totalPoses; i++)
@@ -92,6 +94,9 @@ public class YogaManager : MonoBehaviour
         _onWinGame.Raise();
         transform.parent.gameObject.SetActive(false);
         Debug.Log("won!");
+        
+        moodSystemRef.PlayIncreaseStatAnim(Stats.Body);
+
         yield return new WaitForSeconds(1);
     }
 }
