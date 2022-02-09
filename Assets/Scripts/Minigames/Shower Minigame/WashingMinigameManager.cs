@@ -37,7 +37,7 @@ public class WashingMinigameManager : MonoBehaviour
         _onWinGame.Raise();
         transform.parent.gameObject.SetActive(false);
 
-        moodSystemRef.PlayIncreaseStatAnim(Stats.Body);
+        moodSystemRef.PlayIncreaseStatAnim(Stats.Hygiene);
     }
 
     public void GetAverageTransparency()
