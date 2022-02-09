@@ -42,10 +42,15 @@ public class GridCellController : MonoBehaviour
             placeBlockSFX.PlayFeedbacks();
             GetComponent<SpriteRenderer>().sprite = marks[0].GetComponent<SpriteRenderer>().sprite;
         }
-        else
+        else if(myOwner== Owner.AI)
         {
             placeBlockSFX.PlayFeedbacks();
             GetComponent<SpriteRenderer>().sprite = marks[1].GetComponent<SpriteRenderer>().sprite;
         }
+        else
+        {
+            GetComponent<SpriteRenderer>().sprite = null;
+        }
     }
+
 }

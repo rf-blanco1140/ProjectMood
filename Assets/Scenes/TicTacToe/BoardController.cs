@@ -55,6 +55,35 @@ public class BoardController : MonoBehaviour
         numberTurns = 0;
     }
 
+    private void OnEnable()
+    {
+        ResetBoard();
+    }
+
+    private void ResetBoard()
+    {
+        if(winner!=Owner.None)
+        {
+            winner = Owner.None;
+            AffectGrandma(GrandmaStats.Neutral);
+            playerVictoryMsg.SetActive(false);
+            playerDefeatMsg.SetActive(false);
+            tieMsg.SetActive(false);
+            textBubble.SetActive(false);
+            isPlayerTurn = true;
+            exitTime = 3f;
+            numberTurns = 0;
+
+            for (int i=0;i<3;i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    grid[i, j].GetComponent<GridCellController>().SetNewOwner(Owner.None);
+                }
+            }
+        }
+    }
+
     private Owner WinCheck()
     {
         Owner ret = Owner.None;
@@ -240,7 +269,7 @@ public class BoardController : MonoBehaviour
     public void EndAiTurn()
     {
         winner = WinCheck();
-        Debug.Log("W: " + winner);
+        //Debug.Log("W: " + winner);
         if (winner != Owner.None)
         {
             FinishGame();
