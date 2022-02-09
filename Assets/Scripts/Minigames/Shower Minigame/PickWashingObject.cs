@@ -16,13 +16,13 @@ public class PickWashingObject : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
 
-        SetPosition(soap, soapStartPosition);
-        SetPosition(powerWash, washerStartPosition);
+        soap.transform.position = soapStartPosition;
+        powerWash.transform.position = washerStartPosition;
     }
 
     public void UseSoap()
     {
-        SetPosition(soap, soapStartPosition);
+        soap.transform.position = soapStartPosition;
         audioSource.Stop();
         soap.SetActive(true);
         powerWash.SetActive(false);
@@ -30,7 +30,7 @@ public class PickWashingObject : MonoBehaviour
     
     public void UsePowerWash()
     {
-        SetPosition(powerWash, washerStartPosition);
+        powerWash.transform.position = washerStartPosition;
         audioSource.Play();
         powerWash.SetActive(true);
         soap.SetActive(false);

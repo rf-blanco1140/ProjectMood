@@ -740,7 +740,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4406042319069163848}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f9f70269fdaac44b859fb209f058d67, type: 3}
   m_Name: 
@@ -748,6 +748,7 @@ MonoBehaviour:
   _cameraManager: {fileID: 6254183486184730592, guid: 1a919c32925869547882ebcdeba08422, type: 3}
   _moodManager: {fileID: 0}
   _canWalk: {fileID: 11400000, guid: d54b5c11946b22a469b4b0b173c5109f, type: 2}
+  _cameraIndex: 0
 --- !u!1 &4406042319225787935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1959,7 +1960,6 @@ GameObject:
   - component: {fileID: 4406042320361048602}
   - component: {fileID: 4406042320361048601}
   - component: {fileID: 4406042320361048605}
-  - component: {fileID: 4406042320361048606}
   - component: {fileID: 4127864129010477507}
   - component: {fileID: 2976015597950447821}
   m_Layer: 5
@@ -2058,22 +2058,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniGameCamera: {fileID: 0}
---- !u!54 &4406042320361048606
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4406042320361048600}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &4127864129010477507
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f201c596-5ae4-4312-bd06-349e50fd4f1e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectMood/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectMood/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/End Day Summary.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/End Day Summary.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/Sleep Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/Sleep Manager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Indoor Mainscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Indoor Mainscene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/JespersScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/JespersScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/LightController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/LightController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/TimeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndOfDaySummary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EndOfDaySummary.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MoodSystem Folder/MoodSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MoodSystem Folder/MoodSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sleep/Sleep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sleep/Sleep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SleepUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SleepUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Washing Minigame.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Washing Minigame.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/PickWashingObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/PickWashingObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +135,7 @@
       <workItem from="1644220682068" duration="20772000" />
       <workItem from="1644246314474" duration="9423000" />
       <workItem from="1644307150566" duration="29759000" />
-      <workItem from="1644393496157" duration="5927000" />
+      <workItem from="1644393496157" duration="9025000" />
     </task>
     <servers />
   </component>

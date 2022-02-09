@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -4821186132618897608}
   - component: {fileID: 1773546072982855734}
   m_Layer: 5
-  m_Name: MeatIngredient
+  m_Name: TofuIngredient
   m_TagString: Ingredient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,9 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6e6a5c1fb8817468121af6bad0f9a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uncookedSprite: {fileID: 21300000, guid: f934629d9a870a649bedc05502afd904, type: 3}
-  _cookedSprite: {fileID: 21300000, guid: 59a0ea8a6f03d37418f929323684ecac, type: 3}
-  _overcookedSprite: {fileID: 21300000, guid: 00bf9ccbf485c324abc45db546c0c983, type: 3}
+  _uncookedSprite: {fileID: 21300000, guid: 26e6a5fded3f5b543856cf83deff6a44, type: 3}
+  _cookedSprite: {fileID: 21300000, guid: 8a68e28ffec288a45868828b6b795fb1, type: 3}
+  _overcookedSprite: {fileID: 21300000, guid: 1141592ec39b6f94e84d43ac164e2388, type: 3}
 --- !u!212 &8535135727456217209
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -89,12 +89,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f934629d9a870a649bedc05502afd904, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 26e6a5fded3f5b543856cf83deff6a44, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.68, y: 3.69}
+  m_Size: {x: 5.19, y: 2.94}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -127,5 +127,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.0604143, y: 2.9813085, z: 0.19999999}
-  m_Center: {x: 0.024413219, y: -0.10413969, z: 0}
+  m_Size: {x: 5.2399445, y: 2.9813085, z: 0.19999999}
+  m_Center: {x: -0.008888245, y: -0.104139745, z: -0.0000000013184058}
