@@ -15,6 +15,10 @@ public class YogaManager : MonoBehaviour
     [SerializeField] private FloatVariable body;
     
     [SerializeField] private BoolVariable animationIsPlaying;
+
+    [SerializeField] private GameObject _happy;
+    [SerializeField] private GameObject _sad;
+
     private int _totalPoses = 5;
 
     private float currentPoints;
@@ -28,6 +32,13 @@ public class YogaManager : MonoBehaviour
         }
     }
 
+    private IEnumerator ToggleImage(GameObject gameObject)
+    {
+        gameObject.SetActive(true);
+        yield return new WaitForSeconds(2);
+        gameObject.SetActive(false);
+    }
+    
     private IEnumerator PlayAnimation()
     {
         StartCoroutine(animations.PlayYogaAnimation(_pressedID.Value));
@@ -40,11 +51,11 @@ public class YogaManager : MonoBehaviour
         if (_poseID[0] == _pressedID.Value)
         {
             StartCoroutine(PlayAnimation());
-            Debug.Log("correct");
+            StartCoroutine(ToggleImage(_happy));
         }
         else
         {
-            Debug.Log("incorrect");
+            StartCoroutine(ToggleImage(_sad));
         }
     }
 
@@ -52,7 +63,6 @@ public class YogaManager : MonoBehaviour
     {
         if (_poseID.Count <= 1)
         {
-            Debug.Log("no more poses");
             StartCoroutine(OnFinish());
             return;
         }
@@ -74,8 +84,8 @@ public class YogaManager : MonoBehaviour
     {
         LookForCorrectID();
             
-        if (_poseID[0] == _pressedID.Value)
-        {
+        if (_poseID[0] == _pressedID.Value) 
+        { 
             UI.OnButtonPressed();
         }
     }
@@ -86,7 +96,6 @@ public class YogaManager : MonoBehaviour
         body.ApplyChange(20);
         _onWinGame.Raise();
         transform.parent.gameObject.SetActive(false);
-        Debug.Log("won!");
         yield return new WaitForSeconds(1);
     }
 }

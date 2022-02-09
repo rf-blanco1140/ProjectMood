@@ -15,7 +15,7 @@ public class TimeManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI clock;
 
-    private float _inGameHourInSeconds = 30f;
+    private float _inGameHourInSeconds = 5f;
     private int _hoursInDay = 1;
     private int _dayTimeEnds = 5;
     private int _nightTimeStarts = 6;
@@ -30,21 +30,26 @@ public class TimeManager : MonoBehaviour
 
     private IEnumerator HourlyTimer()
     {
-        if (_timePaused.boolValue == true) yield return null;
+        if (_timePaused.boolValue = true)
+        {
+            yield return WaitForSeconds(2);
+            StartCoroutine(HourlyTimer());
+        }
+        else
+        {
+            HourManager();
 
-        HourManager();
-
-        DayTime();
-        NightTime();
-        UpdateClock();
+            DayTime();
+            NightTime();
+            UpdateClock();
         
-        _clockHours++;
-        _hoursInDay++;
+            _clockHours++;
+            _hoursInDay++;
         
-        onDropEachHour.Raise();
+            onDropEachHour.Raise();
         
-        yield return new WaitForSeconds(_inGameHourInSeconds);
-        StartCoroutine(HourlyTimer());
+            yield return new WaitForSeconds(_inGameHourInSeconds);
+        }
     }
     
     private void DayTime()

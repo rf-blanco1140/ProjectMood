@@ -9,15 +9,17 @@ public class PickWashingObject : MonoBehaviour
     private AudioSource audioSource;
 
     private bool _active;
-    private Vector3 soapStartPosition = new Vector3(-4.27f,0f,10.31f);
-    private Vector3 washerStartPosition = new Vector3(2.33f, -1.34f, 5.67f);
+    private Vector3 soapStartPosition;
+    private Vector3 washerStartPosition;
 
     private void OnEnable()
     {
         audioSource = GetComponent<AudioSource>();
 
-        soap.transform.position = soapStartPosition;
-        powerWash.transform.position = washerStartPosition;
+        soapStartPosition = soap.transform.position;
+        washerStartPosition = powerWash.transform.position;
+        soap.SetActive(false);
+        powerWash.SetActive(false);
     }
 
     public void UseSoap()
@@ -34,10 +36,5 @@ public class PickWashingObject : MonoBehaviour
         audioSource.Play();
         powerWash.SetActive(true);
         soap.SetActive(false);
-    }
-    
-    private Vector3 SetPosition(GameObject washObject, Vector3 targetPosition)
-    {
-        return washObject.transform.position = targetPosition;
     }
 }

@@ -64,7 +64,7 @@ public class Sleep : MonoBehaviour
 
     public void StartExhaustion()
     {
-        StartCoroutine(Exhausted());
+        //StartCoroutine(Exhausted());
     }
     
     private IEnumerator Exhausted()
