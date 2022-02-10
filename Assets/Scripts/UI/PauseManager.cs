@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
@@ -67,5 +68,10 @@ public class PauseManager : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+    public void ReturnStart()
+    {
+        ResumeGame();
+        SceneManager.LoadScene("MainMenu");
     }
 }
