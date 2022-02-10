@@ -63,6 +63,8 @@ public class BonsaiManager : MonoBehaviour
             mind.ApplyChange(20);
             _onWinGame.Raise();
             transform.parent.gameObject.SetActive(false);
+
+            moodSystemRef.PlayIncreaseStatAnim(Stats.Mind);
         }
         else
         {
@@ -70,7 +72,5 @@ public class BonsaiManager : MonoBehaviour
             transform.parent.gameObject.SetActive(false);
         }
         AudioManager.instance.ReturnToDefault();
-        
-        moodSystemRef.PlayIncreaseStatAnim(Stats.Mind);
     }
 }
