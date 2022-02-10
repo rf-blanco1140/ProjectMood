@@ -23,8 +23,8 @@ public class YogaManagerUI : MonoBehaviour
     {
         foreach (var idList in _IDList)
         {
-            GameObject iconObject = Instantiate(icon, currentVector, Quaternion.identity);
-            increment = 1;
+            GameObject iconObject = Instantiate(icon, new Vector3(transform.position.x + increment, transform.position.y,transform.position.z), Quaternion.identity);
+            increment += .3f;
 
             iconObject.transform.parent = parent.transform;
             
@@ -42,7 +42,7 @@ public class YogaManagerUI : MonoBehaviour
         {
             if (j == 0)
             {
-                ugh.transform.localScale = new Vector3(0.15f, 0.15f, 0.15f);
+                ugh.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
             }
             
             else return;
@@ -88,11 +88,13 @@ public class YogaManagerUI : MonoBehaviour
 
     public void OnButtonPressed()
     {
-        foreach (GameObject game in icons) 
-        { 
-            Vector3 transformPosition = game.transform.position; 
-            game.transform.position = new Vector3(transformPosition.x -= 1f, 0f,0f);
-        }
+        //float i = 0;
+        //foreach (GameObject game in icons) 
+        //{ 
+        //    Vector3 transformPosition = game.transform.position; 
+        //    game.transform.position = new Vector3( game.transform.position.x -i, game.transform.position.y, game.transform.position.z);
+        //    i++;
+        //}
         
         SetScale(icons[0]);
         

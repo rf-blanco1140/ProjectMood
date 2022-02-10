@@ -11,7 +11,7 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private IntVariable day;
     [SerializeField] private Ending ending;
 
-    private float _inGameHourInSeconds = 3f;
+    private float _inGameHourInSeconds = 30f;
     public float _clockHours = 8f;
     
     private void Awake()
