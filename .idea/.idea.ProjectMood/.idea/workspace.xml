@@ -3,17 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f201c596-5ae4-4312-bd06-349e50fd4f1e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectMood/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectMood/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/End Day Summary.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/End Day Summary.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/Sleep Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/Sleep Manager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Extras/pose.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Minigames/Yoga Extras/pose.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Indoor Mainscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Indoor Mainscene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/new epic.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/new epic.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/TimeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sleep/Sleep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sleep/Sleep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sleep/SleepUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sleep/SleepUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/NiceVibrationsAHAPConverters.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/OlderVersions/v1.7/NiceVibrations-v-1-7.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/OlderVersions/v2.0.1/NiceVibrations-v-2-0-1.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManagerUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaManagerUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
