@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f201c596-5ae4-4312-bd06-349e50fd4f1e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/Sleep Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/Sleep Manager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/NiceVibrationsAHAPConverters.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/OlderVersions/v1.7/NiceVibrations-v-1-7.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/OlderVersions/v2.0.1/NiceVibrations-v-2-0-1.unitypackage.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="f201c596-5ae4-4312-bd06-349e50fd4f1e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +131,7 @@
       <workItem from="1644246314474" duration="9423000" />
       <workItem from="1644307150566" duration="29759000" />
       <workItem from="1644393496157" duration="26839000" />
-      <workItem from="1644481288511" duration="10125000" />
+      <workItem from="1644481288511" duration="10816000" />
     </task>
     <servers />
   </component>
