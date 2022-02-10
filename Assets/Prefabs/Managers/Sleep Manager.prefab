@@ -642,6 +642,8 @@ MonoBehaviour:
   nextButton: {fileID: 1883727375}
   player: {fileID: 0}
   sleepUI: {fileID: 1516458996}
+  sleepTrigger: {fileID: 2913800528855786384}
+  bufferNextDay: {fileID: 11400000, guid: c5ed15d494fcd58419471a63a5da266b, type: 2}
 --- !u!114 &2913800528855786384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,6 +660,7 @@ MonoBehaviour:
   _endSound: {fileID: 5042099135887197866}
   timeManager: {fileID: 0}
   notTiredResponseText: {fileID: 50471656}
+  pressed: 0
 --- !u!114 &2913800528855786387
 MonoBehaviour:
   m_ObjectHideFlags: 0
