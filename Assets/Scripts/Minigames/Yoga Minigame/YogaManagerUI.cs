@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +12,12 @@ public class YogaManagerUI : MonoBehaviour
     
     private float increment = 0f;
     private float currentVectorX = 24f;
+
+    private void OnEnable()
+    {
+        currentVectorX = 24;
+        increment = 0;
+    }
 
     public void DrawImages(List<int> _IDList)
     {
@@ -81,15 +88,15 @@ public class YogaManagerUI : MonoBehaviour
 
     public void OnButtonPressed()
     {
-        RemoveLastIcon();
-        
-        foreach (GameObject game in icons)
-        {
-            Vector3 transformPosition = game.transform.position;
+        foreach (GameObject game in icons) 
+        { 
+            Vector3 transformPosition = game.transform.position; 
             game.transform.position = new Vector3(transformPosition.x -= 7f, 10,45);
         }
         
         SetScale(icons[0]);
+        
+        RemoveLastIcon();
     }
 
     private void RemoveLastIcon()
