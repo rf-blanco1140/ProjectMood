@@ -10,6 +10,10 @@ public class GridCellController : MonoBehaviour
     private BoardController boardController;
     [SerializeField] private MMFeedbacks placeBlockSFX;
 
+    void Awake()
+    {
+        //Debug.LogError("...");
+    }
     private void Start()
     {
         myOwner = Owner.None;
