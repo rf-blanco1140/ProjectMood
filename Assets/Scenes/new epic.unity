@@ -19529,6 +19529,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1810318845}
     m_Modifications:
+    - target: {fileID: 1551509280, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 525f785f2c048994a8e112e4be9c33b8, type: 2}
+    - target: {fileID: 1551509280, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1350705276206607353, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 525f785f2c048994a8e112e4be9c33b8, type: 2}
+    - target: {fileID: 1350705276206607353, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4892080374492844692, guid: 525f785f2c048994a8e112e4be9c33b8, type: 2}
     - target: {fileID: 2913800528855786384, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
       propertyPath: timeManager
       value: 
@@ -19537,10 +19553,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1236790480454806365}
-    - target: {fileID: 2913800528855786385, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
-      propertyPath: sleepTrigger
-      value: 
-      objectReference: {fileID: 1185458957}
     - target: {fileID: 2913800528855786386, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -19596,17 +19608,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2913800528855786386, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
   m_PrefabInstance: {fileID: 1185458955}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1185458957 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2913800528855786384, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
-  m_PrefabInstance: {fileID: 1185458955}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 213d98efad2783740a9870a9544d57ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1189984980
 GameObject:
   m_ObjectHideFlags: 0
@@ -24852,7 +24853,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482156457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.060699932, y: 0.006000459, z: 0.41413265}
+  m_LocalPosition: {x: 0.060699932, y: 0.006000459, z: 0.41413397}
   m_LocalScale: {x: 1, y: 0.91652, z: 1}
   m_Children: []
   m_Father: {fileID: 1713742908}
@@ -29693,6 +29694,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 263307072}
     m_Modifications:
+    - target: {fileID: 775348594899237639, guid: 7e5c6477f3b65f94b85a002c8833c2ad, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2049193141501005581, guid: 7e5c6477f3b65f94b85a002c8833c2ad, type: 3}
       propertyPath: _moodManager
       value: 
@@ -29701,10 +29706,22 @@ PrefabInstance:
       propertyPath: _cameraManager
       value: 
       objectReference: {fileID: 272165801}
+    - target: {fileID: 4210656010909964274, guid: 7e5c6477f3b65f94b85a002c8833c2ad, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6073825472797318826, guid: 7e5c6477f3b65f94b85a002c8833c2ad, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 404277218}
+    - target: {fileID: 7786599047771259990, guid: 7e5c6477f3b65f94b85a002c8833c2ad, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8136028040755050147, guid: 7e5c6477f3b65f94b85a002c8833c2ad, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8381945392097632344, guid: 7e5c6477f3b65f94b85a002c8833c2ad, type: 3}
       propertyPath: m_Name
       value: MinigameBonsai
@@ -33653,7 +33670,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067125896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.19869, y: 30.775316, z: -144.89998}
+  m_LocalPosition: {x: -14.194494, y: 30.776365, z: -144.89998}
   m_LocalScale: {x: 1, y: 1, z: 0.4183}
   m_Children: []
   m_Father: {fileID: 7261780162239371421}
@@ -62392,6 +62409,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1810318845}
     m_Modifications:
+    - target: {fileID: 8810519665893314243, guid: d07620027616fad46b022adb229bb456, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 525f785f2c048994a8e112e4be9c33b8, type: 2}
+    - target: {fileID: 8810519665893314243, guid: d07620027616fad46b022adb229bb456, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4892080374492844692, guid: 525f785f2c048994a8e112e4be9c33b8, type: 2}
     - target: {fileID: 8810519666891121175, guid: d07620027616fad46b022adb229bb456, type: 3}
       propertyPath: m_Name
       value: Time Manager
