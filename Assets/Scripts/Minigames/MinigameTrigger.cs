@@ -6,7 +6,6 @@ using MoreMountains.Feedbacks;
 
 public class MinigameTrigger : MonoBehaviour
 {
-    [SerializeField] private GameObject _textGameObject;
     [SerializeField] private GameObject _miniGame;
     [SerializeField] private GameObject _imageF;
     [SerializeField] private GameObject _imageStat;
@@ -28,7 +27,6 @@ public class MinigameTrigger : MonoBehaviour
         {
             
             _canInteract = true;
-            _textGameObject.SetActive(true);
             _imageF.SetActive(true);
             _imageStat.SetActive(true);
         }
@@ -37,7 +35,6 @@ public class MinigameTrigger : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         _canInteract = false;
-        _textGameObject.SetActive(false);
         _imageF.SetActive(false);
         _imageStat.SetActive(false);
     }
@@ -60,7 +57,6 @@ public class MinigameTrigger : MonoBehaviour
         AudioManager.instance.SwapTrack(_newTrack);
         _miniGame.SetActive(true);
         _canInteract = false;
-        _textGameObject.SetActive(false);
         _imageF.SetActive(false);
         _imageStat.SetActive(false);
     }
