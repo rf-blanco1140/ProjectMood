@@ -36,7 +36,7 @@ public class BoardController : MonoBehaviour
 
     private void Start()
     {
-        grid = new GridCellController[3, 3];
+        /**grid = new GridCellController[3, 3];
         int t = 0;
 
         for(int i= 0; i<3;i++)
@@ -48,10 +48,12 @@ public class BoardController : MonoBehaviour
                 newCell.gameObject.AddComponent<BoxCollider2D>();
                 newCell.GetComponent<BoxCollider2D>().size = new Vector2(0.42f,0.42f);
                 newCell.gameObject.layer = UI;
+                newCell.transform.parent = this.transform;
                 grid[i, j] = newCell;
                 t++;
-            } 
-        }
+                Debug.Log("D:");
+            }
+        }*/
 
         isPlayerTurn = true;
         exitTime = 3f;
@@ -81,7 +83,40 @@ public class BoardController : MonoBehaviour
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    grid[i, j].GetComponent<GridCellController>().SetNewOwner(Owner.None);
+                    //grid[i, j].GetComponent<GridCellController>().SetNewOwner(Owner.None);
+                    GridCellController toDie = grid[i, j];
+                    Destroy(toDie.gameObject);
+                }
+            }
+        }
+        else
+        {
+            winner = Owner.None;
+            AffectGrandma(GrandmaStats.Neutral);
+            playerVictoryMsg.SetActive(false);
+            playerDefeatMsg.SetActive(false);
+            tieMsg.SetActive(false);
+            textBubble.SetActive(false);
+            isPlayerTurn = true;
+            exitTime = 3f;
+            numberTurns = 0;
+
+            grid = new GridCellController[3, 3];
+            int t = 0;
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    GridCellController newCell = Instantiate(cellPrefab).GetComponent<GridCellController>();
+                    newCell.transform.position = positions[t].transform.position;
+                    newCell.gameObject.AddComponent<BoxCollider2D>();
+                    newCell.GetComponent<BoxCollider2D>().size = new Vector2(0.42f, 0.42f);
+                    newCell.gameObject.layer = UI;
+                    newCell.transform.parent = this.transform;
+
+                    grid[i, j] = newCell;
+                    t++;
                 }
             }
         }

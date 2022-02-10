@@ -24,8 +24,7 @@ public class TimeManager : MonoBehaviour
     {
         if (day.Value == 2)
         {
-            Debug.Log("end");
-            //ending.GetAverageForEnding();
+            ending.GetAverageForEnding();
         }
         
         GoingToSleepExhausted();

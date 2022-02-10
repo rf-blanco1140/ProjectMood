@@ -16,15 +16,15 @@ public class YogaManager : MonoBehaviour
     [SerializeField] private FloatVariable body;
     [SerializeField] private MMFeedbacks failSFX;
     [SerializeField] private MMFeedbacks correctSFX;
-
     [SerializeField] private BoolVariable animationIsPlaying;
+    [SerializeField] private MoodSystem moodSystemRef;
+    
     private int _totalPoses = 5;
 
     private float currentPoints;
     private bool test;
 
-    [SerializeField] private MoodSystem moodSystemRef;
-
+    
     private void RandomizePoseID()
     {
         for (int i = 0; i < _totalPoses; i++)
@@ -89,6 +89,8 @@ public class YogaManager : MonoBehaviour
 
     private IEnumerator OnFinish()
     {
+        button.RemoveButtons();
+        
         AudioManager.instance.ReturnToDefault();
         body.ApplyChange(20);
         _onWinGame.Raise();

@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Ending : MonoBehaviour
 {
     [SerializeField] private GameObject endings;
     [SerializeField] private Sprite[] endingImages;
     [SerializeField] private EndOfDaySummary summary;
+    [SerializeField] private GameObject endingCanvas;
     
     public void GetAverageForEnding()
     {       
@@ -17,6 +19,7 @@ public class Ending : MonoBehaviour
     
     private void PickEnding(int i)
     {
-        endings.GetComponent<SpriteRenderer>().sprite = endingImages[i];
+        endingCanvas.SetActive(true);
+        endings.GetComponent<Image>().sprite = endingImages[i];
     }
 }
