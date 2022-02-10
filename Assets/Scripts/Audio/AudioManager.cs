@@ -66,7 +66,7 @@ public class AudioManager : MonoBehaviour
         track2.loop = true;
         isPlayingTrack1 = true;
 
-        isNeutral = true;
+        isHappy = true;
         ReturnToDefault();
     }
     public void SwapTrack(AudioClip newClip)
