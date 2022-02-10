@@ -658,8 +658,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: What a great night of sleep. I'm feeling quite "something". Maybe I should
-    head over to the "blabla" and "do soemthing"!
+  m_Text: What a great night of sleep. I'm feeling quite good! Time to care of myself.
 --- !u!114 &9208396488264011951
 MonoBehaviour:
   m_ObjectHideFlags: 0
