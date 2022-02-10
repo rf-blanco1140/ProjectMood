@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Ending : MonoBehaviour
 {
@@ -21,5 +22,10 @@ public class Ending : MonoBehaviour
     {
         endingCanvas.SetActive(true);
         endings.GetComponent<Image>().sprite = endingImages[i];
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

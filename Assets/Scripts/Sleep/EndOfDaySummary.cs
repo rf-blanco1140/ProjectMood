@@ -67,7 +67,7 @@ public class EndOfDaySummary : MonoBehaviour
         moodText.text =
             $"Today was horrible!" +
             $"\n I feel like I'm going to break down if I don't work on " +
-            $"{GetLowestMoods(1)} {GetLowestMoods(2)} {GetLowestMoods(3)}" +
+            $"\n there's so much i need to work on" +
             $"\n Hopefully tomorrow is better..";
     }
     
