@@ -15,7 +15,7 @@ public class SleepTrigger : MonoBehaviour
         textObject.SetActive(true);
         if(TryGetComponent(out Sleep sleep) && Input.GetKeyDown(KeyCode.F))
         {
-            if (timeManager._clockHours >= 18 && pressed == false)
+            if (timeManager._clockHours >= 17 && pressed == false)
             {
                 pressed = true;
                 _endSound.PlayFeedbacks();

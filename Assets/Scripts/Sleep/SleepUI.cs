@@ -21,12 +21,15 @@ public class SleepUI : MonoBehaviour
     public bool _fadeFromBlack;
     
     private Vector3 _finalPosition = new Vector3(960, 540f, 0);
-    private Vector3 _startPosition = new Vector3(960,2740f,0);
+    private Vector3 _startPosition = new Vector3(960,3807,0);
 
     private RectTransform rectTransform;
     
     private void Awake()
     {
+        _startPosition = new Vector3(960, 3807, 0);
+        _finalPosition = new Vector3(960, 540f, 0);
+        
         _transparentColor = new Color(0, 0, 0, 0);
         _whiteColor = new Color(1, 1, 1, 1);
         _blackColor = new Color(0, 0, 0, 1);
@@ -37,8 +40,6 @@ public class SleepUI : MonoBehaviour
 
     private void Update()
     {
-        //_colorLerpTime = Time.deltaTime / 5; 
-        
         if (_fadeToBlack)
         {
             FadeToBlack();
@@ -65,7 +66,7 @@ public class SleepUI : MonoBehaviour
         _startUI = true;
         _continueUI = false;
         
-        _lerpTime = Time.deltaTime / 5;
+        _lerpTime = Time.deltaTime / 3;
         _colorLerpTime += Time.deltaTime / 10;
 
         rectTransform.localPosition = Vector3.Lerp(rectTransform.localPosition, _finalPosition, _lerpTime);
@@ -77,10 +78,11 @@ public class SleepUI : MonoBehaviour
         _continueUI = true;
         _startUI = false;
         
-        _lerpTime = Time.deltaTime / 5;
-        _colorLerpTime += Time.deltaTime / 10;
+        _lerpTime = Time.deltaTime / 2;
+        _colorLerpTime += Time.deltaTime / 2;
 
-        rectTransform.localPosition = Vector3.Lerp(rectTransform.localPosition, _startPosition, _lerpTime);
+        //rectTransform.localPosition = Vector3.Lerp(rectTransform.localPosition, _startPosition, _lerpTime);
+        rectTransform.localPosition = new Vector3(960, 4000, 0);
         textUI.color = Color.Lerp(_whiteColor, _transparentColor, _colorLerpTime);
     }
 

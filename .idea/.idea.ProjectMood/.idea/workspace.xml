@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f201c596-5ae4-4312-bd06-349e50fd4f1e" name="Changes" comment="" />
+    <list default="true" id="f201c596-5ae4-4312-bd06-349e50fd4f1e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectMood/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectMood/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/End Day Summary.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/End Day Summary.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Managers/Sleep Manager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Managers/Sleep Manager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Indoor Mainscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Indoor Mainscene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/new epic.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/new epic.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/TimeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Day&amp;Night Cycle/TimeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sleep/Sleep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sleep/Sleep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sleep/SleepUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sleep/SleepUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/NiceVibrationsAHAPConverters.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/OlderVersions/v1.7/NiceVibrations-v-1-7.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Feel/NiceVibrations/OlderVersions/v2.0.1/NiceVibrations-v-2-0-1.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/HDRPProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +42,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Yoga Minigame/YogaAnimations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HideClock.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d3b66f0ad4e34a55b6ef91ab8487819313c000/ce/dc02562b/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.high-definition@10.8.1/Runtime/Lighting/Shadow/HDShadowManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/Shower Minigame/Clean.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1c34070ddd5b426b8f32df1db927aad128400/51/8d2c70b2/Event.cs" root0="SKIP_HIGHLIGHTING" />
@@ -48,7 +62,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.331813" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.33182332" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -131,7 +145,8 @@
       <workItem from="1644246314474" duration="9423000" />
       <workItem from="1644307150566" duration="29759000" />
       <workItem from="1644393496157" duration="26839000" />
-      <workItem from="1644481288511" duration="11667000" />
+      <workItem from="1644481288511" duration="14640000" />
+      <workItem from="1644503613190" duration="4178000" />
     </task>
     <servers />
   </component>

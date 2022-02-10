@@ -20,6 +20,7 @@ public class Sleep : MonoBehaviour
     [SerializeField] private SleepUI sleepUI;
     [SerializeField] private SleepTrigger sleepTrigger;
     [SerializeField] private BoolVariable bufferNextDay;
+    [SerializeField] private TimeManager time;
     
     public void StartSleeping()
     {
@@ -54,8 +55,11 @@ public class Sleep : MonoBehaviour
         sleepUI.SetFinalPosition();
         sleepUI.ResetTimers();
         sleepUI.TransitionOutOfEndOfDaySummary();
-
-        yield return new WaitForSeconds(3); 
+        
+        yield return new WaitForSeconds(5); 
+        sleepUI.ResetTimers();
+        sleepUI.FadeFromBlack();
+        
         sleepUI._startUI = false;
         sleepUI._continueUI = false;
 
@@ -68,8 +72,10 @@ public class Sleep : MonoBehaviour
         onToggleUI.Raise();
         player.transform.position = playerStartPosition;
         sleepTrigger.pressed = false;
+        
+        time._clockHours = 8;
+        StartCoroutine(time.DailyTimer());
         bufferNextDay.boolValue = false;
-
     }
 
     public void Button()

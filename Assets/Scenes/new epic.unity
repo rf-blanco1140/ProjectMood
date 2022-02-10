@@ -19529,22 +19529,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1810318845}
     m_Modifications:
-    - target: {fileID: 1551509280, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 525f785f2c048994a8e112e4be9c33b8, type: 2}
-    - target: {fileID: 1551509280, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1350705276206607353, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 525f785f2c048994a8e112e4be9c33b8, type: 2}
-    - target: {fileID: 1350705276206607353, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -4892080374492844692, guid: 525f785f2c048994a8e112e4be9c33b8, type: 2}
     - target: {fileID: 2913800528855786384, guid: 13832b4d0f6e6a14da070611eefaa51b, type: 3}
       propertyPath: timeManager
       value: 
@@ -24853,7 +24837,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482156457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.060699932, y: 0.006000459, z: 0.41413397}
+  m_LocalPosition: {x: 0.060699932, y: 0.006000459, z: 0.4141342}
   m_LocalScale: {x: 1, y: 0.91652, z: 1}
   m_Children: []
   m_Father: {fileID: 1713742908}
@@ -33670,7 +33654,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067125896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.194494, y: 30.776365, z: -144.89998}
+  m_LocalPosition: {x: -14.193731, y: 30.776556, z: -144.89998}
   m_LocalScale: {x: 1, y: 1, z: 0.4183}
   m_Children: []
   m_Father: {fileID: 7261780162239371421}
@@ -62409,14 +62393,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1810318845}
     m_Modifications:
-    - target: {fileID: 8810519665893314243, guid: d07620027616fad46b022adb229bb456, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 525f785f2c048994a8e112e4be9c33b8, type: 2}
-    - target: {fileID: 8810519665893314243, guid: d07620027616fad46b022adb229bb456, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -4892080374492844692, guid: 525f785f2c048994a8e112e4be9c33b8, type: 2}
     - target: {fileID: 8810519666891121175, guid: d07620027616fad46b022adb229bb456, type: 3}
       propertyPath: m_Name
       value: Time Manager
