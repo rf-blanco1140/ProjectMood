@@ -77,13 +77,26 @@ namespace Player
             Vector3 mov;
 
             float horizontal = 0;
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.A) && (Input.GetKey(KeyCode.D)))
+            {
+                StopSound();
+                _isWalking.boolValue = false;
+                _isWalkingBool = false;
+            }
+
+            else if (Input.GetKey(KeyCode.A))
                 horizontal = -1;
             else if (Input.GetKey(KeyCode.D))
                 horizontal = 1;
 
             float vertical = 0;
-            if (Input.GetKey(KeyCode.S))
+            if (Input.GetKey(KeyCode.S) && (Input.GetKey(KeyCode.W)))
+            {
+                StopSound();
+                _isWalking.boolValue = false;
+                _isWalkingBool = false;
+            }
+            else if (Input.GetKey(KeyCode.S))
                 vertical = -1f;
             else if (Input.GetKey(KeyCode.W))
                 vertical = 1f;
