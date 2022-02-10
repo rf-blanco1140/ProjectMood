@@ -67,10 +67,15 @@ namespace Player
 
         private void PlayerMove()
         {
+            //Try to fix Rigibody movement
+
             //rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
             //rb.velocity = movement * moveSpeed;
             //Vector3 dPos = movement*moveSpeed*Time.deltaTime;
             //transform.position = new Vector3(transform.position.x+dPos.x,transform.position.y, transform.position.z+dPos.z);
+
+            Vector3 mov;
+
             float horizontal = 0;
             if (Input.GetKey(KeyCode.A))
                 horizontal = -1;
@@ -82,9 +87,18 @@ namespace Player
                 vertical = -1f;
             else if (Input.GetKey(KeyCode.W))
                 vertical = 1f;
-            
-            Vector3 mov = Vector3.right * horizontal + Vector3.forward * vertical;
-            transform.position += mov * moveSpeed * Time.deltaTime;
+
+            if (horizontal != 0 && vertical != 0)
+            {
+                mov = Vector3.right * horizontal + Vector3.forward * vertical;
+                transform.position += mov * moveSpeed / 1.5f  * Time.deltaTime;
+            }
+
+            else
+            {
+                mov = Vector3.right * horizontal + Vector3.forward * vertical;
+                transform.position += mov * moveSpeed * Time.deltaTime;
+            }
         }
         
         private void PlayerFaceDirection()
