@@ -78,6 +78,8 @@ public class CookingMinigame : MonoBehaviour
             Debug.Log("Best Win");
             _appetite.ApplyChange(20);
             _onWinGame.Raise();
+
+            moodSystemRef.PlayIncreaseStatAnim(Stats.Appetite);
         }
         else
         {
@@ -90,7 +92,6 @@ public class CookingMinigame : MonoBehaviour
         _fader.PlayFeedbacks();
         transform.parent.gameObject.SetActive(false);
 
-        moodSystemRef.PlayIncreaseStatAnim(Stats.Appetite);
     }
 
     private void Update()
