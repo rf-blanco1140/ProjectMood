@@ -25,6 +25,7 @@ public class TimeManager : MonoBehaviour
         if (day.Value == 2)
         {
             ending.GetAverageForEnding();
+            bufferNextDay.boolValue = true;
         }
         
         GoingToSleepExhausted();

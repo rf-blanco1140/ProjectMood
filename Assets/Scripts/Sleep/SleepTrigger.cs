@@ -9,14 +9,15 @@ public class SleepTrigger : MonoBehaviour
     [SerializeField] private MMFeedbacks _endSound;
     [SerializeField] private TimeManager timeManager;
     [SerializeField] private TextMeshProUGUI notTiredResponseText;
-    
+    public bool pressed = false;
    private void OnTriggerStay(Collider other)
     {
         textObject.SetActive(true);
         if(TryGetComponent(out Sleep sleep) && Input.GetKeyDown(KeyCode.F))
         {
-            if (timeManager._clockHours >= 19)
+            if (timeManager._clockHours >= 18 && pressed == false)
             {
+                pressed = true;
                 _endSound.PlayFeedbacks();
                 StartCoroutine(sleep.Sleeping());
             }

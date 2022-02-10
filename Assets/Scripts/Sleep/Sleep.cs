@@ -18,7 +18,9 @@ public class Sleep : MonoBehaviour
     private Vector3 playerStartPosition = new Vector3(-7f, 1f, 10.5f);
     
     [SerializeField] private SleepUI sleepUI;
-
+    [SerializeField] private SleepTrigger sleepTrigger;
+    [SerializeField] private BoolVariable bufferNextDay;
+    
     public void StartSleeping()
     {
         StartCoroutine(Sleeping());
@@ -26,6 +28,7 @@ public class Sleep : MonoBehaviour
     
     public IEnumerator Sleeping()
     {
+        bufferNextDay.boolValue = true;
         sleepUI.ResetTimers();
         sleepUI.FadeToBlack();
         onToggleUI.Raise();
@@ -64,6 +67,9 @@ public class Sleep : MonoBehaviour
         
         onToggleUI.Raise();
         player.transform.position = playerStartPosition;
+        sleepTrigger.pressed = false;
+        bufferNextDay.boolValue = false;
+
     }
 
     public void Button()
