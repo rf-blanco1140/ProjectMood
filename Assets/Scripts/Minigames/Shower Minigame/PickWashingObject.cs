@@ -37,4 +37,11 @@ public class PickWashingObject : MonoBehaviour
         powerWash.SetActive(true);
         soap.SetActive(false);
     }
+
+    private void OnDisable()
+    {
+        soap.SetActive(true);
+        soap.transform.position = soapStartPosition;
+        soap.SetActive(false);
+    }
 }
