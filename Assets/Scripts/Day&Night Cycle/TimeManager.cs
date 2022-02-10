@@ -11,7 +11,7 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private IntVariable day;
     [SerializeField] private Ending ending;
 
-    private float _inGameHourInSeconds = 30f;
+    private float _inGameHourInSeconds = 3f;
     public float _clockHours = 8f;
     
     private void Awake()
@@ -24,6 +24,7 @@ public class TimeManager : MonoBehaviour
     {
         if (day.Value == 2)
         {
+            Debug.Log("Done");
             ending.GetAverageForEnding();
             bufferNextDay.boolValue = true;
             StopCoroutine(DailyTimer());
@@ -40,12 +41,13 @@ public class TimeManager : MonoBehaviour
         StartCoroutine(DailyTimer());
     }
 
-    public void GoingToSleep()
-    {
-        StopCoroutine(DailyTimer());
-        onSleep.Raise();
-        _clockHours = 8;
-    }
+    //public void GoingToSleep()
+    //{
+    //    StopCoroutine(DailyTimer());
+    //    onSleep.Raise();
+    //    _clockHours = 8;
+    //    day.ApplyChange(1);
+    //}
     
     private void GoingToSleepExhausted()
     {
@@ -55,7 +57,6 @@ public class TimeManager : MonoBehaviour
             onSleep.Raise();
             // play some tired sound bell noise idk
             _clockHours = 8;
-            day.ApplyChange(1);
         }
     }
 

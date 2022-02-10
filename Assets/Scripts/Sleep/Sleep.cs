@@ -21,7 +21,8 @@ public class Sleep : MonoBehaviour
     [SerializeField] private SleepTrigger sleepTrigger;
     [SerializeField] private BoolVariable bufferNextDay;
     [SerializeField] private TimeManager time;
-    
+
+    [SerializeField] private IntVariable _day;
     public void StartSleeping()
     {
         StartCoroutine(Sleeping());
@@ -76,6 +77,8 @@ public class Sleep : MonoBehaviour
         time._clockHours = 8;
         StartCoroutine(time.DailyTimer());
         bufferNextDay.boolValue = false;
+
+        _day.ApplyChange(1);
     }
 
     public void Button()
