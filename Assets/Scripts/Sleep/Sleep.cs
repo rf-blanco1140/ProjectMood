@@ -6,7 +6,8 @@ public class Sleep : MonoBehaviour
 {
     [SerializeField] private VoidEvent onSummary;
     [SerializeField] private VoidEvent onToggleUI;
-
+    [SerializeField] private VoidEvent onQueueEnding;
+    
     [SerializeField] private BoolVariable canWalk;
     [SerializeField] private BoolVariable pauseRotation;
     [SerializeField] private BoolVariable timePaused;
@@ -79,6 +80,7 @@ public class Sleep : MonoBehaviour
         bufferNextDay.boolValue = false;
 
         _day.ApplyChange(1);
+        onQueueEnding.Raise();
     }
 
     public void Button()

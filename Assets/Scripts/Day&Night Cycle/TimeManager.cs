@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -11,25 +12,17 @@ public class TimeManager : MonoBehaviour
     [SerializeField] private IntVariable day;
     [SerializeField] private Ending ending;
 
-    private float _inGameHourInSeconds = 30f;
+    private Coroutine timerRoutine;
+    private float _inGameHourInSeconds = 4f;
     public float _clockHours = 8f;
     
     private void Awake()
     {
         day.Value = 0;
-        StartCoroutine(DailyTimer());
+        timerRoutine = StartCoroutine(DailyTimer());
     }
-
     public IEnumerator DailyTimer()
     {
-        if (day.Value == 2)
-        {
-            Debug.Log("Done");
-            ending.GetAverageForEnding();
-            bufferNextDay.boolValue = true;
-            StopCoroutine(DailyTimer());
-        }
-        
         GoingToSleepExhausted();
         
         UpdateClock();
@@ -41,13 +34,16 @@ public class TimeManager : MonoBehaviour
         StartCoroutine(DailyTimer());
     }
 
-    //public void GoingToSleep()
-    //{
-    //    StopCoroutine(DailyTimer());
-    //    onSleep.Raise();
-    //    _clockHours = 8;
-    //    day.ApplyChange(1);
-    //}
+    public void QueueEnding()
+    {
+        if (day.Value == 2)
+        {
+            Debug.Log("Done");
+            ending.GetAverageForEnding();
+            bufferNextDay.boolValue = true;
+            StopCoroutine(timerRoutine);
+        }
+    }
     
     private void GoingToSleepExhausted()
     {
